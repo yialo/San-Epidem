@@ -82,22 +82,14 @@
     line-height: 36px;
 }
 
-.contacts__btn {
-    width: 261px;
-    height: 60px;
-    background-color: $orange;
-}
 
 .contacts__btn {
-    width: 261px;
-    height: 60px;
-    color: #ffffff;
+    width: 260px;
+    font-weight: 300;
     font-family: "HelveticaNeueCyr";
     font-size: 18px;
-    font-weight: 300;
     line-height: 24px;
     text-transform: uppercase;
-    border: 0;
-    position: relative;
-    left: 180px;
+    color: white;
+    background-color: $orange;
 }
