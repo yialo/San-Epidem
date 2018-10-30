@@ -4,26 +4,8 @@
 
 .problems__container {
     display: flex;
-<<<<<<< HEAD
-    padding-top: 50px;
-    padding-bottom: 172px;
-    background-color: #2f2f2f;
     background-image: url("../img/problems-cup.png");
     background-repeat: no-repeat;
-    background-position-y: 362px;
-
-
-    @media (max-width: 991px) {
-        display: block;
-    }
-
-    @media (max-width: 1200px) {
-        display: block;
-    }
-=======
-    background-image: url("../img/problems-cup.png");
-    background-repeat: no-repeat;
->>>>>>> temporary
 }
 
 .problems__lead {
