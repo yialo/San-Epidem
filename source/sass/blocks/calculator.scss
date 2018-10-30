@@ -1,14 +1,16 @@
 .calculator {
-    background-color: #2f2f2f;
+    background-color: $ashpalt;
     background-image: url("../img/calculator-background.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .calculator__title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 500;
     padding-left: 40px;
-    font-family: "HelveticaNeueCyr";
+
     font-size: 36px;
     line-height: 50px;
     text-transform: uppercase;
@@ -54,8 +56,8 @@
     padding-bottom: 15px;
     padding-left: 18px;
     padding-right: 18px;
-    font-family: "HelveticaNeueCyr";
-    color: #ffffff;
+
+    color: white;
     background-color: rgba(255, 255, 255, 0.3);
     border: 0;
 
@@ -67,7 +69,7 @@
     }
 
     &--text::placeholder {
-        color: #ffffff;
+        color: white;
     }
 }
 
@@ -76,7 +78,7 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
-    font-family: "HelveticaNeueCyr";
+
     font-size: 20px;
     color: white;
 }
@@ -103,7 +105,7 @@
 .calculator__download-link {
     display: block;
     font-weight: 300;
-    font-family: "HelveticaNeueCyr";
+
     font-size: 16px;
     color: white;
     text-decoration: underline;
@@ -113,7 +115,7 @@
     width: 260px;
     padding: 0;
     font-weight: 300;
-    font-family: "HelveticaNeueCyr";
+
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;

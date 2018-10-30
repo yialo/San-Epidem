@@ -4,8 +4,12 @@
 
 .contacts__container {
     position: absolute;
+<<<<<<< HEAD
     top: 80px;
     width: 100%;
+=======
+    top: 100px;
+>>>>>>> temporary
     background-color: rgba(0, 0, 0, 0.65);
 }
 
@@ -13,18 +17,28 @@
     width: 580px;
     background-image: url("../img/contacts-redline.png");
     background-repeat: no-repeat;
+<<<<<<< HEAD
     background-position: 0 0;
 }
 
 .contacts__title {
     font-weight: 500;
     font-family: "HelveticaNeueCyr";
+=======
+}
+
+.contacts__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+>>>>>>> temporary
     font-size: 36px;
     line-height: 60px;
     text-transform: uppercase;
     color: white;
 }
 
+<<<<<<< HEAD
 .contacts__list {
     margin-top: 0;
     margin-bottom: 0;
@@ -36,6 +50,16 @@
     font-family: "HelveticaNeueCyr";
     font-size: 16px;
     color: white;
+=======
+.contacts__table {
+    border-collapse: collapse;
+    color: white;
+}
+
+.contacts__table-cell {
+    padding: 0;
+    font-size: 16px;
+>>>>>>> temporary
 
     &--name {
         font-weight: 500;
@@ -45,7 +69,11 @@
         font-weight: 300;
     }
 
+<<<<<<< HEAD
     &--value--phone {
+=======
+    &--value-phone {
+>>>>>>> temporary
         font-size: 32px;
     }
 }
@@ -53,7 +81,6 @@
 .contacts__button {
     width: 260px;
     font-weight: 300;
-    font-family: "HelveticaNeueCyr";
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;

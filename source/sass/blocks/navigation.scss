@@ -1,0 +1,38 @@
+.navigation {
+    &--footer {
+        width: 180px;
+    }
+}
+
+.navigation__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+
+    &--header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.navigation__item {
+    position: relative;
+
+    &--header:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 20px;
+        background-color: white;
+    }
+}
+
+.navigation__link {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+}
