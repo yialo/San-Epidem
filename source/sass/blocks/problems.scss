@@ -37,10 +37,55 @@
 }
 
 .problems__item {
+    position: relative;
     width: 400px;
     padding-top: 255px;
     background-image: url("../img/problems-redarc.png");
     background-repeat: no-repeat;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+    }
+
+    &--1::before {
+        width: 23px;
+        height: 85px;
+        background-image: url("../img/problems-1.png");
+    }
+
+    &--2::before {
+        width: 66px;
+        height: 61px;
+        background-image: url("../img/problems-2.png");
+    }
+
+    &--3::before {
+        width: 70px;
+        height: 74px;
+        background-image: url("../img/problems-3.png");
+    }
+
+    &--4::before {
+        width: 63px;
+        height: 73px;
+        background-image: url("../img/problems-4.png");
+    }
+
+    &--5::before {
+        width: 49px;
+        height: 78px;
+        background-image: url("../img/problems-5.png");
+    }
+
+    &--6::before {
+        width: 76px;
+        height: 47px;
+        background-image: url("../img/problems-6.png");
+    }
 }
 
 .problems__item-title {
