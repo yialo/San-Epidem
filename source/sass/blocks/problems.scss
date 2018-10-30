@@ -19,17 +19,11 @@
     color: white;
     background-image: url("../img/problems-redline.png");
     background-repeat: no-repeat;
-    text-transform: uppercase;
-    position: relative;
-    left: 77px;
-    padding-top: 71px;
-    padding-left: 92px;
 }
 
 .problems__string {
     color: #d65231;
     letter-spacing: 0.65px;
-    text-transform: uppercase;
 }
 
 .problems__list {
@@ -75,9 +69,4 @@
     text-transform: uppercase;
     color: white;
     background-color: $orange;
-    line-height: 72px;
-    text-align: center;
-    position: relative;
-    left: 157px;
-    top: 93px;
 }
