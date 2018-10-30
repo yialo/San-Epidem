@@ -1,0 +1,98 @@
+.expertise__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.expertise__title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-family: "HelveticaNeueCyr";
+    font-size: 36px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: $dark-gray;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 69px;
+        height: 87px;
+        background-image: url("../img/expertise-microscope.svg");
+        background-size: 69px 87px;
+    }
+}
+
+.expertise__outer-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.expertise__outer-item {
+    &--tight {
+        width: 500px;
+    }
+
+    &--wide {
+        width: 1000px;
+    }
+}
+
+.expertise__inner-container {
+    display: flex;
+}
+
+.expertise__item-title {
+    font-weight: 500;
+    font-family: "HelveticaNeueCyr";
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: $orange;
+}
+
+.expertise__inner-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+    font-weight: 400;
+    font-family: "HelveticaNeueCyr";
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-gray;
+
+    &--wide {
+        width: 50%;
+    }
+}
+
+.expertise__inner-item {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: $orange;
+    }
+}
+
+.expertise__button {
+    width: 481px;
+    font-weight: 400;
+    font-family: "HelveticaNeueCyr";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: $orange;
+}

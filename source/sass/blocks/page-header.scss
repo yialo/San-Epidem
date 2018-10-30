@@ -1,0 +1,78 @@
+.page-header {
+    height: 800px;
+    background-image: url("/img/jasa-pembasmi-hama.png");
+    background-repeat: no-repeat;
+    background-position: 100% 136px;
+}
+
+.page-header__logo {
+    width: 405px;
+    height: 129px;
+    margin-top: 35px;
+}
+
+.page-header__phone {
+    font-weight: 300;
+    font-family: "HelveticaNeueCyr";
+    font-size: 32px;
+    line-height: 72px;
+    color: white;
+
+    @media (min-width: 992px) {
+        left: 48px;
+    }
+
+    @media (min-width: 1200px) {
+        left: 110px;
+    }
+}
+
+.page-header__phone-button {
+    width: 267px;
+    font-weight: 300;
+    font-family: "HelveticaNeueCyr";
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px solid $orange;
+}
+
+.page-header__info {
+    background-image: url("/img/page-header-redline.png");
+    background-repeat: no-repeat;
+}
+
+.page-header__title {
+    font-weight: 400;
+    font-family: "HelveticaNeueCyr";
+    font-size: 32px;
+    line-height: 48px;
+    color: $orange;
+}
+
+.page-header__title-string {
+    margin-left: 10px;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+}
+
+.page-header__subtitle {
+    width: 375px;
+    font-weight: 300;
+    font-family: "HelveticaNeueCyr";
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+
+}
+
+.page-header__button {
+    width: 314px;
+    font-weight: 300;
+    font-family: "HelveticaNeueCyr";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: $orange;
+}

@@ -1,0 +1,70 @@
+.consultation {
+    background-color: $orange;
+}
+
+.consultation__container {
+    width: 502px;
+    background-image: url("../img/consultation-whiteline.png");}
+
+.info-consultation__text {
+    display: flex;
+}
+
+.consultation__title {
+    font-weight: 500;
+    font-family: "HelveticaNeueCyr";
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.consultation__tip {
+    font-family: "HelveticaNeueCyr";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: white;
+}
+
+.info-consultation__form {
+    position: relative;
+    margin-top: 87px;
+}
+
+.info-consultation__form input {
+    width: 399px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    background-color: $orange;
+    color: #ffffff;
+    font-family: "HelveticaNeueCyr";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    display: block;
+    margin: 20px;
+    padding-left: 22px;
+}
+
+.info-consultation__form input::-webkit-input-placeholder {
+    color: white;
+}
+
+.info-consultation__btn {
+    width: 301px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: $orange;
+    font-family: "HelveticaNeueCyr";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.info-consultation__btn:hover {
+    color: #ffffff;
+    background-color: $orange;
+}

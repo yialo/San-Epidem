@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "HelveticaNeueCyr";
+    background-color: white;
+}
+
+header {
+    background-color: #2f2f2f;
+    font-family: "HelveticaNeueCyr";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+select {
+    background-image: url("/img/123123.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-position-x: 340px;
+
+    @media (max-width: 991px) {
+        background-position-x: 216px;
+    }
+}
+
+option {
+    color: #fff;
+    background: #369;
+    margin: 5px;
+}

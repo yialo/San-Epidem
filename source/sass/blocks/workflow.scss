@@ -1,0 +1,65 @@
+.workflow {
+    background-color: #ffffff;
+
+    @media (max-width: 1200px) {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.workflow__container {
+    display: flex;
+    padding-top: 86px;
+}
+
+
+.workflow__title {
+    width: 200px;
+    font-weight: 500;
+    font-family: "HelveticaNeueCyr";
+    font-size: 36px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.workflow__title-string {
+    color: $orange;
+}
+
+.workflow__list {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.workflow__item {
+    // position: absolute;
+    width: 280px;
+    min-height: 280px;
+    font-weight: 300;
+    font-family: "HelveticaNeueCyr";
+    font-size: 18px;
+    line-height: 24px;
+    color: $orange;
+    background-image: url("../img/workflow-arc.png");
+    background-repeat: no-repeat;
+    background-position: -20px -20px;
+}
+
+.workflow__item-number {
+    position: absolute;
+    width: 160px;
+    height: 165px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-family: "HelveticaNeueCyr";
+    font-size: 160px;
+    line-height: 160px;
+    color: #eae9e7;
+    background-color: white;
+}

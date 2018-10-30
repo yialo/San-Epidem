@@ -1,0 +1,42 @@
+.reference {
+    background-color: white;
+}
+
+.reference__title {
+    font-weight: 500;
+    font-family: "HelveticaNeueCyr";
+    font-size: 36px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: $dark-gray;
+}
+
+.reference__title-string {
+    color: $orange;
+}
+
+.reference__list {
+    list-style: none;
+    color: $dark-gray;
+    font-family: "HelveticaNeueCyr";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 65px;
+}
+
+.reference__list li {
+    display: flex;
+    margin: 15px;
+}
+
+.reference__list li::before {
+    display: block;
+    content: "";
+    background-image: url("/img/123123.png");
+    width: 17px;
+    height: 9px;
+    position: relative;
+    margin-right: 12px;
+    top: 7px;
+}
