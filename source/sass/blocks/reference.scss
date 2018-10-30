@@ -6,7 +6,7 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
-    font-family: "HelveticaNeueCyr";
+
     font-size: 36px;
     line-height: 60px;
     text-transform: uppercase;
@@ -23,7 +23,7 @@
     padding-left: 0;
     list-style-type: none;
     font-weight: 400;
-    font-family: "HelveticaNeueCyr";
+
     font-size: 18px;
     line-height: 24px;
     color: $dark-gray;
@@ -37,7 +37,7 @@
         position: absolute;
         width: 17px;
         height: 9px;
-        background-image: url("../img/reference-arrow-down.png");
+        background-image: url("../img/arrow-down.png");
         background-repeat: no-repeat;
     }
 }

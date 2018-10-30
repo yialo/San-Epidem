@@ -1,7 +1,4 @@
 <!DOCTYPE HTML>
-
-<!-- TODO: проверить, где ссылки, а где кнопки -->
-
 <html lang="ru">
     <head>
         <meta charset="utf-8">
@@ -18,27 +15,27 @@
     <body class="page">
         <header class="page__header  page-header">
             <div class="page-header__container  container">
-                <img class="page-header__logo  logo  logo--header" src="img/header-logo.png" alt="Санитарная Эпидемиологическая Служба">
+                <img class="page-header__logo  logo" src="img/logo-large.png" alt="Санитарная Эпидемиологическая Служба">
                 <div class="page-header__right-pane">
-                    <nav>
-                        <ul class="page-header__navigation  main-nav">
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="">Услуги</a>
+                    <nav class="page-header__navigation  navigation  navigation--header">
+                        <ul class="navigation__list  navigation__list--header">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Услуги</a>
                             </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="">Статьи</a>
+                            <li class="navigation__item  navigation__item--header">
+                                <a class="navigation__link" href="#">Статьи</a>
                             </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="">Сертификаты</a>
+                            <li class="navigation__item  navigation__item--header">
+                                <a class="navigation__link" href="#">Сертификаты</a>
                             </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="">Экспертиза</a>
+                            <li class="navigation__item  navigation__item--header">
+                                <a class="navigation__link" href="#">Экспертиза</a>
                             </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="">Цены</a>
+                            <li class="navigation__item  navigation__item--header">
+                                <a class="navigation__link" href="#">Цены</a>
                             </li>
-                            <li class="main-nav__item">
-                                <a class="main-nav__link" href="">Контакты</a>
+                            <li class="navigation__item  navigation__item--header">
+                                <a class="navigation__link" href="#">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -81,7 +78,7 @@
                 </div>
             </section>
 
-            <section class="advantages">
+            <section class="page-main__advantages  advantages">
                 <div class="advantages__container  container">
                     <h2 class="advantages__title">Наши преимущества</h2>
                     <ul class="advantages__list">
@@ -112,7 +109,7 @@
                 </div>
             </section>
 
-            <section class="problems">
+            <section class="page-main__problems  problems">
                 <div class="problems__container  container">
                     <h2 class="problems__title  visually-hidden">Возможные проблемы</h2>
                     <p class="problems__lead">
@@ -120,27 +117,27 @@
                     </p>
                     <div class="problems__list-wrapper">
                         <ul class="problems__list">
-                            <li class="problems__item">
+                            <li class="problems__item  problems__item--1">
                                 <h3 class="problems__item-title">Отсутствие гарантии</h3>
                                 <p class="problems__item-description">Недобросовестные исполнители зачастую не оставляют никаких документов или ограничиваются квитанцией об оплате</p>
                             </li>
-                            <li class="problems__item">
+                            <li class="problems__item  problems__item--2">
                                 <h3 class="problems__item-title">Вред здоровью</h3>
                                 <p class="problems__item-description">Неверно подобранный препарат может вызвать тяжелые аллергические реакции у детей или домашних животных</p>
                             </li>
-                            <li class="problems__item">
+                            <li class="problems__item  problems__item--3">
                                 <h3 class="problems__item-title">Низкая эффективность</h3>
                                 <p class="problems__item-description">Несоблюдение техники поведения обработки или экономия препарата значительно снижает эффективность мероприятия</p>
                             </li>
-                            <li class="problems__item">
+                            <li class="problems__item  problems__item--4">
                                 <h3 class="problems__item-title">Некуда позвонить</h3>
                                 <p class="problems__item-description">Компании однодневки исчезают после обработки и не отвечают на звонки</p>
                             </li>
-                            <li class="problems__item">
+                            <li class="problems__item  problems__item--5">
                                 <h3 class="problems__item-title">Порча имущества</h3>
                                 <p class="problems__item-description">При непрофессиональной эксплуатации рабочего оборудования можно нанести вред предметам мебели и домашней технике</p>
                             </li>
-                            <li class="problems__item">
+                            <li class="problems__item  problems__item--6">
                                 <h3 class="problems__item-title">Отсутствие консультации</h3>
                                 <p class="problems__item-description">После обработки крайне важно получить консультацию о профилактических мероприятиях с целью предотвращения повторного появления вредителей</p>
                             </li>
@@ -395,67 +392,75 @@
             </section>
 
             <section class="page-main__contacts  contacts">
-                <div class="contacts__container">
-                    <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CBB1QZq8HD" width="99.8%" height="756" frameborder="1" allowfullscreen="true"></iframe>
-                    <h2 class="contacts__title">Контакты</h2>
-                    <table class="contacts__table">
-                        <tbody class="contacts__table-container">
-                            <tr class="contacts__table-row">
-                                <td class="contacts__table-cell">Телефон</td>
-                                <td class="contacts__table-cell">8 (495) 142-50-54</td>
-                            </tr>
-                            <tr class="contacts__table-row">
-                                <td class="contacts__table-cell">Адрес:</td>
-                                <td class="contacts__table-cell">г. Москва, Оршанская ул., 5</td>
-                            </tr>
-                            <tr class="contacts__table-row">
-                                <td class="contacts__table-cell">Режим работы:</td>
-                                <td class="contacts__table-cell">круглосуточно без выходных</td>
-                            </tr>
-                            <tr class="contacts__table-row">
-                                <td class="contacts__table-cell">E-mail:</td>
-                                <td class="contacts__table-cell">
-                                    <a class="contacts__email" href="#">info@ses-moscow.ru</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <a class="contacts__button  button" href="#">Заказать звонок</a>
+                <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CBB1QZq8HD" width="100%" height="758" frameborder="1" allowfullscreen="true"></iframe>
+                    <div class="contacts__container">
+                        <div class="contacts__info">
+                        <h2 class="contacts__title">Контакты</h2>
+                        <table class="contacts__table">
+                            <tbody class="contacts__table-container">
+                                <tr class="contacts__table-row">
+                                    <td class="contacts__table-cell  contacts__table-cell--name">Телефон</td>
+                                    <td class="contacts__table-cell  contacts__table-cell--value  contacts__table-cell--value-phone">8 (495) 142-50-54</td>
+                                </tr>
+                                <tr class="contacts__table-row">
+                                    <td class="contacts__table-cell  contacts__table-cell--name">Адрес:</td>
+                                    <td class="contacts__table-cell  contacts__table-cell--value">г. Москва, Оршанская ул., 5</td>
+                                </tr>
+                                <tr class="contacts__table-row">
+                                    <td class="contacts__table-cell  contacts__table-cell--name">Режим работы:</td>
+                                    <td class="contacts__table-cell  contacts__table-cell--value">круглосуточно без выходных</td>
+                                </tr>
+                                <tr class="contacts__table-row">
+                                    <td class="contacts__table-cell  contacts__table-cell--name">E-mail:</td>
+                                    <td class="contacts__table-cell  contacts__table-cell--value  contacts__table-cell--value-email">
+                                        <a class="contacts__email" href="#">info@ses-moscow.ru</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="contacts__button  button" href="#">Заказать звонок</a>
+                    </div>
                 </div>
             </section>
         </main>
 
         <footer class="page__footer  page-footer">
-                <div class="container">
-                    <article class="footer-container__wrapper footer-container__wrapper01">
-                        <aside class="footer-container__wrapper">
-                            <nav class="footer__nav">
-                                <ul class="footer__list">
-                                    <li><a href="" alt="">Услуги</a></li>
-                                    <li><a href="" alt="">Статьи</a></li>
-                                    <li><a href="" alt="">Сертификаты</a></li>
-                                    <li><a href="" alt="">Экспертиза</a></li>
-                                    <li><a href="" alt="">Цены</a></li>
-                                    <li><a href="" alt="">Контакты</a></li>
-                                </ul>
-                            </nav>
-                        </aside>
-                        <aside class="footer-container__info">
-                            <aside class="footer-info">
-                                <img src="../img/header-logo.png" class="footer-info__logo" alt="Логотип компании">
-                                <div class="footer-info__container">
-                                    <aside>
-                                        <a href="" class="footer-info__phone" alt="">8 (495) 142-50-54</a>
-                                        <a href="" class="footer-info__email" alt="">info@ses-moscow.ru</a>
-                                    </aside>
-                                    <button class="footer-info__btn">Заказать звонок</button>
-                                </div>
-                                <div class="footer-container__red-line"></div>
-                                <a href="" class="footer-info__wts">СОЗДАНИЕ САЙТА ВЕБ СТУДИЯ WAYTOSTART</a>
-                            </aside>
-                        </aside>
-                    </article>
+            <div class="page-footer__container  container">
+                <nav class="page-footer__navigation  navigation  navigation--footer">
+                    <ul class="navigation__list  navigation__list--footer">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" alt="">Услуги</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" alt="">Статьи</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" alt="">Сертификаты</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" alt="">Экспертиза</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" alt="">Цены</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" alt="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="page-footer__main-part">
+                    <img class="page-footer-logo  logo" src="../img/logo-large.png" alt="Логотип компании">
+                    <div class="page-footer__contacts">
+                        <span class="page-footer__phone">8 (495) 142-50-54</span>
+                        <a class="page-footer__email" href="#">info@ses-moscow.ru</a>
+                    </div>
+                    <a class="page-footer__button  button" href="#">Заказать звонок</a>
+                    <p class="page-footer__copyright">
+                        <a class="page-footer__copyright-link" href="#">Создание сайта Веб Студия WayToStart</a>
+                    </p>
                 </div>
+            </div>
         </footer>
     </body>
 </html>

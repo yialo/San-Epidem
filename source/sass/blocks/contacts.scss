@@ -1,92 +1,54 @@
-.contacts__info {
-    width: 915px;
-    height: 558px;
-    margin-top: 100px;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-
-    @media (max-width: 991px) {
-        width: 747px;
-    }
-}
-
-.contacts-container {
-    display: flex;
-}
-
-.contacts--container {
-    margin-left: 377px;
-    padding-top: 66px;
+.contacts {
     position: relative;
-    display: block;
-    content: "";
-    background-image: url("/img/bottom0145.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 600px;
-    padding-left: 110px;
-    right: 210px;
-    top: 65px;
+}
 
-    @media (max-width: 991px) {
-        right: 383px;
-    }
+.contacts__container {
+    position: absolute;
+    top: 100px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.contacts__info {
+    width: 580px;
+    background-image: url("../img/contacts-redline.png");
+    background-repeat: no-repeat;
 }
 
 .contacts__title {
-    color: #ffffff;
-    font-family: "HelveticaNeueCyr";
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
     font-size: 36px;
-    font-weight: 500;
     line-height: 60px;
     text-transform: uppercase;
-    position: relative;
-    bottom: 92px;
+    color: white;
 }
 
-.contacts__list {
-    list-style: none;
+.contacts__table {
+    border-collapse: collapse;
+    color: white;
+}
+
+.contacts__table-cell {
     padding: 0;
-    position: relative;
-    bottom: 75px;
-}
-
-.contacts__list a {
-    text-decoration: none;
-}
-
-.contacts__list li {
-    color: #ffffff;
-    font-family: "HelveticaNeueCyr";
     font-size: 16px;
-    font-weight: 500;
-    line-height: 36px;
+
+    &--name {
+        font-weight: 500;
+    }
+
+    &--value {
+        font-weight: 300;
+    }
+
+    &--value-phone {
+        font-size: 32px;
+    }
 }
 
-.contacts__phone {
-    color: #ffffff;
-    font-family: "HelveticaNeueCyr";
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 60px;
-    text-transform: uppercase;
-}
-
-.contacts__address,
-.contacts__work-time,
-.contacts__email {
-    color: #ffffff;
-    font-family: "HelveticaNeueCyr";
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 36px;
-}
-
-
-.contacts__btn {
+.contacts__button {
     width: 260px;
     font-weight: 300;
-    font-family: "HelveticaNeueCyr";
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;

@@ -14,18 +14,13 @@ body {
     background-color: white;
 }
 
-header {
-    background-color: #2f2f2f;
-    font-family: "HelveticaNeueCyr";
-}
-
 a {
     text-decoration: none;
     color: inherit;
 }
 
 select {
-    background-image: url("/img/123123.png");
+    background-image: url("../img/arrow-down.png");
     background-position: right center;
     background-repeat: no-repeat;
     background-position-x: 340px;
@@ -36,7 +31,7 @@ select {
 }
 
 option {
-    color: #fff;
-    background: #369;
+    color: white;
+    background-color: #336699;
     margin: 5px;
 }
