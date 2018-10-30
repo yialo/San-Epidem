@@ -1,0 +1,103 @@
+.contacts__info {
+    width: 915px;
+    height: 558px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+
+    @media (max-width: 991px) {
+        width: 747px;
+    }
+}
+
+.contacts-container {
+    display: flex;
+}
+
+.contacts--container {
+    margin-left: 377px;
+    padding-top: 66px;
+    position: relative;
+    display: block;
+    content: "";
+    background-image: url("/img/bottom0145.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    padding-left: 110px;
+    right: 210px;
+    top: 65px;
+
+    @media (max-width: 991px) {
+        right: 383px;
+    }
+}
+
+.contacts__title {
+    color: #ffffff;
+    font-family: "HelveticaNeueCyr";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 60px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 92px;
+}
+
+.contacts__list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    bottom: 75px;
+}
+
+.contacts__list a {
+    text-decoration: none;
+}
+
+.contacts__list li {
+    color: #ffffff;
+    font-family: "HelveticaNeueCyr";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.contacts__phone {
+    color: #ffffff;
+    font-family: "HelveticaNeueCyr";
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.contacts__address,
+.contacts__work-time,
+.contacts__email {
+    color: #ffffff;
+    font-family: "HelveticaNeueCyr";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.contacts__btn {
+    width: 261px;
+    height: 60px;
+    background-color: $orange;
+}
+
+.contacts__btn {
+    width: 261px;
+    height: 60px;
+    color: #ffffff;
+    font-family: "HelveticaNeueCyr";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    border: 0;
+    position: relative;
+    left: 180px;
+}
