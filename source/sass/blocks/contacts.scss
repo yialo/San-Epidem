@@ -11,7 +11,7 @@
 
 .contacts__info {
     width: 580px;
-    background-image: url("/img/bottom0145.png");
+    background-image: url("../img/contacts-redline.png");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -32,33 +32,23 @@
     list-style-type: none;
 }
 
-.contacts__list li {
-    color: #ffffff;
+.contacts__table-cell {
     font-family: "HelveticaNeueCyr";
     font-size: 16px;
-    font-weight: 500;
-    line-height: 36px;
-}
+    color: white;
 
-.contacts__phone {
-    color: #ffffff;
-    font-family: "HelveticaNeueCyr";
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 60px;
-    text-transform: uppercase;
-}
+    &--name {
+        font-weight: 500;
+    }
 
-.contacts__address,
-.contacts__work-time,
-.contacts__email {
-    color: #ffffff;
-    font-family: "HelveticaNeueCyr";
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 36px;
-}
+    &--value {
+        font-weight: 300;
+    }
 
+    &--value--phone {
+        font-size: 32px;
+    }
+}
 
 .contacts__button {
     width: 260px;
