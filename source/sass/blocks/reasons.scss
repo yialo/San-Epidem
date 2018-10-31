@@ -5,12 +5,13 @@
 .reasons__container {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .reasons__title {
     width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
     font-family: "HelveticaNeueCyr";
     font-size: 36px;
     font-weight: 500;
@@ -20,11 +21,20 @@
 }
 
 .reasons__column {
-    width: calc(100% / 3);
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: -20px;
     margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
+    margin: 15px;
+
+    @media (max-width: 992px) {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 .reasons__item {
