@@ -1,5 +1,10 @@
 .page-main {
+    padding-top: 40px;
     background-color: #e8e8e8;
+
+    @media (min-width: $min-desktop-width) {
+        padding-top: 0;
+    }
 }
 
 .page-main__worktypes {
