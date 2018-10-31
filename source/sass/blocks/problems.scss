@@ -3,17 +3,23 @@
     padding-bottom: 30px;
     background-color: $asphalt;
 
+    @media (min-width: $min-tablet-width) {
+        padding-top: 75px;
+        padding-bottom: 50px;
+        background-image: url("../img/problems-cup.png");
+        background-repeat: no-repeat;
+        background-position: calc(50% - 320px) 550px;
+    }
+
     @media (min-width: $min-desktop-width) {
         padding-top: 100px;
         padding-bottom: 100px;
-        background-image: url("../img/problems-cup.png");
-        background-repeat: no-repeat;
         background-position: calc(50% - 510px) 450px;
     }
 }
 
 .problems__container {
-    @media (min-width: $min-desktop-width) {
+    @media (min-width: $min-tablet-width) {
         display: flex;
         justify-content: space-between;
     }
@@ -24,19 +30,28 @@
     margin-bottom: 50px;
     font-variant: small-caps;
     font-weight: 500;
-    font-size: 26px;
-    line-height: 40px;
-    white-space: pre;
+    font-size: 24px;
+    line-height: 36px;
     text-transform: uppercase;
     color: white;
 
+    @media (min-width: $min-tablet-width) {
+        width: 240px;
+        margin-left: 20px;
+        font-size: 26px;
+        line-height: 70px;
+    }
+
     @media (min-width: $min-desktop-width) {
         width: 380px;
+        margin-top: 0;
         margin-bottom: 0;
+        margin-left: 0;
         background-image: url("../img/problems-redline.png");
         background-repeat: no-repeat;
         padding-top: 71px;
         padding-left: 92px;
+        line-height: 40px;
     }
 }
 
@@ -50,6 +65,11 @@
     padding-left: 0;
     list-style-type: none;
 
+    @media (min-width: $min-tablet-width) {
+        width: 440px;
+        padding-top: 15px;
+    }
+
     @media (min-width: $min-desktop-width) {
         display: flex;
         flex-wrap: wrap;
@@ -57,6 +77,7 @@
         width: 780px;
         margin-top: -65px;
         margin-bottom: 60px;
+        padding-top: 0;
     }
 }
 
@@ -119,6 +140,42 @@
         width: 76px;
         height: 47px;
         background-image: url("../img/problems-6.png");
+    }
+
+    @media (min-width: $min-tablet-width) {
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+
+        &--1::before {
+            top: -40px;
+            right: 40px;
+        }
+
+        &--2::before {
+            top: -20px;
+            right: 25px;
+        }
+
+        &--3::before {
+            top: -25px;
+            right: 25px;
+        }
+
+        &--4::before {
+            top: -25px;
+            right: 30px;
+        }
+
+        &--5::before {
+            top: -30px;
+            right: 35px;
+        }
+
+        &--6::before {
+            top: -5px;
+            right: 30px;
+        }
     }
 
     @media (min-width: $min-desktop-width) {
