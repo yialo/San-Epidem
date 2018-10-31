@@ -35,11 +35,6 @@
     background-repeat: no-repeat;
     background-position: left top;
     padding-bottom: 150px;
-
-    @media (max-width: 992px) {
-        display: block;
-        background-image: none;
-    }
 }
 
 .calculator__list {
@@ -51,10 +46,6 @@
     margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
-
-    @media (max-width: 992px) {
-        display: block;
-    }
 }
 
 .calculator__item {
@@ -91,15 +82,11 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
-
     font-size: 20px;
     color: white;
     margin-bottom: 30px;
     margin-top: 30px;
 
-    @media (max-width: 992px) {
-        width: 50%;
-    }
 }
 
 .calculator__price-quantity {
@@ -129,7 +116,6 @@
 .calculator__download-link {
     display: block;
     font-weight: 300;
-
     font-size: 16px;
     color: white;
     text-decoration: underline;
@@ -139,7 +125,6 @@
     width: 260px;
     padding: 0;
     font-weight: 300;
-
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
@@ -159,10 +144,5 @@
         border-color: transparent;
         margin-left: 19px;
         position: relative;
-
-        @media (max-width: 992px) {
-            margin-left: 0;
-            margin-top: 10px;
-        }
     }
 }

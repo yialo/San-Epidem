@@ -6,41 +6,16 @@
     padding-left: 50px;
     padding-right: 50px;
     background-color: $orange;
-
-    @media (max-width: 1300px) {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    @media (min-width: 1300px) {
-        top: 0;
-    }
-
-    @media (max-width: 1200px) {
-        top: 0;
-        position: relative;
-        left: 0;
-    }
 }
 
 .consultation__container {
     width: 502px;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0 !important;
+    padding-bottom: 300px;
     background-image: url("../img/consultation-whiteline.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    padding-bottom: 300px;
-
-    @media (max-width: 550px) {
-        background-image: none;
-    }
-
-    @media (max-width: 768px) {
-        background-image: none;
-    }
 }
 
 .info-consultation__text {
@@ -57,43 +32,14 @@
     margin-bottom: 55px;
     position: relative;
     right: 65px;
-
-    @media (max-width: 550px) {
-        width: 275px;
-        text-align: center;
-    }
 }
 
 .consultation__tip {
-
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
     color: white;
     width: 160px;
-
-
-    @media (max-width: 550px) {
-        width: 160px;
-        text-align: center;
-        position: relative;
-        left: 0;
-        bottom: 0;
-        margin-right: 15px;
-        margin-bottom: 50px;
-    }
-
-    @media (min-width: 550px) {
-        position: relative;
-        left: 0;
-        bottom: 0;
-    }
-
-    @media (min-width: 768px) {
-        position: absolute;
-        left: 235px;
-        bottom: 197px;
-    }
 }
 
 .consultation__form {
@@ -112,28 +58,6 @@
     background-color: $orange;
     border: 2px solid #ffffff;
     margin-top: 20px;
-
-    @media (max-width: 550px) {
-        margin-top: 30px;
-    }
-
-    &::placeholder {
-        color: white;
-    }
-
-    @media (max-width: 550px) {
-        width: 175px;
-    }
-
-    @media (min-width: 550px) {
-        width: 175px;
-        position: relative;
-        right: 30px;
-    }
-
-    @media (min-width: 768px) {
-        width: 400px;
-    }
 }
 
 .consultation__button {
@@ -148,22 +72,6 @@
     border: 2px solid white;
     line-height: 40px;
     margin-top: 20px;
-
-    @media (max-width: 550px) {
-        width: 175px;
-        margin-top: 50px;
-    }
-
-    @media (min-width: 550px) {
-        width: 175px;
-        margin-top: 50px;
-        position: relative;
-        right: 30px;
-    }
-
-    @media (min-width: 768px) {
-        width: 300px;
-    }
 }
 
 .container--consultation {

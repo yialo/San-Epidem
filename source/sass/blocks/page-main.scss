@@ -1,3 +1,11 @@
 .page-main {
     background-color: #e8e8e8;
 }
+
+.page-main__worktypes {
+    margin-bottom: 60px;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 120px;
+    }
+}

@@ -28,12 +28,6 @@
     padding-left: 0;
     list-style-type: none;
     margin: 15px;
-
-    @media (max-width: 992px) {
-        width: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
 }
 
 .reasons__item {

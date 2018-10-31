@@ -25,10 +25,6 @@ select {
     background-position: right center;
     background-repeat: no-repeat;
     background-position-x: 340px;
-
-    @media (max-width: 991px) {
-        background-position-x: 216px;
-    }
 }
 
 option {
