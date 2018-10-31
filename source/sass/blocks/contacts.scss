@@ -2,21 +2,37 @@
     position: relative;
 }
 
+.contacts__map {
+    display: block;
+    border-style: none;
+}
+
 .contacts__container {
     position: absolute;
     top: 100px;
+    right: calc(50% - 30px);
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 40px;
     background-color: rgba(0, 0, 0, 0.65);
 }
 
 .contacts__info {
-    width: 580px;
+    width: 583px;
+    padding-left: 50px;
     background-image: url("../img/contacts-redline.png");
     background-repeat: no-repeat;
+    background-position: 100% 30px;
 }
 
 .contacts__title {
+    width: 440px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 80px;
     font-weight: 500;
     font-size: 36px;
     line-height: 60px;
@@ -25,19 +41,25 @@
 }
 
 .contacts__table {
+    margin-bottom: 75px;
     border-collapse: collapse;
     color: white;
 }
 
 .contacts__table-cell {
     padding: 0;
+    vertical-align: baseline;
     font-size: 16px;
 
     &--name {
+        width: 160px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-weight: 500;
     }
 
     &--value {
+        width: 280px;
         font-weight: 300;
     }
 
@@ -48,6 +70,7 @@
 
 .contacts__button {
     width: 260px;
+    margin-left: 160px;
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
