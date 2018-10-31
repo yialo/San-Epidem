@@ -5,6 +5,11 @@
     padding-left: 20px;
     padding-right: 20px;
 
+    &--workflow {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     @media (min-width: $min-tablet-width) {
         width: $min-tablet-width;
     }
@@ -14,6 +19,11 @@
 
         &--consultation {
             width: 100%;
+        }
+
+        &--workflow {
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 }
