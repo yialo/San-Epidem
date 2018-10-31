@@ -1,8 +1,24 @@
 .page-header {
-    background-color: $ashpalt;
-    background-image: url("/img/jasa-pembasmi-hama.png");
+    padding-top: 40px;
+    background-color: $asphalt;
+    background-image: url("../img/header-backgound-large.png");
     background-repeat: no-repeat;
-    background-position: 100% 136px;
+}
+
+.page-header__top-pane {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $orange;
+}
+
+.page-header__right-pane {
+    display: flex;
+    flex-wrap: wrap;
+    width: 680px;
+}
+
+.page-header__navigation {
+    width: 100%;
 }
 
 .page-header__logo {
@@ -11,28 +27,15 @@
 }
 
 .page-header__phone {
+    display: block;
     font-weight: 300;
     font-size: 32px;
-    line-height: 72px;
+    line-height: 48px;
     color: white;
-
-    @media (min-width: 992px) {
-        left: 48px;
-    }
-
-    @media (min-width: 1200px) {
-        left: 110px;
-    }
 }
 
 .page-header__phone-button {
-    width: 267px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: white;
-    border: 2px solid $orange;
+    width: 315px;
 }
 
 .page-header__info {
