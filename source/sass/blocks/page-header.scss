@@ -55,6 +55,10 @@
 
     }
 
+    &--js-hidden {
+        display: none;
+    }
+
     @media (min-width: $min-desktop-width) {
         display: none;
     }
@@ -98,8 +102,6 @@
     top: 0;
     left: 0;
     z-index: 1;
-
-    display: none; //TODO: убрать в будущем
 
     @media (min-width: $min-desktop-width) {
         position: static;
@@ -185,7 +187,6 @@
     color: white;
 
     &:first-of-type {
-        width: 600px;
         margin-bottom: 20px;
     }
 
@@ -196,6 +197,10 @@
     @media (min-width: $min-tablet-width) {
         margin-left: auto;
         margin-right: auto;
+
+        &:first-of-type {
+            width: 600px;
+        }
     }
 
     @media (min-width: $min-desktop-width) {
