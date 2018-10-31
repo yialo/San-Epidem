@@ -12,18 +12,22 @@
 
     &--header {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 }
 
 .navigation__item {
     position: relative;
 
+    &--header:not(:last-child) {
+        margin-right: 40px;
+    }
+
     &--header:not(:last-child)::after {
         content: "";
         position: absolute;
         top: 0;
-        right: 0;
+        right: -20px;
         width: 1px;
         height: 20px;
         background-color: white;

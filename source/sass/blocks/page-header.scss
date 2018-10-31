@@ -8,17 +8,10 @@
 .page-header__top-pane {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
     border-bottom: 2px solid $orange;
-}
-
-.page-header__right-pane {
-    display: flex;
-    flex-wrap: wrap;
-    width: 680px;
-}
-
-.page-header__navigation {
-    width: 100%;
 }
 
 .page-header__logo {
@@ -26,8 +19,22 @@
     height: 129px;
 }
 
+.page-header__right-pane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 680px;
+    padding-top: 15px;
+}
+
+.page-header__navigation {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
 .page-header__phone {
     display: block;
+    padding-top: 5px;
     font-weight: 300;
     font-size: 32px;
     line-height: 48px;
@@ -36,6 +43,7 @@
 
 .page-header__phone-button {
     width: 315px;
+    margin-left: 35px;
 }
 
 .page-header__info {
