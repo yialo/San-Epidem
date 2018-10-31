@@ -4,8 +4,6 @@
     padding-left: 20px;
     padding-right: 20px;
 
-    @include outline;
-
     @media (min-width: $min-desktop-width) {
         width: $min-desktop-width;
 
