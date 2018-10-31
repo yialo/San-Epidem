@@ -52,11 +52,12 @@
         width: 30px;
         height: 30px;
         background-image: url("../img/page-header-menu-close.svg");
-
     }
 
-    &--js-hidden {
-        display: none;
+    @media (max-width: $max-tablet-width) {
+        &--js-hidden {
+            display: none;
+        }
     }
 
     @media (min-width: $min-desktop-width) {

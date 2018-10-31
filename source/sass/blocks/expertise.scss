@@ -55,7 +55,9 @@
 }
 
 .expertise__inner-container {
-    display: flex;
+    @media (min-width: $min-desktop-width) {
+        display: flex;
+    }
 }
 
 .expertise__item-title {

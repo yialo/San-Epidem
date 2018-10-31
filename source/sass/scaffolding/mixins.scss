@@ -9,16 +9,16 @@
     overflow: hidden;
     white-space: nowrap;
     clip-path: inset(100%);
-  }
+}
 
-  @mixin margin-hor($mh: auto) {
-      margin-left: $mh;
-      margin-right: $mh;
-  }
+@mixin margin-hor($mh: auto) {
+    margin-left: $mh;
+    margin-right: $mh;
+}
 
-  // AUXILIARY
+// AUXILIARY
 
-  @mixin outline {
+@mixin outline {
     outline: 1px solid red;
     outline-offset: -1px;
-  }
+}

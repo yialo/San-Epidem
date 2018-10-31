@@ -2,7 +2,6 @@
     background-color: $orange;
 
     @media (min-width: $min-desktop-width) {
-        position: absolute;
         padding-top: 50px;
         padding-bottom: 40px;
         padding-left: 50px;
@@ -10,12 +9,9 @@
     }
 }
 
-.consultation__container {
+.consultation__form {
     @media (min-width: $min-desktop-width) {
         width: 502px;
-        margin-left: 0;
-        margin-right: 0;
-        padding-bottom: 300px;
         background-image: url("../img/consultation-whiteline.png");
         background-repeat: no-repeat;
         background-position: 0 0;
