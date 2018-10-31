@@ -1,97 +1,91 @@
 .problems {
-    background-color: $ashpalt;
+    background-color: #2f2f2f;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .problems__container {
     display: flex;
+    padding-top: 50px;
+    padding-bottom: 172px;
+    background-color: #2f2f2f;
     background-image: url("../img/problems-cup.png");
     background-repeat: no-repeat;
+    background-position-y: 362px;
+
+
+    @media (max-width: 991px) {
+        display: block;
+    }
+
+    @media (max-width: 1200px) {
+        display: block;
+    }
+
+    @media (max-width:420px) {
+        background-image: none;
+    }
 }
 
 .problems__lead {
+    flex-shrink: 0;
     width: 380px;
-    margin-top: 0;
-    margin-bottom: 0;
     font-variant: small-caps;
     font-weight: 500;
+    font-family: "HelveticaNeueCyr";
     font-size: 26px;
     line-height: 40px;
-    color: white;
+    color: #ffffff;
     background-image: url("../img/problems-redline.png");
     background-repeat: no-repeat;
+    text-transform: uppercase;
+    position: relative;
+    left: 77px;
+    padding-top: 71px;
+    padding-left: 92px;
+
+    @media (max-width: 420px) {
+        left: 0;
+        padding-left: 0;
+    }
+
+    @media (max-width: 550px) {
+        left: 50px;
+        padding-left: 25px;
+    }
 }
 
 .problems__string {
     color: #d65231;
     letter-spacing: 0.65px;
+    text-transform: uppercase;
 }
 
 .problems__list {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0;
+    margin-left: 0;
     list-style-type: none;
+
+    @media (min-width: 768px) {
+        margin-left: 75px;
+    }
 }
 
 .problems__item {
-    position: relative;
-    width: 400px;
-    padding-top: 255px;
-    background-image: url("../img/problems-redarc.png");
-    background-repeat: no-repeat;
+    margin-top: 70px;
+    margin-left: 0;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-repeat: no-repeat;
-    }
-
-    &--1::before {
-        width: 23px;
-        height: 85px;
-        background-image: url("../img/problems-1.png");
-    }
-
-    &--2::before {
-        width: 66px;
-        height: 61px;
-        background-image: url("../img/problems-2.png");
-    }
-
-    &--3::before {
-        width: 70px;
-        height: 74px;
-        background-image: url("../img/problems-3.png");
-    }
-
-    &--4::before {
-        width: 63px;
-        height: 73px;
-        background-image: url("../img/problems-4.png");
-    }
-
-    &--5::before {
-        width: 49px;
-        height: 78px;
-        background-image: url("../img/problems-5.png");
-    }
-
-    &--6::before {
-        width: 76px;
-        height: 47px;
-        background-image: url("../img/problems-6.png");
+    @media (min-width: 992px) {
+        margin-left: 50px;
     }
 }
 
 .problems__item-title {
-    margin-top: 0;
-    margin-bottom: 0;
     font-weight: 400;
+    font-family: "HelveticaNeueCyr";
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
@@ -99,19 +93,44 @@
 }
 
 .problems__item-description {
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 327px;
     font-weight: 300;
+    font-family: "HelveticaNeueCyr";
     font-size: 16px;
     line-height: 24px;
-    color: white;
+    color: #ffffff;
+
+    @media (max-width: 768px) {
+        width: 300px;
+    }
+
+    @media (max-width: 420px) {
+        width: 235px;
+    }
 }
 
 .problems__button {
-    width: 320px;
+    width: 317px;
     font-weight: 300;
+    font-family: "HelveticaNeueCyr";
     font-size: 18px;
     text-transform: uppercase;
-    color: white;
+    color: #ffffff;
     background-color: $orange;
+    line-height: 72px;
+    text-align: center;
+    position: relative;
+    left: 157px;
+    top: 93px;
+
+    @media (max-width: 420px) {
+        width: 300px;
+        left: 0;
+    }
+
+    @media (max-width: 550px) {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
