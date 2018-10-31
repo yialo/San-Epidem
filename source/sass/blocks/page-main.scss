@@ -1,6 +1,6 @@
 .page-main {
     padding-top: 40px;
-    background-color: #e8e8e8;
+    background-color: $light-gray;
 
     @media (min-width: $min-desktop-width) {
         padding-top: 0;
@@ -8,9 +8,9 @@
 }
 
 .page-main__worktypes {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 
-    @media (min-width: $min-desktop-width) {
+    @media (min-width: $min-tablet-width) {
         margin-bottom: 120px;
     }
 }
