@@ -1,5 +1,25 @@
 .button {
     display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
     text-align: center;
     text-transform: uppercase;
+    border: 2px solid $orange;
+
+    &--transparent {
+        background-color: transparent;
+    }
+
+    &--orange {
+        background-color: $orange;
+    }
+
+    &--footer {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
 }
