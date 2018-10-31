@@ -6,8 +6,8 @@
 
 .expertise__title {
     position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 79px;
     font-weight: 500;
     font-family: "HelveticaNeueCyr";
     font-size: 36px;
@@ -18,11 +18,12 @@
     &::after {
         content: "";
         position: absolute;
-        top: 0;
+        top: 0px;
         right: 0;
         width: 69px;
+        left: 274px;
         height: 87px;
-        background-image: url("../img/expertise-microscope.svg");
+        background-image: url(../img/expertise-microscope.svg);
         background-size: 69px 87px;
     }
 }
@@ -34,6 +35,10 @@
     margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
+
+    @media (max-width: 995px) {
+        display: block;
+    }
 }
 
 .expertise__outer-item {
@@ -48,6 +53,10 @@
 
 .expertise__inner-container {
     display: flex;
+
+    @media (max-width: 995px) {
+        display: block;
+    }
 }
 
 .expertise__item-title {
@@ -85,6 +94,8 @@
         position: absolute;
         width: 10px;
         height: 10px;
+        left: -28px;
+        top: 8px;
         background-color: $orange;
     }
 }
@@ -96,5 +107,15 @@
     font-size: 20px;
     text-transform: uppercase;
     color: white;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 78px;
+    margin-bottom: 78px;
     background-color: $orange;
+
+    @media (max-width: 550px) {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
