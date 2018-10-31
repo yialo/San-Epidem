@@ -11,31 +11,35 @@
     padding-left: 0;
     list-style-type: none;
 
-    &--header {
-        display: flex;
-        justify-content: flex-end;
+    @media (min-width: $min-desktop-width) {
+        &--header {
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 }
 
 .navigation__item {
-    position: relative;
+    @media (min-width: $min-desktop-width) {
+        position: relative;
 
-    &--header:not(:last-child) {
-        margin-right: 40px;
-    }
+        &--header:not(:last-child) {
+            margin-right: 40px;
+        }
 
-    &--header:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -20px;
-        width: 1px;
-        height: 20px;
-        background-color: white;
-    }
+        &--header:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -20px;
+            width: 1px;
+            height: 20px;
+            background-color: white;
+        }
 
-    &--footer:not(:last-child) {
-        margin-bottom: 10px;
+        &--footer:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
 }
 

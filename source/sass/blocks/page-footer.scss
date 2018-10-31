@@ -5,6 +5,8 @@
 .page-footer__container {
     display: flex;
     justify-content: space-between;
+
+    @include outline;
 }
 
 .page-footer__navigation {
@@ -18,9 +20,14 @@
 }
 
 .page-footer__logo {
-    width: 405px;
-    height: 129px;
-    margin-bottom: 40px;
+    width: 210px;
+    height: 67px;
+
+    @media (min-width: $min-tablet-width) {
+        width: 405px;
+        height: 129px;
+        margin-bottom: 40px;
+    }
 }
 
 .page-footer__info {

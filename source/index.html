@@ -16,8 +16,17 @@
         <header class="page__header  page-header">
             <div class="page-header__container  container">
                 <div class="page-header__top-pane">
+                    <button class="page-header__menu-button  page-header__menu-button--open" type="button">
+                        <span class="visually-hidden">Открыть меню</span>
+                    </button>
+                    <button class="page-header__menu-button  page-header__menu-button--close" type="button">
+                        <span class="visually-hidden">Открыть меню</span>
+                    </button>
                     <a class="page-header__logo  logo">
-                        <img class="logo__image" src="img/logo-large.png" alt="Санитарная Эпидемиологическая Служба">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="img/logo-large.png">
+                            <img class="logo__image" src="img/logo-small.png" alt="Санитарная Эпидемиологическая Служба">
+                        </picture>
                     </a>
                     <div class="page-header__right-pane">
                         <nav class="page-header__navigation  navigation  navigation--header">
@@ -47,9 +56,9 @@
                     </div>
                 </div>
                 <div class="page-header__info">
-                    <h1 class="page-header__title">Дезинсекция, дератизация<br> и дезинфекция<span class="page-header__title-string">в Москве и МО</span></h1>
+                    <h1 class="page-header__title">Дезинсекция, дератизация<br>и дезинфекция <span class="page-header__title-string">в Москве и МО</span></h1>
                     <p class="page-header__details">Стоимость дезинсекции и дератизации от 1200 рублей 100% юридическая гарантия в договоре</p>
-                    <p class="page-header__details">Работаем круглосуточно 24/7 без выходных Наличный и безналичный расчет</p>
+                    <p class="page-header__details">Работаем круглосуточно 24/7 без выходных<br>Наличный и безналичный расчет</p>
                     <a class="page-header__button  button  button--orange" href="#">Получить консультацию</a>
                 </div>
             </div>
@@ -472,7 +481,10 @@
 
                 <div class="page-footer__main-part">
                     <a class="page-footer__logo  logo">
-                        <img class="logo__image" src="../img/logo-large.png" alt="Логотип компании">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="img/logo-large.png">
+                            <img class="logo__image" src="img/logo-small.png" alt="Санитарная Эпидемиологическая Служба">
+                        </picture>
                     </a>
                     <div class="page-footer__info">
                         <div class="page-footer__contacts">
@@ -487,5 +499,8 @@
                 </div>
             </div>
         </footer>
+
+        <script src="js/picturefill.js"></script>
+        <script src="js/page-header-menu.js"></script>
     </body>
 </html>
