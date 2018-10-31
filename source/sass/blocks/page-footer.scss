@@ -4,57 +4,52 @@
 
 .page-footer__container {
     display: flex;
-
-    @include outline;
+    justify-content: space-between;
 }
 
-.page-footer__list {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style-type: none;
+.page-footer__navigation {
+    width: 180px;
 }
 
-.page-footer__link {
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
+.page-footer__main-part {
+    width: 700px;
+    margin-right: 200px;
+    padding-top: 50px;
 }
 
-.footer-info__container {
+.page-footer__logo {
+    width: 405px;
+    height: 129px;
+    margin-bottom: 40px;
+}
+
+.page-footer__info {
     display: flex;
-
-    @media (max-width: 991px) {
-        display: block;
-    }
-}
-
-.footer-container__red-line {
-    width: 680px;
-    height: 2px;
-    background-color: $orange;
-    margin-top: 61px;
-
-    @media (max-width: 991px) {
-        width: auto;
-    }
+    margin-left: 20px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid $orange;
 }
 
 .page-footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    margin-right: 20px;
     font-weight: 300;
 }
 
 .page-footer__phone {
     display: block;
     font-size: 32px;
-    line-height: 48px;
+    line-height: 32px;
     color: white;
 }
 
 .page-footer__email {
     color: $orange;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 24px;
 }
 
 .page-footer__button {
@@ -65,10 +60,18 @@
     border: 2px solid $orange;
 }
 
+.page-footer__copyright {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
 .page-footer__copyright-link {
+    margin-left: 20px;
     font-weight: 300;
     font-size: 13px;
-    line-height: 48px;
+    line-height: 13px;
     text-transform: uppercase;
     color: white;
 }

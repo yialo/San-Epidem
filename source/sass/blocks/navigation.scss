@@ -1,6 +1,7 @@
 .navigation {
     &--footer {
         width: 180px;
+        padding-top: 70px;
     }
 }
 
@@ -31,6 +32,10 @@
         width: 1px;
         height: 20px;
         background-color: white;
+    }
+
+    &--footer:not(:last-child) {
+        margin-bottom: 10px;
     }
 }
 
