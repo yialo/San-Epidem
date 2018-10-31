@@ -1,16 +1,19 @@
 .problems {
     background-color: $asphalt;
+
+    @media (min-width: $min-desktop-width) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-image: url("../img/problems-cup.png");
+        background-repeat: no-repeat;
+        background-position: calc(50% - 510px) 450px;
+    }
 }
 
 .problems__container {
     @media (min-width: $min-desktop-width) {
         display: flex;
-        padding-top: 50px;
-        padding-bottom: 172px;
-        background-color: #2f2f2f;
-        background-image: url("../img/problems-cup.png");
-        background-repeat: no-repeat;
-        background-position-y: 362px;
+        justify-content: space-between;
     }
 }
 
@@ -35,7 +38,6 @@
 
 .problems__string {
     color: $orange;
-    letter-spacing: 0.65px;
 }
 
 .problems__list {
@@ -45,10 +47,12 @@
     list-style-type: none;
 
     @media (min-width: $min-desktop-width) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 800px;
-        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 780px;
+        margin-top: -65px;
+        margin-bottom: 60px;
     }
 }
 
@@ -115,13 +119,14 @@
     }
 
     @media (min-width: $min-desktop-width) {
-        width: 400px;
+        width: 380px;
+        margin-top: 65px;
     }
 }
 
 .problems__item-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
