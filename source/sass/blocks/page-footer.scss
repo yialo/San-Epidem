@@ -7,6 +7,11 @@
     justify-content: space-between;
 
     @include outline;
+
+    @media (max-width: 992px) {
+        display: block;
+        outline: none;
+    }
 }
 
 .page-footer__navigation {
@@ -28,6 +33,10 @@
         height: 129px;
         margin-bottom: 40px;
     }
+
+    @media (max-width: 992px) {
+        margin-bottom: 50px;
+    }
 }
 
 .page-footer__info {
@@ -35,6 +44,11 @@
     margin-left: 20px;
     padding-bottom: 60px;
     border-bottom: 2px solid $orange;
+
+    @media (max-width: 992px) {
+        display: block;
+        border-bottom: none;
+    }
 }
 
 .page-footer__contacts {
@@ -51,12 +65,20 @@
     font-size: 32px;
     line-height: 32px;
     color: white;
+
+    @media (max-width: 992px) {
+        margin-bottom: 50px;
+    }
 }
 
 .page-footer__email {
     color: $orange;
     font-size: 24px;
     line-height: 24px;
+
+    @media (max-width: 992px) {
+        margin-bottom: 50px;
+    }
 }
 
 .page-footer__button {
