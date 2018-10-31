@@ -2,15 +2,29 @@
     display: flex;
     justify-content: space-between;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 129px;
     padding-left: 0;
     list-style-type: none;
+
+    @media (max-width: 995px) {
+        display: block;
+    }
 }
 
 .worktypes__image {
     display: block;
     width: 193px;
     height: 193px;
+    bottom: 35px;
+    position: relative;
+
+    @media (max-width: 995px) {
+        bottom: 0;
+        top: 25px;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .worktypes__item-title {
@@ -19,4 +33,9 @@
     font-size: 24px;
     text-transform: uppercase;
     color: #4f4f4f;
+
+    @media (max-width: 995px) {
+        text-align: center;
+        display: block;
+    }
 }
