@@ -13,6 +13,8 @@
     line-height: 50px;
     text-transform: uppercase;
     color: white;
+    top: 215px;
+    position: relative;
 }
 
 .calculator__title-string {
@@ -24,11 +26,17 @@
     flex-wrap: wrap;
     align-items: flex-start;
     width: 780px;
-    padding-top: 100px;
+    padding-top: 225px;
     padding-left: 40px;
     background-image: url("../img/calculator-redline.png");
     background-repeat: no-repeat;
     background-position: left top;
+    padding-bottom: 150px;
+
+    @media (max-width: 992px) {
+        display: block;
+        background-image: none;
+    }
 }
 
 .calculator__list {
@@ -40,6 +48,10 @@
     margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
+
+    @media (max-width: 992px) {
+        display: block;
+    }
 }
 
 .calculator__item {
@@ -79,6 +91,12 @@
     font-family: "HelveticaNeueCyr";
     font-size: 20px;
     color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    @media (max-width: 992px) {
+        width: 50%;
+    }
 }
 
 .calculator__price-quantity {
@@ -100,6 +118,11 @@
     list-style-type: none;
 }
 
+.calculator__download-item {
+    margin: 15px;
+    margin-left: 0;
+}
+
 .calculator__download-link {
     display: block;
     font-weight: 300;
@@ -119,15 +142,24 @@
     text-transform: uppercase;
     color: white;
     border-style: solid;
+    line-height: 60px;
     border-width: 2px;
 
     &--reset {
         background-color: transparent;
         border-color: $orange;
+        line-height: 60px;
     }
 
     &--submit {
         background-color: $orange;
         border-color: transparent;
+        margin-left: 19px;
+        position: relative;
+
+        @media (max-width: 992px) {
+            margin-left: 0;
+            margin-top: 10px;
+        }
     }
 }
