@@ -1,9 +1,10 @@
 .calculator {
+    display: none;
+
     background-color: $asphalt;
     background-image: url("../img/calculator-background.png");
     background-repeat: no-repeat;
     background-position: center;
-    display: none;
 }
 
 .calculator__title {
@@ -66,15 +67,22 @@
     border: 0;
 
     &--select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
+        background-image: url("../img/arrow-down.png");
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-position-x: 340px;
         appearance: none;
     }
 
     &--text::placeholder {
         color: white;
     }
+}
+
+.calculator__option {
+    margin: 5px;
+    color: white;
+    background-color: #336699;
 }
 
 .calculator__price {

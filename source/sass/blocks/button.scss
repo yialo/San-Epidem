@@ -5,9 +5,9 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 27px;
-    color: white;
     text-align: center;
     text-transform: uppercase;
+    color: white;
     border: 2px solid $orange;
 
     &--transparent {
@@ -16,6 +16,12 @@
 
     &--orange {
         background-color: $orange;
+    }
+
+    &--white {
+        color: $orange;
+        background-color: white;
+        border-color: white;
     }
 
     &--footer {

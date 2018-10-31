@@ -100,14 +100,9 @@
 }
 
 .expertise__button {
-    width: 481px;
-    font-weight: 400;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: white;
-    line-height: 40px;
-    text-align: center;
-    margin-top: 78px;
-    margin-bottom: 78px;
-    background-color: $orange;
+    @media (min-width: $min-desktop-width) {
+        width: 480px;
+        margin-top: 78px;
+        margin-bottom: 78px;
+    }
 }

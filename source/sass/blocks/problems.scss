@@ -3,31 +3,34 @@
 }
 
 .problems__container {
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 172px;
-    background-color: #2f2f2f;
-    background-image: url("../img/problems-cup.png");
-    background-repeat: no-repeat;
-    background-position-y: 362px;
+    @media (min-width: $min-desktop-width) {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 172px;
+        background-color: #2f2f2f;
+        background-image: url("../img/problems-cup.png");
+        background-repeat: no-repeat;
+        background-position-y: 362px;
+    }
 }
 
 .problems__lead {
-    width: 380px;
     margin-top: 0;
     margin-bottom: 0;
     font-variant: small-caps;
     font-weight: 500;
     font-size: 26px;
     line-height: 40px;
-    color: white;
-    background-image: url("../img/problems-redline.png");
-    background-repeat: no-repeat;
     text-transform: uppercase;
-    position: relative;
-    left: 77px;
-    padding-top: 71px;
-    padding-left: 92px;
+    color: white;
+
+    @media (min-width: $min-desktop-width) {
+        width: 380px;
+        background-image: url("../img/problems-redline.png");
+        background-repeat: no-repeat;
+        padding-top: 71px;
+        padding-left: 92px;
+    }
 }
 
 .problems__string {
@@ -36,22 +39,24 @@
 }
 
 .problems__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 800px;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
+
+    @media (min-width: $min-desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 800px;
+        margin-bottom: 100px;
+    }
 }
 
 .problems__item {
     position: relative;
-    width: 400px;
     padding-top: 255px;
     background-image: url("../img/problems-redarc.png");
     background-repeat: no-repeat;
-    margin-top: 20px;
 
     &::before {
         content: "";
@@ -108,6 +113,10 @@
         margin-left: 60px;
         margin-top: 75px;
     }
+
+    @media (min-width: $min-desktop-width) {
+        width: 400px;
+    }
 }
 
 .problems__item-title {
@@ -131,11 +140,13 @@
 }
 
 .problems__button {
-    width: 320px;
     font-weight: 300;
     font-size: 18px;
-    margin-top: 100px;
     text-transform: uppercase;
     color: white;
     background-color: $orange;
+
+    @media (min-width: $min-desktop-width) {
+        width: 320px;
+    }
 }

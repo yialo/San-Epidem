@@ -3,8 +3,10 @@
 }
 
 .page-footer__container {
-    display: flex;
-    justify-content: space-between;
+    @media (min-width: $min-desktop-width) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .page-footer__navigation {
@@ -12,9 +14,11 @@
 }
 
 .page-footer__main-part {
-    width: 700px;
-    margin-right: 200px;
-    padding-top: 50px;
+    @media (min-width: $min-desktop-width) {
+        width: 700px;
+        margin-right: 200px;
+        padding-top: 50px;
+    }
 }
 
 .page-footer__logo {
