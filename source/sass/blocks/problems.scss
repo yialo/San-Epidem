@@ -4,8 +4,28 @@
 
 .problems__container {
     display: flex;
+    padding-top: 50px;
+    padding-bottom: 172px;
+    background-color: #2f2f2f;
     background-image: url("../img/problems-cup.png");
     background-repeat: no-repeat;
+    background-position-y: 362px;
+
+    @media (max-width: 1220px) {
+        background-image: none;
+    }
+
+    @media (max-width: 991px) {
+        display: block;
+    }
+
+    @media (max-width: 1200px) {
+        display: block;
+    }
+
+    @media (max-width:420px) {
+        background-image: none;
+    }
 }
 
 .problems__lead {
@@ -19,6 +39,24 @@
     color: white;
     background-image: url("../img/problems-redline.png");
     background-repeat: no-repeat;
+    text-transform: uppercase;
+    position: relative;
+    left: 77px;
+    padding-top: 71px;
+    padding-left: 92px;
+
+    @media (max-width: 420px) {
+        left: 0;
+        padding-left: 0;
+    }
+
+    @media (max-width: 550px) {
+        left: 0px;
+        position: relative;
+        right: 15px;
+        padding-left: 25px;
+        font-size: 20px;
+    }
 }
 
 .problems__string {
@@ -27,13 +65,22 @@
 }
 
 .problems__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 800px;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
+
+    @media (min-width: 768px) {
+        margin-left: 75px;
+    }
+
+    @media (max-width: 1220px) {
+        display: block;
+        margin-top: 250px;
+    }
 }
 
 .problems__item {
@@ -42,6 +89,7 @@
     padding-top: 255px;
     background-image: url("../img/problems-redarc.png");
     background-repeat: no-repeat;
+    margin-top: 20px;
 
     &::before {
         content: "";
@@ -55,36 +103,52 @@
         width: 23px;
         height: 85px;
         background-image: url("../img/problems-1.png");
+        margin-left: 88px;
+        margin-top: 50px;
     }
 
     &--2::before {
         width: 66px;
         height: 61px;
         background-image: url("../img/problems-2.png");
+        margin-left: 70px;
+        margin-top: 65px;
     }
 
     &--3::before {
         width: 70px;
         height: 74px;
         background-image: url("../img/problems-3.png");
+        margin-left: 70px;
+        margin-top: 65px;
     }
 
     &--4::before {
         width: 63px;
         height: 73px;
         background-image: url("../img/problems-4.png");
+        margin-left: 70px;
+        margin-top: 65px;
     }
 
     &--5::before {
         width: 49px;
         height: 78px;
         background-image: url("../img/problems-5.png");
+        margin-left: 70px;
+        margin-top: 65px;
     }
 
     &--6::before {
         width: 76px;
         height: 47px;
         background-image: url("../img/problems-6.png");
+        margin-left: 60px;
+        margin-top: 75px;
+    }
+
+    @media (min-width: 992px) {
+        margin-left: 50px;
     }
 }
 
@@ -105,13 +169,34 @@
     font-size: 16px;
     line-height: 24px;
     color: white;
+    width: 300px;
+
+    @media (max-width: 768px) {
+        width: 300px;
+    }
+
+    @media (max-width: 420px) {
+        width: 235px;
+    }
 }
 
 .problems__button {
     width: 320px;
     font-weight: 300;
     font-size: 18px;
+    margin-top: 100px;
     text-transform: uppercase;
     color: white;
     background-color: $orange;
+
+    @media (max-width: 420px) {
+        width: 300px;
+        left: 0;
+    }
+
+    @media (max-width: 550px) {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

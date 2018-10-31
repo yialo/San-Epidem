@@ -9,11 +9,13 @@
 
 
     @media (max-width: 1300px) {
-        top: 7126px;
+        top: 0;
+        position: relative;
+        left: 0;
     }
 
     @media (min-width:1300px) {
-        top: 6360px;
+        top: 6672px;
     }
 
     @media (max-width: 1200px) {
@@ -25,6 +27,9 @@
 
 .consultation__container {
     width: 502px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
     background-image: url("../img/consultation-whiteline.png");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -66,10 +71,8 @@
     font-weight: 300;
     line-height: 28px;
     color: white;
-    position: absolute;
     width: 160px;
-    left: 235px;
-    bottom: 173px;
+
 
     @media (max-width: 550px) {
         width: 160px;
@@ -80,20 +83,30 @@
         margin-right: 15px;
         margin-bottom: 50px;
     }
+
+    @media (min-width: 550px) {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        position: absolute;
+        left: 235px;
+        bottom: 197px;
+    }
 }
 
 .consultation__form {
     top: 115px;
     position: relative;
-    left: 15px;
+    left: 35px;
 }
 
 .consultation__field {
     display: block;
-    width: 400px;
     padding-left: 22px;
     font-weight: 300;
-
     font-size: 16px;
     line-height: 28px;
     color: white;
@@ -111,6 +124,16 @@
 
     @media (max-width: 550px) {
         width: 175px;
+    }
+
+    @media (min-width: 550px) {
+        width: 175px;
+        position: relative;
+        right: 30px;
+    }
+
+    @media (min-width: 768px) {
+        width: 400px;
     }
 }
 
@@ -131,4 +154,19 @@
         width: 175px;
         margin-top: 50px;
     }
+
+    @media (min-width: 550px) {
+        width: 175px;
+        margin-top: 50px;
+        position: relative;
+        right: 30px;
+    }
+
+    @media (min-width: 768px) {
+        width: 300px;
+    }
+}
+
+.container--consultation {
+    width: auto;
 }
