@@ -181,19 +181,12 @@
 
 .page-header__details {
     margin-top: 0;
+    margin-bottom: 20px;
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
     color: white;
-
-    &--1 {
-        margin-bottom: 20px;
-    }
-
-    &--2 {
-        margin-bottom: 30px;
-    }
 
     @media (min-width: $min-tablet-width) {
         margin-left: auto;
@@ -205,6 +198,7 @@
     }
 
     @media (min-width: $min-desktop-width) {
+        margin-bottom: 15px;
         margin-left: 120px;
         margin-right: 0;
         line-height: 28px;
@@ -212,7 +206,6 @@
 
         &--1 {
             width: 320px;
-            margin-bottom: 15px;
         }
 
         &--2 {
@@ -222,6 +215,8 @@
 }
 
 .page-header__button {
+    margin-top: 30px;
+
     @media (min-width: $min-tablet-width) {
         width: 450px;
         margin-left: auto;
