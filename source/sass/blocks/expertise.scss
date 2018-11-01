@@ -31,19 +31,24 @@
             width: 69px;
             height: 87px;
             background-image: url("../img/expertise-microscope.svg");
+            background-repeat: no-repeat;
             background-size: 69px 87px;
             transform: translateX(-50%);
         }
     }
 
     @media (min-width: $min-desktop-width) {
+        width: 360px;
         margin-bottom: 50px;
         padding-bottom: 0;
+        padding-right: 80px;
         text-align: left;
 
         &::after {
             top: -15px;
-            left: 275px;
+            left: auto;
+            right: 0;
+            transform: translateX(0);
         }
     }
 }
@@ -167,5 +172,9 @@
 
     @media (min-width: $min-tablet-width) {
         width: 480px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        @include margin-hor(0);
     }
 }
