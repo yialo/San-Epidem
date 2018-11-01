@@ -8,7 +8,7 @@
         padding-bottom: 50px;
         background-image: url("../img/problems-cup.png");
         background-repeat: no-repeat;
-        background-position: calc(50% - 320px) 550px;
+        background-position: calc(50% - 320px) 600px;
     }
 
     @media (min-width: $min-desktop-width) {
@@ -21,6 +21,7 @@
 .problems__container {
     @media (min-width: $min-tablet-width) {
         display: flex;
+        align-items: flex-start;
         justify-content: space-between;
     }
 }
@@ -36,10 +37,14 @@
     color: white;
 
     @media (min-width: $min-tablet-width) {
-        width: 240px;
-        margin-left: 20px;
-        font-size: 26px;
+        width: 260px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 18px;
+        padding-right: 18px;
+        font-size: 24px;
         line-height: 70px;
+        border: 2px solid $orange;
     }
 
     @media (min-width: $min-desktop-width) {

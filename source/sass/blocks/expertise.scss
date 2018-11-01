@@ -1,48 +1,85 @@
 .expertise {
-    padding-top: 100px;
-    padding-bottom: 110px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (min-width: $min-desktop-width) {
+        padding-top: 100px;
+        padding-bottom: 110px;
+    }
 }
 
 .expertise__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 36px;
     line-height: 60px;
+    text-align: center;
     text-transform: uppercase;
     color: $dark-gray;
 
-    @media (min-width: $min-desktop-width) {
+    @media (min-width: $min-tablet-width) {
         position: relative;
+        margin-bottom: 30px;
+        padding-bottom: 100px;
 
         &::after {
             content: "";
             position: absolute;
-            top: -15px;
-            left: 275px;
+            bottom: 0;
+            left: 50%;
             width: 69px;
             height: 87px;
             background-image: url("../img/expertise-microscope.svg");
             background-size: 69px 87px;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 50px;
+        padding-bottom: 0;
+        text-align: left;
+
+        &::after {
+            top: -15px;
+            left: 275px;
         }
     }
 }
 
 .expertise__outer-list {
-    margin-top: -60px;
-    margin-bottom: 70px;
+    margin-top: 0;
+    margin-bottom: 40px;
     padding-left: 0;
     list-style-type: none;
 
-    @media (min-width: $min-desktop-width) {
+    @media (min-width: $min-tablet-width) {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        flex-direction: row;
         flex-wrap: wrap;
+        align-items: stretch;
+        margin-top: -60px;
+        margin-bottom: 70px;
     }
 }
 
 .expertise__outer-item {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
     @media (min-width: $min-desktop-width) {
         margin-top: 60px;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
 
         &--tight {
             width: 500px;
@@ -64,10 +101,20 @@
     margin-top: 0;
     margin-bottom: 20px;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
     text-transform: uppercase;
     color: $orange;
+
+    @media (min-width: $min-tablet-width) {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        text-align: left;
+    }
 }
 
 .expertise__inner-list {
@@ -76,8 +123,10 @@
     padding-left: 0;
     list-style-type: none;
 
-    &--wide {
-        width: 50%;
+    @media (min-width: $min-desktop-width) {
+        &--wide {
+            width: 50%;
+        }
     }
 }
 
@@ -99,10 +148,24 @@
         height: 10px;
         background-color: $orange;
     }
+
+    @media (min-width: $min-tablet-width) {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        font-size: 16px;
+        line-height: 28px;
+    }
 }
 
 .expertise__button {
-    @media (min-width: $min-desktop-width) {
+    width: 280px;
+
+    @include margin-hor;
+
+    @media (min-width: $min-tablet-width) {
         width: 480px;
     }
 }
