@@ -11,24 +11,11 @@ html {
 body {
     min-width: 320px;
     margin: 0;
-    font-family: "HelveticaNeueCyr";
+    font-family: "HelveticaNeueCyr", "Arial", sans-serif;
     background-color: white;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-}
-
-select {
-    background-image: url("../img/arrow-down.png");
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-position-x: 340px;
-}
-
-option {
-    color: white;
-    background-color: #336699;
-    margin: 5px;
 }

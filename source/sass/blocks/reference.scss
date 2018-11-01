@@ -44,3 +44,9 @@
         top: 8px;
     }
 }
+
+.reference__consultation {
+    @media (min-width: $min-desktop-width) {
+        position: absolute;
+    }
+}
