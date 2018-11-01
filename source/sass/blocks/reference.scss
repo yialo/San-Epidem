@@ -1,5 +1,6 @@
 .reference {
     position: relative;
+    padding-top: 20px;
     background-color: white;
 
     @media (min-width: $min-desktop-width) {
@@ -8,17 +9,29 @@
     }
 }
 
+.reference__container {
+    padding-bottom: 50px;
+
+    @media (min-width: $min-desktop-width) {
+        padding-bottom: 0;
+    }
+}
+
 .reference__title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     font-weight: 500;
-    font-size: 36px;
-    line-height: 60px;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
     text-transform: uppercase;
     color: $dark-gray;
 
     @media (min-width: $min-desktop-width) {
         margin-bottom: 60px;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: left;
     }
 }
 

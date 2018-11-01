@@ -1,13 +1,18 @@
 .consultation {
-    padding-top: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: $orange;
 
     @media (min-width: $min-desktop-width) {
-
+        padding-top: 120px;
+        padding-bottom: 0;
     }
 }
 
 .consultation__form {
+    padding-left: 20px;
+    padding-right: 20px;
+
     @media (min-width: $min-desktop-width) {
         display: flex;
         flex-wrap: wrap;
@@ -20,38 +25,70 @@
 }
 
 .consultation__title {
-    width: 200px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    margin-left: 40px;
-    margin-right: 60px;
-    padding-top: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-weight: 500;
     font-size: 24px;
     line-height: 38px;
+    text-align: center;
     text-transform: uppercase;
     color: white;
-    background-color: $orange;
+    border: 2px solid white;
+
+    @media (min-width: $min-desktop-width) {
+        width: 200px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        margin-left: 40px;
+        margin-right: 60px;
+        padding-top: 30px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 24px;
+        line-height: 38px;
+        text-align: left;
+        background-color: $orange;
+        border-style: none;
+    }
 }
 
 .consultation__tip {
-    width: 180px;
+    width: 240px;
     margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 60px;
-    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include margin-hor;
     font-weight: 300;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 32px;
     color: white;
+
+    @media (min-width: $min-desktop-width) {
+        width: 180px;
+        margin-bottom: 0;
+        padding-top: 60px;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+    }
 }
 
 .consultation__item {
-    width: 400px;
     margin-bottom: 20px;
-    margin-left: 100px;
 
-    &--phone-number {
-        margin-top: 64px;
+    @media (min-width: $min-desktop-width) {
+        width: 400px;
+        margin-left: 100px;
+
+        &--phone-number {
+            margin-top: 65px;
+        }
     }
 }
 
@@ -84,9 +121,10 @@
 }
 
 .consultation__button {
-    margin-left: 100px;
+    width: 280px;
 
     @media (min-width: $min-desktop-width) {
         width: 300px;
+        margin-left: 100px;
     }
 }
