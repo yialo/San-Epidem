@@ -1,7 +1,7 @@
 .contacts {
     background-color: #595959;
 
-    @media (min-width: $min-desktop-width) {
+    @media (min-width: $min-tablet-width) {
         position: relative;
         background-color: transparent;
     }
@@ -12,7 +12,12 @@
 
     @media (min-width: $min-tablet-width) {
         display: block;
+        height: 540px;
         border-style: none;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        height: 758px;
     }
 }
 
@@ -22,50 +27,70 @@
     @include margin-hor;
     padding: 20px;
 
+    @media (min-width: $min-tablet-width) {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        z-index: 1;
+        width: 728px;
+        background-color: rgba(0, 0, 0, 0.65);
+        transform: translateX(-50%);
+    }
+
     @media (min-width: $min-desktop-width) {
         position: absolute;
         top: 100px;
         left: 0;
-        z-index: 1;
         display: flex;
         justify-content: flex-end;
         width: calc(50% + 30px);
         padding-top: 80px;
         padding-bottom: 80px;
         padding-right: 40px;
-        background-color: rgba(0, 0, 0, 0.65);
+        transform: translateX(0);
     }
 }
 
 .contacts__info {
-    @media (min-width: $min-desktop-width) {
+    @media (min-width: $min-tablet-width) {
         padding: 18px;
         border: 2px solid white;
     }
 
     @media (min-width: $min-desktop-width) {
         width: 583px;
+        padding: 0;
         padding-left: 50px;
         background-image: url("../img/contacts-redline.png");
         background-repeat: no-repeat;
         background-position: 100% 30px;
+        border-style: none;
     }
 }
 
 .contacts__title {
     margin-top: 0;
-    padding: 18px;
+    padding: 13px;
     font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
     text-align: center;
     text-transform: uppercase;
     color: white;
     border: 2px solid white;
 
+    @media (min-width: $min-tablet-width) {
+        padding: 0;
+        font-size: 36px;
+        line-height: 60px;
+        border-style: none;
+    }
+
     @media (min-width: $min-desktop-width) {
         width: 440px;
         margin-bottom: 80px;
-        font-size: 36px;
-        line-height: 60px;
+        padding-bottom: 0;
+        text-align: left;
     }
 }
 
@@ -73,6 +98,10 @@
     display: block;
     margin-bottom: 30px;
     color: white;
+
+    @media (min-width: $min-tablet-width) {
+        margin-bottom: 40px;
+    }
 
     @media (min-width: $min-desktop-width) {
         display: table;
@@ -84,8 +113,16 @@
 .contacts__table-container {
     display: block;
 
+    @media (min-width: $min-tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: -30px;
+    }
+
     @media (min-width: $min-desktop-width) {
         display: table-row-group;
+        margin-top: 0;
     }
 }
 
@@ -98,12 +135,18 @@
         margin-bottom: 15px;
     }
 
-    @media (min-width: $min-desktop-width) {
-        display: table-row;
+    @media (min-width: $min-tablet-width) {
+        width: calc((100% - 40px) / 2);
+        margin-top: 30px;
 
         &:not(:last-child) {
             margin-bottom: 0;
         }
+    }
+
+    @media (min-width: $min-desktop-width) {
+        display: table-row;
+        margin-top: 0;
     }
 }
 
@@ -147,8 +190,14 @@
 }
 
 .contacts__button {
+    @media (min-width: $min-tablet-width) {
+        width: calc((100% - 40px) / 2);
+        @include margin-hor;
+    }
+
     @media (min-width: $min-desktop-width) {
         width: 260px;
         margin-left: 160px;
+        margin-right: 0;
     }
 }
