@@ -1,13 +1,23 @@
 .page-header {
-    padding-bottom: 40px;
+    padding-top: 30px;
     background-color: $asphalt;
 
+    &--large {
+        padding-bottom: 40px;
+    }
+
+
+    &--small {
+        padding-bottom: 30px;
+    }
+
     @media (min-width: $min-desktop-width) {
-        padding-top: 40px;
-        padding-bottom: 140px;
-        background-image: url("../img/header-backgound-large.png");
-        background-repeat: no-repeat;
-        background-position: calc(50% + 240px) 100%;
+        &--large {
+            padding-bottom: 140px;
+            background-image: url("../img/header-backgound-large.png");
+            background-repeat: no-repeat;
+            background-position: calc(50% + 240px) 100%;
+        }
     }
 }
 
@@ -16,22 +26,26 @@
 }
 
 .page-header__top-pane {
-    margin-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: 0;
+
+    &--large {
+        padding-bottom: 20px;
+    }
 
     @media (min-width: $min-desktop-width) {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 60px;
-        padding-bottom: 30px;
-        border-bottom: 2px solid $orange;
+
+        &--large {
+            padding-bottom: 30px;
+        }
     }
 }
 
 .page-header__menu-button {
     position: absolute;
-    top: 30px;
+    top: 10px;
     z-index: 2;
     padding: 0;
     background-color: transparent;
@@ -74,7 +88,7 @@
         width: 405px;
         height: 129px;
         margin-left: 50px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     @media (min-width: $min-desktop-width) {
@@ -146,12 +160,15 @@
 }
 
 .page-header__info {
+    padding-top: 20px;
+
     @media (min-width: $min-desktop-width) {
-        width: 680px;
-        padding-top: 50px;
+        padding-top: 110px;
+        padding-right: 500px;
         background-image: url("/img/page-header-redline.png");
         background-repeat: no-repeat;
-        background-position: 100% 0;
+        background-position: 80px 50px;
+        border-top: 2px solid $orange;
     }
 }
 

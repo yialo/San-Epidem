@@ -1,15 +1,42 @@
 .page-main {
-    padding-top: 40px;
     background-color: $light-gray;
 
+    &--index {
+        padding-top: 40px;
+    }
+
+    &--inner {
+        padding-top: 20px;
+    }
+
     @media (min-width: $min-desktop-width) {
-        padding-top: 0;
+        &--index {
+            padding-top: 0;
+        }
     }
 }
 
 .page-main__title {
     margin-top: 0;
     margin-bottom: 0;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $asphalt;
+
+    &--index {
+        @include visually-hider;
+    }
+
+    &--certificates {
+        margin-bottom: 60px;
+    }
+}
+
+.page-main__breadcrumbs {
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .page-main__worktypes {
@@ -17,5 +44,18 @@
 
     @media (min-width: $min-tablet-width) {
         margin-bottom: 120px;
+    }
+}
+
+.page-main__certificates {
+    margin-bottom: 30px;
+
+    @media (min-width: $min-tablet-width) {
+        margin-bottom: 60px;
+    }
+
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 100px;
     }
 }
