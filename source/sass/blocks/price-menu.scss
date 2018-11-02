@@ -1,0 +1,97 @@
+.price-menu__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $asphalt;
+}
+
+.price-menu__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.price-menu__item {
+    display: flex;
+    width: 380px;
+    background-color: white;
+}
+
+.price-menu__link {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 2px solid transparent;
+    transition: outline-color 0.3s;
+
+    &:hover {
+        outline-color: $orange;
+        outline-offset: -2px;
+    }
+}
+
+.price-menu__image-wrapper {
+    align-self: center;
+    position: relative;
+    margin-bottom: 30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        background-image: url("../img/price-menu-redline.png");
+        background-repeat: no-repeat;
+        transition: transform 0.3s;
+    }
+
+    .price-menu__link:hover &::before {
+        transform: rotate(90deg);
+    }
+}
+
+.price-menu__image {
+    display: block;
+}
+
+.price-menu__item-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: $dark-gray;
+
+
+    &--thigh {
+        width: 200px;
+    }
+}
+
+.price-menu__details {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: $dark-gray;
+}
+
+.price-menu__cost {
+    align-self: center;
+    display: block;
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 50px;
+    color: $orange;
+}
