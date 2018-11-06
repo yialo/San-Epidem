@@ -1,17 +1,28 @@
 .connection {
-    padding-top: 110px;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: white;
+
+    @media (min-width: $min-desktop-width) {
+        padding-top: 110px;
+        padding-bottom: 100px;
+    }
 }
 
 .connection__container {
-    display: flex;
+    @media (min-width: $min-desktop-width) {
+        display: flex;
+    }
 }
 
 .connection__title {
-    width: 300px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+
+    @media (min-width: $min-desktop-width) {
+        width: 300px;
+        margin-bottom: 0;
+    }
 }
 
 .connection__title-string {
@@ -19,46 +30,44 @@
 }
 
 .connection__form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 20px;
-    width: 780px;
+    @media (min-width: $min-desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 20px;
+        width: 780px;
+    }
 }
 
 .connection__checkbox-wrapper {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
     display: flex;
-    padding-top: 20px;
-    padding-left: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @media (min-width: $min-desktop-width) {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        display: block;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
 }
 
 .connection__label {
     display: block;
-
-    &--fullname {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
-    &--phone {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-
-    &--email {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
+    margin-bottom: 15px;
 
     &--comment {
-        grid-row: 2 / 4;
         display: flex;
+        min-height: 150px;
+        margin-bottom: 25px;
     }
 
     &--policy {
         position: relative;
+        width: 200px;
+        margin-bottom: 0;
         padding-left: 35px;
         font-weight: 400;
         font-size: 13px;
@@ -87,6 +96,35 @@
         border-right: 2px solid $orange;
         transform: rotate(45deg) scaleX(0.7);
     }
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 0;
+
+        &--fullname {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        &--phone {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        &--email {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+
+        &--comment {
+            grid-row: 2 / 4;
+            min-height: auto;
+            margin-bottom: 0;
+        }
+
+        &--policy {
+            width: auto;
+        }
+    }
 }
 
 .connection__field {
@@ -107,6 +145,10 @@
 }
 
 .connection__button {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
+    // width: 100%;
+
+    @media (min-width: $min-desktop-width) {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
 }
