@@ -1,0 +1,41 @@
+.connection__title {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.connection__title-string {
+    color: $orange;
+}
+
+.connection__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+    &--1 {}
+
+    &--2 {}
+
+    &--3 {}
+
+    &--4 {}
+
+    &--5 {}
+
+    &--6 {}
+
+    &--7 {
+        grid-row: 5;
+        grid-column: 2;
+    }
+
+    input {
+        background-color: $light-gray;
+        color: #ffffff;
+    }
+
+    textarea {
+        background-color: $light-gray;
+        color: #ffffff;
+    }
+}
