@@ -31,24 +31,68 @@
 }
 
 .price-table__cell {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 
-    &--head {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    &--head:first-child {
+    &:nth-child(1) {
+        padding-left: 20px;
         text-align: left;
     }
 
-    &--body {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    &--body:not(:first-child) {
+    &:not(:nth-child(1)) {
         text-align: center;
     }
+
+    .price-table--1 &:nth-child(1) {
+        width: 200px;
+        padding-right: 50px;
+    }
+
+    .price-table--1 &:nth-child(2) {
+        width: 180px;
+    }
+
+    .price-table--1 &:nth-child(3) {
+        width: 220px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .price-table--1 &:nth-child(4) {
+        width: 260px;
+        padding-right: 10px;
+    }
+
+    .price-table--1 &:nth-child(5) {
+        width: 160px;
+    }
+
+    .price-table--1 &:nth-child(6) {
+        width: 160px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .price-table--2 &:nth-child(1) {
+        width: 380px;
+    }
+
+    .price-table--2 &:nth-child(2) {
+        width: 240px;
+    }
+
+    .price-table--2 &:nth-child(3) {
+        width: 560px;
+        padding-left: 180px;
+        padding-right: 80px;
+    }
+}
+
+.price-table__note {
+    display: block;
+    margin-bottom: 60px;
+    padding-top: 20px;
+    font-size: 16px;
+    color: $dark-gray;
+    border-top: 2px solid white;
 }
