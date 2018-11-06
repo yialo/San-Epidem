@@ -1,4 +1,5 @@
 .page-header {
+    position: relative;
     padding-top: 30px;
     background-color: $asphalt;
 
@@ -12,6 +13,8 @@
     }
 
     @media (min-width: $min-desktop-width) {
+        position: static;
+
         &--large {
             padding-bottom: 140px;
             background-image: url("../img/header-backgound-large.png");
@@ -19,10 +22,6 @@
             background-position: calc(50% + 240px) 100%;
         }
     }
-}
-
-.page-header__container {
-    position: relative;
 }
 
 .page-header__top-pane {
@@ -45,7 +44,6 @@
 
 .page-header__menu-button {
     position: absolute;
-    top: 10px;
     z-index: 2;
     padding: 0;
     background-color: transparent;
@@ -55,17 +53,29 @@
     border-style: none;
 
     &--open {
-        right: 20px;
+        top: 40px;
+        right: calc(50% - 140px);
         width: 50px;
         height: 30px;
         background-image: url("../img/page-header-menu-open.svg");
     }
 
     &--close {
-        right: 30px;
+        top: 20px;
+        right: calc(50% - 130px);
         width: 30px;
         height: 30px;
         background-image: url("../img/page-header-menu-close.svg");
+    }
+
+    @media (min-width: $min-tablet-width) {
+        &--open {
+            right: calc(50% - 360px);
+        }
+
+        &--close {
+            right: calc(50% - 350px);
+        }
     }
 
     @media (max-width: $max-tablet-width) {
@@ -115,8 +125,12 @@
 .page-header__navigation {
     position: absolute;
     top: 0;
-    left: 0;
+    left: calc(50% - 160px);
     z-index: 1;
+
+    @media (min-width: $min-tablet-width) {
+        left: calc(50% - 380px);
+    }
 
     @media (min-width: $min-desktop-width) {
         position: static;

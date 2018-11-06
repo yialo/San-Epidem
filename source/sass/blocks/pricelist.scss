@@ -8,36 +8,97 @@
 }
 
 .pricelist__navigation-wrapper {
+    position: relative;
     margin-bottom: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: $orange;
-}
-
-.pricelist__navigation {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    list-style-type: none;
 
     @media (min-width: $min-desktop-width) {
-        display: flex;
-        justify-content: space-between;
+        position: static;
         padding-top: 0;
         padding-bottom: 0;
     }
 }
 
-.pricelist__navigation-item {
-    display: none;
+.pricelist__navigation-button {
+    position: relative;
+    display: block;
+    width: 280px;
+    margin-top: 0;
+    margin-bottom: 0;
 
-    @media (max-width: $max-phone-width) {
-        &.is-visible {
-            display: block;
-            width: 240px;
+    @include margin-hor;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $dark-gray;
+    background-color: $light-gray;
+    border-style: none;
 
-            @include margin-hor;
-            background-color: $light-gray;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        width: 17px;
+        height: 9px;
+        background-image: url("../img/arrow-down.png");
+        background-repeat: no-repeat;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        display: none;
+    }
+}
+
+.pricelist__navigation {
+    position: absolute;
+    top: calc(100% - 10px);
+    left: 50%;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+    background-color: $orange;
+    transform: translateX(-50%);
+
+    @media (max-width: $max-tablet-width) {
+        &.is-hidden {
+            display: none;
         }
+    }
+
+    @media (min-width: $min-desktop-width) {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        width: $min-desktop-width;
+
+        @include margin-hor;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: transparent;
+        transform: translateX(0);
+    }
+}
+
+.pricelist__navigation-item {
+    background-color: white;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $light-gray;
     }
 
     @media (min-width: $min-desktop-width) {
@@ -47,6 +108,7 @@
         width: 200px;
         padding-top: 20px;
         padding-bottom: 20px;
+        background-color: transparent;
 
         &--active {
             position: relative;
@@ -70,22 +132,35 @@
 }
 
 .pricelist__navigation-link {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
     text-transform: uppercase;
-    color: white;
 
-    &--active {
-        color: $dark-gray;
+    @media (min-width: $min-desktop-width) {
+        display: inline;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: white;
+
+        &--active {
+            color: $dark-gray;
+        }
     }
 }
 
 .pricelist__table-wrapper {
     overflow-x: auto;
     border-radius: 5px;
-    box-shadow: 0 0 5px 1px $asphalt;
+    box-shadow: 0 0 5px 0 $asphalt;
 
     @media (min-width: $min-desktop-width) {
         overflow-x: visible;
@@ -100,6 +175,7 @@
     padding-left: 20px;
     font-weight: 500;
     font-size: 18px;
+    line-height: 24px;
     color: $dark-gray;
 
     @media (min-width: $min-desktop-width) {
@@ -110,10 +186,14 @@
 
 .pricelist__note {
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding-top: 20px;
     padding-left: 20px;
     font-size: 16px;
     color: $dark-gray;
     border-top: 2px solid white;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 60px;
+    }
 }
