@@ -104,10 +104,6 @@
         text-transform: uppercase;
     }
 
-    &--footer {
-        font-variant: small-caps;
-    }
-
     @media (min-width: $min-desktop-width) {
         &--header {
             display: inline;

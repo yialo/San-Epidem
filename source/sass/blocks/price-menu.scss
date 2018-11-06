@@ -51,7 +51,14 @@
         outline-offset: -2px;
     }
 
+    @media (min-width: $min-tablet-width) {
+        display: block;
+        padding-bottom: 30px;
+    }
+
     @media (min-width: $min-desktop-width) {
+        display: flex;
+        flex-direction: column;
         padding-top: 40px;
         padding-bottom: 40px;
     }
@@ -75,6 +82,18 @@
     .price-menu__link:hover &::before {
         transform: rotate(90deg);
     }
+
+    @media (min-width: $min-tablet-width) {
+        float: right;
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        float: none;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
 }
 
 .price-menu__image {
@@ -90,11 +109,14 @@
     text-align: center;
     color: $dark-gray;
 
-    @media (min-width: $min-desktop-width) {
-        margin-bottom: 50px;
+    @media (min-width: $min-tablet-width) {
         font-size: 24px;
         line-height: 36px;
         text-align: left;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 50px;
 
         &--thigh {
             width: 200px;
@@ -124,7 +146,7 @@
     line-height: 48px;
     color: $orange;
 
-    @media (min-width: $min-desktop-width) {
+    @media (min-width: $min-tablet-width) {
         font-size: 41px;
         line-height: 50px;
     }

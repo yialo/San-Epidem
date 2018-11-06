@@ -54,7 +54,7 @@
 .contacts__info {
     @media (min-width: $min-tablet-width) {
         padding: 18px;
-        border: 2px solid white;
+        border: 2px solid $orange;
     }
 
     @media (min-width: $min-desktop-width) {
