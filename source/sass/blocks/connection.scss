@@ -1,6 +1,17 @@
+.connection {
+    padding-top: 110px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.connection__container {
+    display: flex;
+}
+
 .connection__title {
-    text-align: left;
-    text-transform: uppercase;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .connection__title-string {
@@ -11,31 +22,91 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+    width: 780px;
+}
 
-    &--1 {}
+.connection__checkbox-wrapper {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+}
 
-    &--2 {}
+.connection__label {
+    display: block;
 
-    &--3 {}
-
-    &--4 {}
-
-    &--5 {}
-
-    &--6 {}
-
-    &--7 {
-        grid-row: 5;
-        grid-column: 2;
+    &--fullname {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
     }
 
-    input {
-        background-color: $light-gray;
-        color: #ffffff;
+    &--phone {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
     }
 
-    textarea {
-        background-color: $light-gray;
-        color: #ffffff;
+    &--email {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
     }
+
+    &--comment {
+        grid-row: 2 / 4;
+        display: flex;
+    }
+
+    &--policy {
+        position: relative;
+        padding-left: 35px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: $dark-gray;
+    }
+
+    &--policy::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        border: 2px solid $orange;
+    }
+
+    .connection__checkbox:checked ~ &--policy::after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 7px;
+        width: 11px;
+        height: 14px;
+        border-bottom: 2px solid $orange;
+        border-right: 2px solid $orange;
+        transform: rotate(45deg) scaleX(0.7);
+    }
+}
+
+.connection__field {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-color: $light-gray;
+    border-style: none;
+
+    &--textarea {
+        resize: none;
+    }
+}
+
+.connection__link {
+    text-decoration: underline;
+}
+
+.connection__button {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
 }
