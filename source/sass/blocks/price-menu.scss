@@ -1,27 +1,39 @@
 .price-menu__title {
     margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 54px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $asphalt;
+    margin-bottom: 20px;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 50px;
+    }
 }
 
 .price-menu__list {
-    display: flex;
-    justify-content: space-between;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
+
+    @media (min-width: $min-desktop-width) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .price-menu__item {
     display: flex;
-    width: 380px;
     background-color: white;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        width: 380px;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .price-menu__link {
@@ -66,25 +78,34 @@
 
 .price-menu__item-title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 27px;
     color: $dark-gray;
 
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 36px;
 
-    &--thigh {
-        width: 200px;
+        &--thigh {
+            width: 200px;
+        }
     }
 }
 
 .price-menu__details {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
     color: $dark-gray;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 30px;
+    }
 }
 
 .price-menu__cost {
