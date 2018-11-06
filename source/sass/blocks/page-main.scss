@@ -32,6 +32,10 @@
     &--certificates {
         margin-bottom: 60px;
     }
+
+    &--price {
+        @include visually-hider;
+    }
 }
 
 .page-main__breadcrumbs {

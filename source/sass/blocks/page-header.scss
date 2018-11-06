@@ -201,7 +201,7 @@
     margin-bottom: 20px;
     font-weight: 300;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 28px;
     text-align: center;
     color: white;
 
@@ -218,7 +218,6 @@
         margin-bottom: 15px;
         margin-left: 120px;
         margin-right: 0;
-        line-height: 28px;
         text-align: left;
 
         &--1 {
@@ -242,6 +241,7 @@
 
     @media (min-width: $min-desktop-width) {
         width: 315px;
+        margin-top: 22px;
         margin-left: 120px;
         margin-right: 0;
     }
