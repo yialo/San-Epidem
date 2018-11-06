@@ -1,16 +1,8 @@
 .price-table {
-    width: 100%;
+    width: 1180px;
     font-weight: 500;
     line-height: 24px;
     border-collapse: collapse;
-}
-
-.price-table__title {
-    margin-bottom: 25px;
-    padding-left: 20px;
-    font-size: 18px;
-    text-align: left;
-    color: $dark-gray;
 }
 
 .price-table__row {
@@ -88,11 +80,3 @@
     }
 }
 
-.price-table__note {
-    display: block;
-    margin-bottom: 60px;
-    padding-top: 20px;
-    font-size: 16px;
-    color: $dark-gray;
-    border-top: 2px solid white;
-}

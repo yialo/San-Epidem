@@ -13,38 +13,59 @@
 }
 
 .pricelist__navigation {
-    display: flex;
-    justify-content: space-between;
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     list-style-type: none;
+
+    @media (min-width: $min-desktop-width) {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 .pricelist__navigation-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: none;
 
-    &--active {
-        position: relative;
-        z-index: 0;
-        width: auto;
-        padding-left: 40px;
-        padding-right: 40px;
+    @media (max-width: $max-phone-width) {
+        &.is-visible {
+            display: block;
+            width: 240px;
+
+            @include margin-hor;
+            background-color: $light-gray;
+        }
     }
 
-    &--active::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: calc(100% + 10px);
-        background-color: $light-gray;
+    @media (min-width: $min-desktop-width) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &--active {
+            position: relative;
+            z-index: 0;
+            width: auto;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        &--active::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: calc(100% + 10px);
+            background-color: $light-gray;
+        }
     }
 }
 
@@ -59,4 +80,40 @@
     &--active {
         color: $dark-gray;
     }
+}
+
+.pricelist__table-wrapper {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px $asphalt;
+
+    @media (min-width: $min-desktop-width) {
+        overflow-x: visible;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+.pricelist__subtitle {
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: $dark-gray;
+
+    @media (min-width: $min-desktop-width) {
+        width: auto;
+        text-align: left;
+    }
+}
+
+.pricelist__note {
+    display: block;
+    margin-bottom: 60px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: $dark-gray;
+    border-top: 2px solid white;
 }

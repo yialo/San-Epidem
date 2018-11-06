@@ -39,8 +39,8 @@
 .price-menu__link {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     outline: 2px solid transparent;
@@ -49,6 +49,11 @@
     &:hover {
         outline-color: $orange;
         outline-offset: -2px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 
@@ -82,12 +87,14 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+    text-align: center;
     color: $dark-gray;
 
     @media (min-width: $min-desktop-width) {
         margin-bottom: 50px;
         font-size: 24px;
         line-height: 36px;
+        text-align: left;
 
         &--thigh {
             width: 200px;
@@ -113,7 +120,12 @@
     display: block;
     margin-top: auto;
     font-weight: 400;
-    font-size: 41px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 48px;
     color: $orange;
+
+    @media (min-width: $min-desktop-width) {
+        font-size: 41px;
+        line-height: 50px;
+    }
 }
