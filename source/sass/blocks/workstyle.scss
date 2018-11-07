@@ -1,0 +1,42 @@
+.workstyle {
+    min-height: 400px;
+    padding-top: 95px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.workstyle__container {
+    position: relative;
+    padding-right: 620px;
+}
+
+.workstyle__image {
+    position: absolute;
+    top: -140px;
+    right: 80px;
+    width: 398px;
+    height: 398px;
+}
+
+.workstyle__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: $dark-gray;
+}
+
+.workstyle__details {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: $dark-gray;
+
+    &:not(:last-of-type) {
+        margin-bottom: 25px;
+    }
+}
