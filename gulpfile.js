@@ -148,7 +148,7 @@ var html = function () {
       include()
     ]))
     .pipe(minhtml({
-      collapseWhitespace: true,
+      collapseWhitespace: false,
       removeComments: true
     }))
     .pipe(gulp.dest('./build/'));

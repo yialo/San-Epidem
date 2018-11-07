@@ -25,3 +25,23 @@
         }
     }
 }
+
+.inner-section-title__string {
+    color: $orange;
+}
+
+.inner-section-title__text-wrap {
+    span {
+        display: none;
+    }
+
+    @media (min-width: $min-tablet-width) and (max-width: $max-tablet-width) {
+        span {
+            display: inline;
+        }
+
+        br {
+            display: none;
+        }
+    }
+}
