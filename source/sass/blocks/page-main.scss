@@ -19,6 +19,10 @@
 
     @media (min-width: $min-desktop-width) {
         margin-bottom: 60px;
+
+        .page-main--worktypes-about-page & {
+            margin-bottom: 80px;
+        }
     }
 }
 
@@ -46,6 +50,14 @@
             position: relative;
             top: -35px;
         }
+    }
+}
+
+.worktypes-about {
+    margin-bottom: 40px;
+
+    @media (min-width: $min-tablet-width) {
+        margin-bottom: 100px;
     }
 }
 
