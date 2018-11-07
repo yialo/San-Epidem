@@ -1,53 +1,51 @@
 .page-main {
+    padding-top: 20px;
     background-color: $light-gray;
 
-    &--index {
+    &--indexpage {
         padding-top: 40px;
     }
 
-    &--inner {
-        padding-top: 20px;
-    }
-
     @media (min-width: $min-desktop-width) {
-        &--index {
+        &--indexpage {
             padding-top: 0;
         }
-    }
-}
-
-.page-main__title {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 500;
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $asphalt;
-
-    &--index {
-        @include visually-hider;
-    }
-
-    &--certificates {
-        margin-bottom: 60px;
-    }
-
-    &--price {
-        @include visually-hider;
     }
 }
 
 .page-main__breadcrumbs {
     margin-top: 0;
     margin-bottom: 30px;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 60px;
+    }
 }
 
 .page-main__worktypes {
-    margin-bottom: 80px;
+    .page-main--indexpage & {
+        margin-bottom: 80px;
+    }
+
+    .page-main--worktypes-page & {
+        margin-bottom: 40px;
+    }
 
     @media (min-width: $min-tablet-width) {
-        margin-bottom: 120px;
+        .page-main & {
+            margin-bottom: 80px;
+        }
+    }
+
+    @media (min-width: $min-desktop-width) {
+        .page-main & {
+            margin-bottom: 120px;
+        }
+
+        .page-main--indexpage & {
+            position: relative;
+            top: -35px;
+        }
     }
 }
 
