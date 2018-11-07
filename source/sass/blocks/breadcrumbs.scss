@@ -9,7 +9,7 @@
 
 .breadcrumb__item {
     position: relative;
-    color: $asphalt;
+    color: $orange;
 
     &:not(:first-child) {
         padding-left: 30px;
@@ -18,14 +18,18 @@
     &:not(:first-child)::before {
         content: "";
         position: absolute;
-        background-color: #7b7b7b;
-        height: 2px;
+        background-color: $orange;
+        height: 1px;
         width: 8px;
         top: 11px;
         left: 12px;
     }
 
-    &--active {
-        color: $orange;
+    &:last-child {
+        color: $asphalt;
+    }
+
+    &:last-child::before {
+        background-color: currentColor;
     }
 }
