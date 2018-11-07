@@ -17,6 +17,10 @@
     margin-top: 0;
     margin-bottom: 30px;
 
+    .page-main--worktypes-about-page & {
+        margin-bottom: 50px;
+    }
+
     @media (min-width: $min-desktop-width) {
         margin-bottom: 60px;
 
@@ -57,6 +61,10 @@
     margin-bottom: 30px;
 
     @media (min-width: $min-tablet-width) {
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: $min-desktop-width) {
         margin-bottom: 100px;
     }
 }

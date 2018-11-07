@@ -1,5 +1,5 @@
 .worktypes-about__container {
-    @media (min-width: $min-desktop-width) {
+    @media (min-width: $min-tablet-width) {
         display: flex;
         flex-wrap: wrap;
     }
@@ -11,14 +11,27 @@
     height: 280px;
     margin-bottom: 30px;
 
-    @media (min-width: $min-desktop-width) {
+    @media (min-width: $min-tablet-width) {
+        order: 1;
+        align-self: center;
         margin-bottom: 0;
+        margin-left: auto;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        order: 0;
+        align-self: stretch;
+        margin-left: 0;
         margin-right: 20px;
     }
 }
 
 .worktypes-about__inner-container {
     margin-bottom: 30px;
+
+    @media (min-width: $min-tablet-width) {
+        width: 420px;
+    }
 
     @media (min-width: $min-desktop-width) {
         display: flex;
@@ -44,6 +57,10 @@
     text-align: center;
     text-transform: uppercase;
     color: $dark-gray;
+
+    @media (min-width: $min-tablet-width) {
+        margin-bottom: 20px;
+    }
 
     @media (min-width: $min-desktop-width) {
         width: 100%;
@@ -108,7 +125,13 @@
 }
 
 .worktypes-about__button {
+    @media (min-width: $min-tablet-width) {
+        order: 1;
+        width: 420px;
+    }
+
     @media (min-width: $min-desktop-width) {
+        order: 0;
         width: 480px;
         margin-left: 300px;
     }
