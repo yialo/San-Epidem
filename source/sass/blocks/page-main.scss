@@ -74,11 +74,19 @@
 }
 
 .page-main__worktypes-text {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 100px;
+    }
 }
 
 .page-main__textstyle {
-    margin-bottom: 110px;
+    margin-bottom: 20px;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 110px;
+    }
 }
 
 .page-main__certificates {

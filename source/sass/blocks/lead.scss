@@ -1,30 +1,50 @@
 .lead {
-    min-height: 320px;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: $light-gray;
+
+    @media (min-width: $min-desktop-width) {
+        min-height: 320px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
 }
 
 .lead__container {
-    position: relative;
-    padding-right: 680px;
+    @media (min-width: $min-desktop-width) {
+        position: relative;
+        padding-right: 680px;
+    }
 }
 
 .lead__image {
-    position: absolute;
-    top: -147px;
-    right: 20px;
-    width: 613px;
-    height: 348px;
+    display: block;
+    width: 280px;
+    height: 159px;
+    margin-bottom: 20px;
+
+    @media (min-width: $min-desktop-width) {
+        position: absolute;
+        top: -147px;
+        right: 20px;
+        width: 613px;
+        height: 348px;
+        margin-bottom: 0;
+    }
 }
 
 .lead__text {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 300;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 30px;
     color: $dark-gray;
+
+    @media (min-width: $min-desktop-width) {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
 
 .lead__string {

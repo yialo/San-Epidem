@@ -1,45 +1,78 @@
 .textstyle {
-    min-height: 320px;
+    @media (min-width: $min-desktop-width) {
+        min-height: 320px;
+    }
 }
 
 .textstyle__container {
-    position: relative;
+    @media (min-width: $min-desktop-width) {
+        position: relative;
+    }
 }
 
 .textstyle__image {
-    position: absolute;
-    top: 0;
-    left: 20px;
-    width: 320px;
-    height: 320px;
+    display: block;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 30px;
+
+    @media (min-width: $min-desktop-width) {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: 320px;
+        height: 320px;
+        margin-bottom: 0;
+    }
 }
 
 .textstyle__title {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 500;
     font-size: 26px;
     line-height: 40px;
+    text-align: center;
     text-transform: uppercase;
     color: $dark-gray;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 30px;
+        text-align: left;
+    }
 }
 
 .textstyle__details {
     margin-top: 0;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 30px;
     color: $dark-gray;
 
     &:not(:last-of-type) {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     &:last-of-type {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        font-size: 16px;
+        line-height: 26px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 25px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 50px;
+        }
     }
 }
 
 .textstyle__button {
-    width: 380px;
+    @media (min-width: $min-desktop-width) {
+        width: 380px;
+    }
 }

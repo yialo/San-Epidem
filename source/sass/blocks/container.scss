@@ -10,11 +10,6 @@
         padding-right: 0;
     }
 
-    &--textstyle {
-        padding-left: 400px;
-        padding-right: 240px;
-    }
-
     @media (min-width: $min-tablet-width) {
         width: $min-tablet-width;
 
@@ -34,6 +29,11 @@
         &--workstyle {
             padding-left: 20px;
             padding-right: 620px;
+        }
+
+        &--textstyle {
+            padding-left: 400px;
+            padding-right: 240px;
         }
     }
 }
