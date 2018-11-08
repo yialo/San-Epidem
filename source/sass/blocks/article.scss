@@ -6,19 +6,56 @@
 
 .article__link {
     display: block;
+
+    @media (min-width: $min-tablet-width) {
+        text-align: center;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+    }
+
+    @media (min-width: $min-desktop-width) {
+        text-align: left;
+
+        &:hover {
+            background-color: transparent;
+            border-radius: 0;
+        }
+    }
 }
 
 .article__image {
     display: block;
-    width: 380px;
+    width: 280px;
 
     .article--horizontal & {
-        height: 259px;
+        height: 191px;
         margin-bottom: 20px;
     }
 
     .article--vertical & {
-        height: 499px;
+        height: 368px;
+    }
+
+    @media (min-width: $min-tablet-width) {
+        width: 380px;
+
+        @include margin-hor;
+
+        .article--horizontal & {
+            height: 259px;
+        }
+
+        .article--vertical & {
+            height: 499px;
+        }
+    }
+
+    @media (min-width: $min-desktop-width) {
+        @include margin-hor(0);
     }
 }
 
@@ -27,7 +64,6 @@
         position: relative;
         z-index: 0;
         overflow: hidden;
-        padding-right: 80px;
 
         &::before {
             content: "";
@@ -47,6 +83,12 @@
         left: 0;
         padding: 18px;
         background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    @media (min-width: $min-desktop-width) {
+        .article--horizontal & {
+            padding-right: 80px;
+        }
     }
 }
 
@@ -87,13 +129,23 @@
     line-height: 24px;
     color: $dark-gray;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 226px;
-        height: 2px;
-        background-color: $orange;
+    @media (min-width: $min-tablet-width) {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 226px;
+            height: 2px;
+            background-color: $orange;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (min-width: $min-desktop-width) {
+        &::before {
+            left: 0;
+            transform: translateX(0);
+        }
     }
 }
