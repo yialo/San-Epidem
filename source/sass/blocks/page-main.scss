@@ -84,6 +84,10 @@
 .page-main__textstyle {
     margin-bottom: 20px;
 
+    @media (min-width: $min-tablet-width) {
+        margin-bottom: 30px;
+    }
+
     @media (min-width: $min-desktop-width) {
         margin-bottom: 110px;
     }
