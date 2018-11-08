@@ -1,0 +1,33 @@
+.lead {
+    min-height: 320px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: $light-gray;
+}
+
+.lead__container {
+    position: relative;
+    padding-right: 680px;
+}
+
+.lead__image {
+    position: absolute;
+    top: -147px;
+    right: 20px;
+    width: 613px;
+    height: 348px;
+}
+
+.lead__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: $dark-gray;
+}
+
+.lead__string {
+    font-weight: 700;
+    color: $orange;
+}

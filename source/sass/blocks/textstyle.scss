@@ -1,0 +1,45 @@
+.textstyle {
+    min-height: 320px;
+}
+
+.textstyle__container {
+    position: relative;
+}
+
+.textstyle__image {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 320px;
+    height: 320px;
+}
+
+.textstyle__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: $dark-gray;
+}
+
+.textstyle__details {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: $dark-gray;
+
+    &:not(:last-of-type) {
+        margin-bottom: 25px;
+    }
+
+    &:last-of-type {
+        margin-bottom: 50px;
+    }
+}
+
+.textstyle__button {
+    width: 380px;
+}

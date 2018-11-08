@@ -6,6 +6,10 @@
         padding-top: 40px;
     }
 
+    &--textpage {
+        background-color: #fefefe;
+    }
+
     @media (min-width: $min-desktop-width) {
         &--indexpage {
             padding-top: 0;
@@ -67,6 +71,14 @@
     @media (min-width: $min-desktop-width) {
         margin-bottom: 100px;
     }
+}
+
+.page-main__worktypes-text {
+    margin-bottom: 100px;
+}
+
+.page-main__textstyle {
+    margin-bottom: 110px;
 }
 
 .page-main__certificates {
