@@ -27,6 +27,11 @@
         border-color: white;
     }
 
+    &--articles {
+        color: $dark-gray;
+        background-color: transparent;
+    }
+
     @media (min-width: $min-tablet-width) {
         &--footer {
             padding-top: 18px;

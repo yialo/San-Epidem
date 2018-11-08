@@ -1,0 +1,38 @@
+.articles__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-gray;
+}
+
+.articles__list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 70px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.articles__column {
+    width: 380px;
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.articles__item {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.articles__button {
+    width: 280px;
+
+    @include margin-hor;
+}
