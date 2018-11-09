@@ -7,83 +7,78 @@ block header
     include modules/header-inner.pug
 
 block main
-        <main class="page__main  page-main  page-main--worktypes-page">
-            <ul class="page-main__breadcrumbs  breadcrumbs  container">
-                <li class="breadcrumb__item">
-                    <a class="breadcrumb__link" href="#">Главная</a>
-                </li>
-                <li class="breadcrumb__item  breadcrumb__item--active">
-                    <a class="breadcrumb__link">Услуги</a>
-                </li>
-            </ul>
-            <h1 class="page-main__title  visually-hidden">Страница услуг</h1>
-            <section class="page-main__worktypes  worktypes  worktypes--innerpage">
-                <div class="worktypes__container  container">
-                    <h2 class="worktypes__title  inner-section-title">Услуги</h2>
-                    <ul class="worktypes__list">
-                        <li class="worktypes__item">
-                            <img class="worktypes__image" src="../img/worktypes-1.png" alt="Дезинсекция">
-                            <div class="worktypes__item-container">
-                                <span class="worktypes__item-title">Дезинсекция</span>
-                                <p class="worktypes__item-subtitle"><span class="worktypes__item-string">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit</p>
-                                <ul class="worktypes__inner-list">
-                                    <li class="worktypes__inner-item">Aenean tempor</li>
-                                    <li class="worktypes__inner-item">turpis non placerat</li>
-                                    <li class="worktypes__inner-item">condimentum felis augue convallis</li>
-                                    <li class="worktypes__inner-item">diam, sed ultricies ante lorem</li>
-                                </ul>
-                            </div>
-                        </li>
+    main(class="page__main  page-main  page-main--worktypes-page")
+        ul(class="page-main__breadcrumbs  breadcrumbs  container")
+            li(class="breadcrumb__item")
+                a(class="breadcrumb__link" href="#") Главная
+            li(class="breadcrumb__item  breadcrumb__item--active")
+                a(class="breadcrumb__link") Услуги
 
-                        <li class="worktypes__item">
-                            <img class="worktypes__image" src="../img/worktypes-2.png" alt="Дератизация">
-                            <div class="worktypes__item-container">
-                                <span class="worktypes__item-title">Дератизация</span>
-                                <p class="worktypes__item-subtitle"><span class="worktypes__item-string">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit</p>
-                                <ul class="worktypes__inner-list">
-                                    <li class="worktypes__inner-item">Aenean tempor</li>
-                                    <li class="worktypes__inner-item">turpis non placerat</li>
-                                    <li class="worktypes__inner-item">condimentum felis augue convallis</li>
-                                    <li class="worktypes__inner-item">diam, sed ultricies ante lorem</li>
-                                </ul>
-                            </div>
-                        </li>
+        h1(class="page-main__title  visually-hidden") Страница услуг
+        section(class="page-main__worktypes  worktypes  worktypes--innerpage")
+            div(class="worktypes__container  container")
+                <h2 class="worktypes__title  inner-section-title">Услуги</h2>
+                <ul class="worktypes__list">
+                    <li class="worktypes__item">
+                        <img class="worktypes__image" src="../img/worktypes-1.png" alt="Дезинсекция">
+                        <div class="worktypes__item-container">
+                            <span class="worktypes__item-title">Дезинсекция</span>
+                            <p class="worktypes__item-subtitle"><span class="worktypes__item-string">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit</p>
+                            <ul class="worktypes__inner-list">
+                                <li class="worktypes__inner-item">Aenean tempor</li>
+                                <li class="worktypes__inner-item">turpis non placerat</li>
+                                <li class="worktypes__inner-item">condimentum felis augue convallis</li>
+                                <li class="worktypes__inner-item">diam, sed ultricies ante lorem</li>
+                            </ul>
+                        </div>
+                    </li>
 
-                        <li class="worktypes__item">
-                            <img class="worktypes__image" src="../img/worktypes-3.png" alt="Дезодорация">
-                            <div class="worktypes__item-container">
-                                <span class="worktypes__item-title">Дезодорация</span>
-                                <p class="worktypes__item-subtitle"><span class="worktypes__item-string">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit</p>
-                                <ul class="worktypes__inner-list">
-                                    <li class="worktypes__inner-item">Aenean tempor</li>
-                                    <li class="worktypes__inner-item">turpis non placerat</li>
-                                    <li class="worktypes__inner-item">condimentum felis augue convallis</li>
-                                    <li class="worktypes__inner-item">diam, sed ultricies ante lorem</li>
-                                </ul>
-                            </div>
-                        </li>
+                    <li class="worktypes__item">
+                        <img class="worktypes__image" src="../img/worktypes-2.png" alt="Дератизация">
+                        <div class="worktypes__item-container">
+                            <span class="worktypes__item-title">Дератизация</span>
+                            <p class="worktypes__item-subtitle"><span class="worktypes__item-string">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit</p>
+                            <ul class="worktypes__inner-list">
+                                <li class="worktypes__inner-item">Aenean tempor</li>
+                                <li class="worktypes__inner-item">turpis non placerat</li>
+                                <li class="worktypes__inner-item">condimentum felis augue convallis</li>
+                                <li class="worktypes__inner-item">diam, sed ultricies ante lorem</li>
+                            </ul>
+                        </div>
+                    </li>
 
-                        <li class="worktypes__item">
-                            <img class="worktypes__image" src="../img/worktypes-4.png" alt="Дезинфекция">
-                            <div class="worktypes__item-container">
-                                <span class="worktypes__item-title">Дезинфекция</span>
-                                <p class="worktypes__item-subtitle"><span class="worktypes__item-string">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit</p>
-                                <ul class="worktypes__inner-list">
-                                    <li class="worktypes__inner-item">Aenean tempor</li>
-                                    <li class="worktypes__inner-item">turpis non placerat</li>
-                                    <li class="worktypes__inner-item">condimentum felis augue convallis</li>
-                                    <li class="worktypes__inner-item">diam, sed ultricies ante lorem</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                    <li class="worktypes__item">
+                        <img class="worktypes__image" src="../img/worktypes-3.png" alt="Дезодорация">
+                        <div class="worktypes__item-container">
+                            <span class="worktypes__item-title">Дезодорация</span>
+                            <p class="worktypes__item-subtitle"><span class="worktypes__item-string">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit</p>
+                            <ul class="worktypes__inner-list">
+                                <li class="worktypes__inner-item">Aenean tempor</li>
+                                <li class="worktypes__inner-item">turpis non placerat</li>
+                                <li class="worktypes__inner-item">condimentum felis augue convallis</li>
+                                <li class="worktypes__inner-item">diam, sed ultricies ante lorem</li>
+                            </ul>
+                        </div>
+                    </li>
 
-            block calculator
-                include modules/calculator-block.pug
+                    <li class="worktypes__item">
+                        <img class="worktypes__image" src="../img/worktypes-4.png" alt="Дезинфекция">
+                        <div class="worktypes__item-container">
+                            <span class="worktypes__item-title">Дезинфекция</span>
+                            <p class="worktypes__item-subtitle"><span class="worktypes__item-string">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit</p>
+                            <ul class="worktypes__inner-list">
+                                <li class="worktypes__inner-item">Aenean tempor</li>
+                                <li class="worktypes__inner-item">turpis non placerat</li>
+                                <li class="worktypes__inner-item">condimentum felis augue convallis</li>
+                                <li class="worktypes__inner-item">diam, sed ultricies ante lorem</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
 
-            block contacts
-                include modules/contacts-block.pug
+        block calculator
+            include modules/calculator-block.pug
 
-        </main>
+        block contacts
+            include modules/contacts-block.pug
+
