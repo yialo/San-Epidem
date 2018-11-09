@@ -1,12 +1,12 @@
-<header class="page__header  page-header  page-header--large">
-    <div class="page-header__container  container">
-        <div class="page-header__top-pane  page-header__top-pane--large">
-            <button class="page-header__menu-button  page-header__menu-button--open" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <button class="page-header__menu-button  page-header__menu-button--close  page-header__menu-button--js-hidden" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
+header(class="page__header  page-header  page-header--large")
+    div(class="page-header__container  container")
+        div(class="page-header__top-pane  page-header__top-pane--large")
+            button(class="page-header__menu-button  page-header__menu-button--open" type="button")
+                span(class="visually-hidden") Открыть меню
+
+            button(class="page-header__menu-button  page-header__menu-button--close  page-header__menu-button--js-hidden" type="button")
+                span(class="visually-hidden") Открыть меню
+
             <a class="page-header__logo  logo">
                 <picture>
                     <source media="(min-width: 768px)" srcset="img/logo-large.png">
@@ -39,13 +39,14 @@
                 <span class="page-header__phone" href="#">8 (495) 142-50-54</span>
                 <a class="page-header__phone-button  button  button--transparent" href="#">Заказать звонок</a>
             </div>
-        </div>
 
-        <div class="page-header__info">
-            <p class="page-header__lead">Дезинсекция, дератизация<br>и дезинфекция <span class="page-header__lead-string">в Москве и МО</span></p>
-            <p class="page-header__details  page-header__details--1">Стоимость дезинсекции и дератизации от 1200 рублей 100% юридическая гарантия в договоре</p>
-            <p class="page-header__details  page-header__details--2">Работаем круглосуточно 24/7 без выходных<br>Наличный и безналичный расчет</p>
-            <a class="page-header__button  button  button--orange" href="#">Получить консультацию</a>
-        </div>
-    </div>
-</header>
+        div(class="page-header__info")
+            p(class="page-header__lead") Дезинсекция, дератизация
+                br
+                | и дезинфекция
+                span(class="page-header__lead-string") в Москве и МО
+            p(class="page-header__details  page-header__details--1") Стоимость дезинсекции и дератизации от 1200 рублей 100% юридическая гарантия в договоре
+            p(class="page-header__details  page-header__details--2") Работаем круглосуточно 24/7 без выходных
+                br
+                | Наличный и безналичный расчет
+            a(class="page-header__button  button  button--orange" href="#") Получить консультацию

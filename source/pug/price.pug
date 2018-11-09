@@ -7,17 +7,16 @@ block header
     include modules/header-inner.pug
 
 block main
-    <main class="page__main  page-main  page-main--price-page">
-        <ul class="page-main__breadcrumbs  breadcrumbs  container">
-            <li class="breadcrumb__item">
-                <a class="breadcrumb__link" href="#">Главная</a>
-            </li>
-            <li class="breadcrumb__item  breadcrumb__item--active">
-                <a class="breadcrumb__link">Дезинсекция</a>
-            </li>
-        </ul>
-        <h1 class="page-main__title  visually-hidden">Наши цены</h1>
-        <section class="page-main__price-menu  price-menu">
+    main(class="page__main  page-main  page-main--price-page")
+        ul(class="page-main__breadcrumbs  breadcrumbs  container")
+            li(class="breadcrumb__item")
+                a(class="breadcrumb__link" href="#") Главная
+            li(class="breadcrumb__item  breadcrumb__item--active")
+                a(class="breadcrumb__link") Дезинсекция
+
+        h1(class="page-main__title  visually-hidden") Наши цены
+
+        section(class="page-main__price-menu  price-menu")
             <div class="price-menu__container  container">
                 <h2 class="price-menu__title  inner-section-title">Цены</h2>
                 <ul class="price-menu__list">
@@ -53,7 +52,6 @@ block main
                     </li>
                 </ul>
             </div>
-        </section>
 
         <section class="page-main__pricelist  pricelist">
             <div class="pricelist__title-wrapper">
@@ -95,85 +93,85 @@ block main
                         </thead>
                         <tbody class="price-table__section">
                             <tr class="price-table__row  price-table__row--body">
-                                <td class="price-table__cell">1-а комнатная</td>
-                                <td class="price-table__cell">1 700 руб.</td>
-                                <td class="price-table__cell">2 200 руб.</td>
-                                <td class="price-table__cell">2 700 руб.</td>
-                                <td class="price-table__cell">2 700 руб.</td>
-                                <td class="price-table__cell">2 700 руб.</td>
+                                td(class="price-table__cell") 1-а комнатная
+                                td(class="price-table__cell") 1 700 руб.
+                                td(class="price-table__cell") 2 200 руб.
+                                td(class="price-table__cell") 2 700 руб.
+                                td(class="price-table__cell") 2 700 руб.
+                                td(class="price-table__cell") 2 700 руб.
                             </tr>
                             <tr class="price-table__row  price-table__row--body">
-                                <td class="price-table__cell">2-х комнатная</td>
-                                <td class="price-table__cell">2 000 руб.</td>
-                                <td class="price-table__cell">2 500 руб.</td>
-                                <td class="price-table__cell">3 000 руб.</td>
-                                <td class="price-table__cell">3 000 руб.</td>
-                                <td class="price-table__cell">3 000 руб.</td>
+                                td(class="price-table__cell") 2-х комнатная
+                                td(class="price-table__cell") 2 000 руб.
+                                td(class="price-table__cell") 2 500 руб.
+                                td(class="price-table__cell") 3 000 руб.
+                                td(class="price-table__cell") 3 000 руб.
+                                td(class="price-table__cell") 3 000 руб.
                             </tr>
                             <tr class="price-table__row  price-table__row--body">
-                                <td class="price-table__cell">3-х комнатная</td>
-                                <td class="price-table__cell">2 200 руб.</td>
-                                <td class="price-table__cell">2 700 руб.</td>
-                                <td class="price-table__cell">3 200 руб.</td>
-                                <td class="price-table__cell">3 200 руб.</td>
-                                <td class="price-table__cell">3 200 руб.</td>
+                                td(class="price-table__cell") 3-х комнатная
+                                td(class="price-table__cell") 2 200 руб.
+                                td(class="price-table__cell") 2 700 руб.
+                                td(class="price-table__cell") 3 200 руб.
+                                td(class="price-table__cell") 3 200 руб.
+                                td(class="price-table__cell") 3 200 руб.
                             </tr>
                             <tr class="price-table__row  price-table__row--body">
-                                <td class="price-table__cell">4-х комнатная</td>
-                                <td class="price-table__cell">2 400 руб.</td>
-                                <td class="price-table__cell">2 900 руб.</td>
-                                <td class="price-table__cell">3 400 руб.</td>
-                                <td class="price-table__cell">3 400 руб.</td>
-                                <td class="price-table__cell">3 400 руб.</td>
+                                td(class="price-table__cell") 4-х комнатная
+                                td(class="price-table__cell") 2 400 руб.
+                                td(class="price-table__cell") 2 900 руб.
+                                td(class="price-table__cell") 3 400 руб.
+                                td(class="price-table__cell") 3 400 руб.
+                                td(class="price-table__cell") 3 400 руб.
                             </tr>
                             <tr class="price-table__row  price-table__row--body">
-                                <td class="price-table__cell">МОП (коридор, кухня и др) ***</td>
-                                <td class="price-table__cell">1 500 руб.</td>
-                                <td class="price-table__cell">2 900 руб.</td>
-                                <td class="price-table__cell">2 300 руб.</td>
-                                <td class="price-table__cell">2 300 руб.</td>
-                                <td class="price-table__cell">2 300 руб.</td>
+                                td(class="price-table__cell") МОП (коридор, кухня и др) ***
+                                td(class="price-table__cell") 1 500 руб.
+                                td(class="price-table__cell") 2 900 руб.
+                                td(class="price-table__cell") 2 300 руб.
+                                td(class="price-table__cell") 2 300 руб.
+                                td(class="price-table__cell") 2 300 руб.
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <small class="pricelist__note">*** Гарантия не распространяется на частичную обработку помещения.</small>
+                small(class="pricelist__note") *** Гарантия не распространяется на частичную обработку помещения.
 
-                <p class="pricelist__subtitle">Цены на обработку квартир от насекомых</p>
+                p(class="pricelist__subtitle") Цены на обработку квартир от насекомых
                 <div class="pricelist__table-wrapper">
                     <table class="pricelist__table  price-table  price-table--2">
                         <thead class="price-table__section  price-table__section--head">
                             <tr class="price-table__row  price-table__row--head">
-                                <th class="price-table__cell">Квартира</th>
-                                <th class="price-table__cell">Установка приманок ПД</th>
-                                <th class="price-table__cell">Приманки +генератор тумана</th>
+                                th(class="price-table__cell") Квартира
+                                th(class="price-table__cell") Установка приманок ПД
+                                th(class="price-table__cell") Приманки +генератор тумана
                             </tr>
                         </thead>
                         <tbody class="price-table__section  price-table__section--body">
                             <tr class="price-table__row  price-table__row--body">
-                                <td class="price-table__cell">1-а комнатная</td>
-                                <td class="price-table__cell">1 700 руб.</td>
-                                <td class="price-table__cell">2 200 руб.</td>
+                                td(class="price-table__cell") 1-а комнатная
+                                td(class="price-table__cell") 1 700 руб.
+                                td(class="price-table__cell") 2 200 руб.
                             </tr>
                             <tr class="price-table__row  price-table__row--body">
-                                <td class="price-table__cell">2-х комнатная</td>
-                                <td class="price-table__cell">2 000 руб.</td>
-                                <td class="price-table__cell">2 500 руб.</td>
+                                td(class="price-table__cell") 2-х комнатная
+                                td(class="price-table__cell") 2 000 руб.
+                                td(class="price-table__cell") 2 500 руб.
                             </tr>
                             <tr class="price-table__row  price-table__row--body">
-                                <td class="price-table__cell">3-х комнатная</td>
-                                <td class="price-table__cell">2 200 руб.</td>
-                                <td class="price-table__cell">2 700 руб.</td>
+                                td(class="price-table__cell") 3-х комнатная
+                                td(class="price-table__cell") 2 200 руб.
+                                td(class="price-table__cell") 2 700 руб.
                             </tr>
                             <tr class="price-table__row  price-table__row--body">
-                                <td class="price-table__cell">4-х комнатная</td>
-                                <td class="price-table__cell">2 400 руб.</td>
-                                <td class="price-table__cell">2 900 руб.</td>
+                                td(class="price-table__cell") 4-х комнатная
+                                td(class="price-table__cell") 2 400 руб.
+                                td(class="price-table__cell") 2 900 руб.
                             </tr>
                             <tr class="price-table__row  price-table__row--body">
-                                <td class="price-table__cell">МОП (коридор, кухня и др) ***</td>
-                                <td class="price-table__cell">1 500 руб.</td>
-                                <td class="price-table__cell">2 900 руб.</td>
+                                td(class="price-table__cell") МОП (коридор, кухня и др) ***
+                                td(class="price-table__cell") 1 500 руб.
+                                td(class="price-table__cell") 2 900 руб.
                             </tr>
                         </tbody>
                     </table>
@@ -184,7 +182,7 @@ block main
         block contacts
             include modules/contacts-block.pug
 
-    </main>
-
 block custom-scripts
     script(src="js/pricelist-navigation.js")
+
+
