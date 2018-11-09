@@ -1,0 +1,55 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    title
+      block title
+    meta(name="description" content="Дезинсекция, дератизация и дезинфекция в Москве и МО")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="cmsmagazine" content="cdc79537f1d9f113c73cd2fd46ca0125")
+    meta(name="author" content="Веб-студия WayToStart")
+    link(rel="preload" href="fonts/helveticaneuecyr-light.woff2" as="font")
+    link(rel="preload" href="fonts/helveticaneuecyr-roman.woff2" as="font")
+    link(rel="preload" href="fonts/helveticaneuecyr-medium.woff2" as="font")
+    link(rel="preload" href="fonts/helveticaneuecyr-bold.woff2" as="font")
+    link(rel="preload" href="fonts/helveticaneuecyr-black.woff2" as="font")
+    link(rel="stylesheet" href="css/style.min.css")
+
+    body
+        block header
+
+        block main
+
+        footer(class="page__footer  page-footer")
+            div(class="page-footer__container  container")
+                nav(class="page-footer__navigation  navigation  navigation--footer")
+                    ul(class="navigation__list")
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Услуги
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Статьи
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Сертификаты
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Экспертиза
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Цены
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Контакты
+                div(class="page-footer__main-part")
+                    a(class="page-footer__logo  logo" href="index.html")
+                        picture
+                            source(media="(min-width: 768px)" srcset="img/logo-large.png")
+                            img(class="logo__image" src="img/logo-small.png" alt="Санитарная Эпидемиологическая Служба")
+                    div(class="page-footer__info")
+                        div(class="page-footer__contacts")
+                            span(class="page-footer__phone") 8 (495) 142-50-54
+                            a(class="page-footer__email" href="#") info@ses-moscow.ru
+                        a(class="page-footer__button  button  button--transparent  button--footer" href="#") Заказать звонок
+                p(class="page-footer__copyright")
+                    a(class="page-footer__copyright-link" href="https://www.waytostart.ru/") Создание сайта Веб Студия WayToStart
+
+        script(src="js/picturefill.js")
+        script(src="js/page-header-menu.js")
+
+        block custom-scripts

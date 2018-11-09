@@ -1,67 +1,12 @@
-<!DOCTYPE HTML>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Цены | Санитарная Эпидемиологическая Служба</title>
-        <meta name="description" content="Дезинсекция, дератизация и дезинфекция в Москве и МО">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="cmsmagazine" content="cdc79537f1d9f113c73cd2fd46ca0125">
-        <meta name="author" content="Веб-студия WayToStart">
-        <link rel="preload" href="fonts/helveticaneuecyr-light.woff2" as="font">
-        <link rel="preload" href="fonts/helveticaneuecyr-roman.woff2" as="font">
-        <link rel="preload" href="fonts/helveticaneuecyr-medium.woff2" as="font">
-        <link rel="preload" href="fonts/helveticaneuecyr-bold.woff2" as="font">
-        <link rel="preload" href="fonts/helveticaneuecyr-black.woff2" as="font">
-        <link rel="stylesheet" href="css/style.min.css">
-    </head>
+extends scaffolding/page-layout.pug
 
-    <body class="page">
-        <header class="page__header  page-header  page-header--small">
-            <div class="page-header__container  container">
-                <div class="page-header__top-pane  page-header__top-pane--small">
-                    <button class="page-header__menu-button  page-header__menu-button--open" type="button">
-                        <span class="visually-hidden">Открыть меню</span>
-                    </button>
-                    <button class="page-header__menu-button  page-header__menu-button--close  page-header__menu-button--js-hidden" type="button">
-                        <span class="visually-hidden">Открыть меню</span>
-                    </button>
-                    <a class="page-header__logo  logo" href="index.html">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="img/logo-large.png">
-                            <img class="logo__image" src="img/logo-small.png" alt="Санитарная Эпидемиологическая Служба">
-                        </picture>
-                    </a>
-                    <div class="page-header__right-pane">
-                        <nav class="page-header__navigation  navigation  navigation--header  navigation--js-closed">
-                            <ul class="navigation__list  navigation__list--header">
-                                <li class="navigation__item  navigation__item--header">
-                                    <a class="navigation__link  navigation__link--header" href="#">Услуги</a>
-                                </li>
-                                <li class="navigation__item  navigation__item--header">
-                                    <a class="navigation__link  navigation__link--header" href="#">Статьи</a>
-                                </li>
-                                <li class="navigation__item  navigation__item--header">
-                                    <a class="navigation__link  navigation__link--header" href="#">Сертификаты</a>
-                                </li>
-                                <li class="navigation__item  navigation__item--header">
-                                    <a class="navigation__link  navigation__link--header" href="#">Экспертиза</a>
-                                </li>
-                                <li class="navigation__item  navigation__item--header">
-                                    <a class="navigation__link  navigation__link--header" href="#">Цены</a>
-                                </li>
-                                <li class="navigation__item  navigation__item--header">
-                                    <a class="navigation__link  navigation__link--header" href="#">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <span class="page-header__phone" href="#">8 (495) 142-50-54</span>
-                        <a class="page-header__phone-button  button  button--transparent" href="#">Заказать звонок</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+block title
+    | Цены | Санитарная Эпидемиологическая Служба
 
+block header
+    include modules/header-inner.pug
+
+block main
         <main class="page__main  page-main  page-main--price-page">
             <ul class="page-main__breadcrumbs  breadcrumbs  container">
                 <li class="breadcrumb__item">
@@ -269,53 +214,5 @@
             </section>
         </main>
 
-        <footer class="page__footer  page-footer">
-            <div class="page-footer__container  container">
-                <nav class="page-footer__navigation  navigation  navigation--footer">
-                    <ul class="navigation__list  navigation__list--footer">
-                        <li class="navigation__item  navigation__item--footer">
-                            <a class="navigation__link  navigation__link--footer" href="#" alt="">Услуги</a>
-                        </li>
-                        <li class="navigation__item  navigation__item--footer">
-                            <a class="navigation__link  navigation__link--footer" href="#" alt="">Статьи</a>
-                        </li>
-                        <li class="navigation__item  navigation__item--footer">
-                            <a class="navigation__link  navigation__link--footer" href="#" alt="">Сертификаты</a>
-                        </li>
-                        <li class="navigation__item  navigation__item--footer">
-                            <a class="navigation__link  navigation__link--footer" href="#" alt="">Экспертиза</a>
-                        </li>
-                        <li class="navigation__item  navigation__item--footer">
-                            <a class="navigation__link  navigation__link--footer" href="#" alt="">Цены</a>
-                        </li>
-                        <li class="navigation__item  navigation__item--footer">
-                            <a class="navigation__link  navigation__link--footer" href="#" alt="">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="page-footer__main-part">
-                    <a class="page-footer__logo  logo" href="index.html">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="img/logo-large.png">
-                            <img class="logo__image" src="img/logo-small.png" alt="Санитарная Эпидемиологическая Служба">
-                        </picture>
-                    </a>
-                    <div class="page-footer__info">
-                        <div class="page-footer__contacts">
-                            <span class="page-footer__phone">8 (495) 142-50-54</span>
-                            <a class="page-footer__email" href="#">info@ses-moscow.ru</a>
-                        </div>
-                        <a class="page-footer__button  button  button--transparent  button--footer" href="#">Заказать звонок</a>
-                    </div>
-                </div>
-                <p class="page-footer__copyright">
-                    <a class="page-footer__copyright-link" href="#">Создание сайта Веб Студия WayToStart</a>
-                </p>
-            </div>
-        </footer>
-
-        <script src="js/picturefill.js"></script>
-        <script src="js/page-header-menu.js"></script>
-        <script src="js/pricelist-navigation.js"></script>
-    </body>
-</html>
+block custom-scripts
+    script(src="js/pricelist-navigation.js")
