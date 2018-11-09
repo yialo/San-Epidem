@@ -7,8 +7,8 @@ block header
     include modules/header-inner.pug
 
 block main
-    <main class="page__main  page-main  page-main--contacts">
-        <h1 class="page-main__title  visually-hidden">Наши контактные данные</h1>
+    main(class="page__main  page-main  page-main--contacts")
+        h1(class="page-main__title  visually-hidden") Наши контактные данные
 
         block contacts
             include modules/contacts-block.pug
@@ -47,4 +47,3 @@ block main
                 </form>
             </div>
         </section>
-    </main>

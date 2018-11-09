@@ -7,8 +7,8 @@ block header
     include modules/header-inner.pug
 
 block main
-    <main class="page__main  page-main  page-main--worktypes-about-page">
-        <ul class="page-main__breadcrumbs  breadcrumbs  container">
+    main(class="page__main  page-main  page-main--worktypes-about-page")
+        ul(class="page-main__breadcrumbs  breadcrumbs  container")
             <li class="breadcrumb__item">
                 <a class="breadcrumb__link" href="#">Главная</a>
             </li>
@@ -18,7 +18,7 @@ block main
             <li class="breadcrumb__item  breadcrumb__item--active">
                 <a class="breadcrumb__link">Дезинсекция</a>
             </li>
-        </ul>
+
         <h1 class="page-main__title  visually-hidden">Дезинсекция: все подробности об услуге</h1>
         <section class="page-main__worktypes-about  worktypes-about">
             <div class="worktypes-about__container  container">
@@ -56,5 +56,3 @@ block main
 
         block contacts
             include modules/contacts-block.pug
-
-    </main>

@@ -26,29 +26,38 @@ block main
                         img(class="worktypes__image" src="../img/worktypes-4.png" alt="Дезинфекция")
                         span(class="worktypes__item-title") Дезинфекция
 
-        <section class="page-main__advantages  advantages">
-            <div class="advantages__container  container">
-                <h2 class="advantages__title">Наши преимущества</h2>
-                <ul class="advantages__list">
-                    <li class="advantages__item  advantages__item--1"><span class="advantages__string">Гарантия</span> на наши услуги 3 года
-                    </li>
-                    <li class="advantages__item  advantages__item--2"><span class="advantages__string">Стаж работы</span> более 8 лет
-                    </li>
-                    <li class="advantages__item  advantages__item--3">Работа только <span class="advantages__string">по договору</span>
-                    </li>
-                    <li class="advantages__item  advantages__item--4">Большой штат опытных сотрудников, возможен <span class="advantages__string">выезд в день заказа</span>
-                    </li>
-                    <li class="advantages__item  advantages__item--5">Дорогие высококачественные, <span class="advantages__string">безопасные</span> для людей и животных препараты
-                    </li>
-                    <li class="advantages__item  advantages__item--6">Имеем несколько филиалов по Москве и МО, что гарантирует <span class="advantages__string">осуществление работ в срок</span>
-                    </li>
-                    <li class="advantages__item  advantages__item--7"><span class="advantages__string">Хотите сделать все сами?</span> Без проблем, доставим на дом все для этого необходимое
-                    </li>
-                    <li class="advantages__item  advantages__item--8">Имеем свой <span class="advantages__string">собственный магазин </span> профессиональных средств, окажем подробную консультацию по применению того или иного препарата
-                    </li>
-                </ul>
-            </div>
-        </section>
+        section(class="page-main__advantages  advantages")
+            div(class="advantages__container  container")
+                h2(class="advantages__title") Наши преимущества
+                ul(class="advantages__list")
+                    li(class="advantages__item  advantages__item--1")
+                        span(class="advantages__string") Гарантия
+                        | на наши услуги 3 года
+
+                    li(class="advantages__item  advantages__item--2")
+                        span(class="advantages__string") Стаж работы
+                        | более 8 лет
+
+                    li(class="advantages__item  advantages__item--3") Работа только
+                        span(class="advantages__string") по договору
+
+                    li(class="advantages__item  advantages__item--4") Большой штат опытных сотрудников, возможен
+                        span(class="advantages__string") выезд в день заказа
+
+                    li(class="advantages__item  advantages__item--5") Дорогие высококачественные,
+                        span(class="advantages__string") безопасные
+                        | для людей и животных препараты
+
+                    li(class="advantages__item  advantages__item--6") Имеем несколько филиалов по Москве и МО, что гарантирует
+                        span(class="advantages__string") осуществление работ в срок
+
+                    li(class="advantages__item  advantages__item--7")
+                        span(class="advantages__string") Хотите сделать все сами?
+                        | Без проблем, доставим на дом все для этого необходимое
+
+                    li(class="advantages__item  advantages__item--8") Имеем свой
+                        span(class="advantages__string") собственный магазин
+                        | профессиональных средств, окажем подробную консультацию по применению того или иного препарата
 
         <section class="page-main__problems  problems">
             <div class="problems__container  container">
@@ -238,8 +247,8 @@ block main
             </aside>
         </section>
 
-        <section class="page-main__about  about">
-            <div class="about__container  container">
+        section(class="page-main__about  about")
+            div(class="about__container  container")
                 <picture>
                     <source media="(min-width: 1220px)" srcset="img/about-image-large.png">
                     <img class="about__image" src="img/about-image-small.png" alt="Фото центра">
@@ -266,8 +275,6 @@ block main
                         <li class="about__list-item">Корректировка стратегии в случае необходимости и т.д.</li>
                     </ul>
                 </div>
-            </div>
-        </section>
 
         block contacts
             include modules/contacts-block.pug

@@ -17,8 +17,8 @@ block main
         h1(class="page-main__title  visually-hidden") Страница услуг
         section(class="page-main__worktypes  worktypes  worktypes--innerpage")
             div(class="worktypes__container  container")
-                <h2 class="worktypes__title  inner-section-title">Услуги</h2>
-                <ul class="worktypes__list">
+                h2(class="worktypes__title  inner-section-title") Услуги
+                ul(class="worktypes__list")
                     <li class="worktypes__item">
                         <img class="worktypes__image" src="../img/worktypes-1.png" alt="Дезинсекция">
                         <div class="worktypes__item-container">
@@ -74,7 +74,6 @@ block main
                             </ul>
                         </div>
                     </li>
-                </ul>
 
         block calculator
             include modules/calculator-block.pug

@@ -7,19 +7,19 @@ block header
     include modules/header-inner.pug
 
 block main
-    <main class="page__main  page-main  page-main--certificates">
-        <ul class="page-main__breadcrumbs  breadcrumbs  container">
-            <li class="breadcrumb__item">
-                <a class="breadcrumb__link" href="#">Главная</a>
-            </li>
-            <li class="breadcrumb__item  breadcrumb__item--active">
-                <a class="breadcrumb__link">Дезинсекция</a>
-            </li>
-        </ul>
-        <h1 class="page-main__title  visually-hidden">Сертификаты</h1>
-        <section class="page-main__certificates  certificates">
-            <div class="certificates__container  container">
-                <h2 class="certificates__title  inner-section-title">Сертификаты</h2>
+    main(class="page__main  page-main  page-main--certificates")
+        ul(class="page-main__breadcrumbs  breadcrumbs  container")
+            li(class="breadcrumb__item")
+                a(class="breadcrumb__link" href="#") Главная
+
+            li(class="breadcrumb__item  breadcrumb__item--active")
+                a(class="breadcrumb__link") Дезинсекция
+
+        h1(class="page-main__title  visually-hidden") Сертификаты
+
+        section(class="page-main__certificates  certificates")
+            div(class="certificates__container  container")
+                h2(class="certificates__title  inner-section-title") Сертификаты
                 <ul class="certificates__list">
                     <li class="certificates__item">
                         <picture>
@@ -70,10 +70,6 @@ block main
                         <p class="certificates__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis neque sed eleifend sagittis. Nulla mattis diam eu malesuada porttitor. Pellentesque eu dignissim libero.</p>
                     </li>
                 </ul>
-            </div>
-        </section>
 
         block contacts
             include modules/contacts-block.pug
-
-    </main>
