@@ -15,10 +15,3 @@
     margin-left: $mh;
     margin-right: $mh;
 }
-
-// AUXILIARY
-
-@mixin outline {
-    outline: 1px solid red;
-    outline-offset: -1px;
-}
