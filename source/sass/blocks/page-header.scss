@@ -79,7 +79,7 @@
     }
 
     @media (max-width: $max-tablet-width) {
-        &--js-hidden {
+        &.is-hidden {
             display: none;
         }
     }

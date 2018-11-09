@@ -1,6 +1,6 @@
 .navigation {
     @media (max-width: $max-tablet-width) {
-        &--js-closed {
+        &.is-hidden {
             display: none;
         }
     }
@@ -32,7 +32,7 @@
     }
 
     @media (min-width: $min-desktop-width) {
-        &--header {
+        .navigation--header & {
             display: flex;
             justify-content: flex-end;
         }
@@ -44,11 +44,11 @@
 }
 
 .navigation__item {
-    &--header {
+    .navigation--header & {
         background-color: $orange;
     }
 
-    &--header:not(:last-child) {
+    .navigation--header &:not(:last-child) {
         border-bottom: 1px solid white;
     }
 
@@ -60,16 +60,16 @@
     @media (min-width: $min-desktop-width) {
         position: relative;
 
-        &--header {
+        .navigation--header & {
             background-color: transparent;
         }
 
-        &--header:not(:last-child) {
+        .navigation--header &:not(:last-child) {
             margin-right: 40px;
             border-style: none;
         }
 
-        &--header:not(:last-child)::after {
+        .navigation--header &:not(:last-child)::after {
             content: "";
             position: absolute;
             top: 0;
@@ -95,7 +95,7 @@
     line-height: 20px;
     color: white;
 
-    &--header {
+    .navigation--header & {
         display: block;
         width: 240px;
         padding-top: 15px;
@@ -105,7 +105,7 @@
     }
 
     @media (min-width: $min-desktop-width) {
-        &--header {
+        .navigation--header & {
             display: inline;
             padding-top: 0;
             padding-bottom: 0;

@@ -4,41 +4,32 @@ header(class="page__header  page-header  page-header--large")
             button(class="page-header__menu-button  page-header__menu-button--open" type="button")
                 span(class="visually-hidden") Открыть меню
 
-            button(class="page-header__menu-button  page-header__menu-button--close  page-header__menu-button--js-hidden" type="button")
+            button(class="page-header__menu-button  page-header__menu-button--close  is-hidden" type="button")
                 span(class="visually-hidden") Открыть меню
 
-            <a class="page-header__logo  logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/logo-large.png">
-                    <img class="logo__image" src="img/logo-small.png" alt="Санитарная Эпидемиологическая Служба">
-                </picture>
-            </a>
-            <div class="page-header__right-pane">
-                <nav class="page-header__navigation  navigation  navigation--header  navigation--js-closed">
-                    <ul class="navigation__list  navigation__list--header">
-                        <li class="navigation__item  navigation__item--header">
-                            <a class="navigation__link  navigation__link--header" href="#">Услуги</a>
-                        </li>
-                        <li class="navigation__item  navigation__item--header">
-                            <a class="navigation__link  navigation__link--header" href="#">Статьи</a>
-                        </li>
-                        <li class="navigation__item  navigation__item--header">
-                            <a class="navigation__link  navigation__link--header" href="#">Сертификаты</a>
-                        </li>
-                        <li class="navigation__item  navigation__item--header">
-                            <a class="navigation__link  navigation__link--header" href="#">Экспертиза</a>
-                        </li>
-                        <li class="navigation__item  navigation__item--header">
-                            <a class="navigation__link  navigation__link--header" href="#">Цены</a>
-                        </li>
-                        <li class="navigation__item  navigation__item--header">
-                            <a class="navigation__link  navigation__link--header" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
+            a(class="page-header__logo  logo")
+                picture
+                    source(media="(min-width: 768px)" srcset="img/logo-large.png")
+                    img(class="logo__image" src="img/logo-small.png" alt="Санитарная Эпидемиологическая Служба")
+
+            div(class="page-header__right-pane")
+                nav(class="page-header__navigation  navigation  navigation--header  is-hidden")
+                    ul(class="navigation__list")
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Услуги
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Статьи
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Сертификаты
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Экспертиза
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Цены
+                        li(class="navigation__item")
+                            a(class="navigation__link" href="#") Контакты
+
                 <span class="page-header__phone" href="#">8 (495) 142-50-54</span>
-                <a class="page-header__phone-button  button  button--transparent" href="#">Заказать звонок</a>
-            </div>
+                a(class="page-header__phone-button  button  button--transparent" href="#") Заказать звонок
 
         div(class="page-header__info")
             p(class="page-header__lead") Дезинсекция, дератизация
