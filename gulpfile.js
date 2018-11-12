@@ -17,7 +17,6 @@ var postcss = require('gulp-postcss');
 var pug = require('gulp-pug');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
-var webp = require('gulp-webp');
 var zopfli = require('imagemin-zopfli');
 
 // Task functions
@@ -92,10 +91,6 @@ var minbitmap = function () {
         quality: 90
       })
     ]))
-    .pipe(gulp.dest('./source/img/'))
-    .pipe(webp({
-      quality: 80
-    }))
     .pipe(gulp.dest('./source/img/'));
 }
 
@@ -114,7 +109,7 @@ var copysvg = function () {
 }
 
 var copybitmap = function () {
-  return gulp.src('./source/img/*.{jpg,png,webp}')
+  return gulp.src('./source/img/*.{jpg,png}')
     .pipe(gulp.dest('./build/img/'));
 }
 

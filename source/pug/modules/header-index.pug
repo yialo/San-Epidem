@@ -3,15 +3,10 @@ header(class="page__header  page-header  page-header--large")
         div(class="page-header__top-pane  page-header__top-pane--large")
             button(class="page-header__menu-button  page-header__menu-button--open" type="button")
                 span(class="visually-hidden") Открыть меню
-
             button(class="page-header__menu-button  page-header__menu-button--close  is-hidden" type="button")
                 span(class="visually-hidden") Закрыть меню
-
             a(class="page-header__logo  logo")
-                picture
-                    source(media="(min-width: 768px)" srcset="img/logo-large.png")
-                    img(class="logo__image" src="img/logo-small.png" alt="Санитарная Эпидемиологическая Служба")
-
+                img(class="logo__image" src="img/logo.svg" width="210" height="67" alt="Санитарная Эпидемиологическая Служба")
             div(class="page-header__right-pane")
                 nav(class="page-header__navigation  navigation  navigation--header  is-hidden")
                     ul(class="navigation__list")
@@ -35,6 +30,7 @@ header(class="page__header  page-header  page-header--large")
             p(class="page-header__lead") Дезинсекция, дератизация
                 br
                 | и дезинфекция
+                |
                 span(class="page-header__lead-string") в Москве и МО
             p(class="page-header__details  page-header__details--1") Стоимость дезинсекции и дератизации от 1200 рублей 100% юридическая гарантия в договоре
             p(class="page-header__details  page-header__details--2") Работаем круглосуточно 24/7 без выходных

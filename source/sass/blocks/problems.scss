@@ -97,6 +97,7 @@
         content: "";
         position: absolute;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &:not(:last-child) {
@@ -108,7 +109,7 @@
         right: 30px;
         width: 23px;
         height: 85px;
-        background-image: url("../img/problems-1.png");
+        background-image: url("../img/problems-1.svg");
     }
 
     &--2::before {
@@ -116,7 +117,7 @@
         right: 10px;
         width: 66px;
         height: 61px;
-        background-image: url("../img/problems-2.png");
+        background-image: url("../img/problems-2.svg");
     }
 
     &--3::before {
@@ -124,7 +125,7 @@
         right: 10px;
         width: 70px;
         height: 74px;
-        background-image: url("../img/problems-3.png");
+        background-image: url("../img/problems-3.svg");
     }
 
     &--4::before {
@@ -132,7 +133,7 @@
         right: 10px;
         width: 63px;
         height: 73px;
-        background-image: url("../img/problems-4.png");
+        background-image: url("../img/problems-4.svg");
     }
 
     &--5::before {
@@ -140,7 +141,7 @@
         right: 10px;
         width: 49px;
         height: 78px;
-        background-image: url("../img/problems-5.png");
+        background-image: url("../img/problems-5.svg");
     }
 
     &--6::before {
@@ -148,7 +149,7 @@
         right: 10px;
         width: 76px;
         height: 47px;
-        background-image: url("../img/problems-6.png");
+        background-image: url("../img/problems-6.svg");
     }
 
     @media (min-width: $min-tablet-width) {

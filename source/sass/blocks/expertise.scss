@@ -30,9 +30,9 @@
             left: 50%;
             width: 69px;
             height: 87px;
-            background-image: url("../img/expertise-microscope.svg");
+            background-image: url("../img/expertise-microscope.png");
             background-repeat: no-repeat;
-            background-size: 69px 87px;
+            background-size: cover;
             transform: translateX(-50%);
         }
     }
