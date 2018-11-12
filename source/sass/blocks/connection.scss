@@ -130,9 +130,13 @@
     display: block;
     width: 100%;
     padding: 20px;
-    color: white;
+    color: $asphalt;
     background-color: $light-gray;
     border-style: none;
+
+    &::placeholder {
+        color: #7b7b7b;
+    }
 
     &--textarea {
         resize: none;
@@ -141,6 +145,10 @@
 
 .connection__link {
     text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .connection__button {
