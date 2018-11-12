@@ -39,6 +39,7 @@ function init() {
         preset: 'islands#redStretchyIcon'
     });
 
+    map.behaviors.disable('scrollZoom');
     map.controls.add(zoomControlObject);
     map.controls.add(fullscreenControlObject);
     map.geoObjects.add(marker);
