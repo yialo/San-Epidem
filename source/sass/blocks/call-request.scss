@@ -5,10 +5,18 @@
 
     &.is-visible {
         display: block;
+        animation-name: bounce;
+        animation-duration: 0.4s;
+    }
+
+    &.is-error {
+        animation-name: shake;
+        animation-duration: 0.5s;
     }
 }
 
 .call-request__inner {
+    position: relative;
     padding-top: 50px;
     padding-bottom: 60px;
     padding-left: 40px;
@@ -92,5 +100,28 @@
 
     &:hover {
         text-decoration: none;
+    }
+}
+
+.call-request__close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("../img/call-request-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-style: none;
+
+    &:hover {
+        opacity: 0.75;
+    }
+
+    &:active {
+        opacity: 0.3;
     }
 }

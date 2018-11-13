@@ -4,15 +4,17 @@ section(class="call-request page__call-request")
         form(class="call-request__form" action="" method="POST")
             label(class="call-request__label  call-request__label--fullname" for="modal-fullname")
                 span(class="visually-hidden") Укажите имя
-                input(class="call-request__field" type="name" placeholder="Ваше имя" id="modal-fullname")
+                input(class="call-request__field call-request__field--fullname" type="name" placeholder="Ваше имя" id="modal-fullname" autocomplete="off")
             label(class="call-request__label  call-request__label--phone" for="modal-phone")
                 span(class="visually-hidden") Укажите телефон
-                input(class="call-request__field" type="tel" placeholder="Телефон" id="modal-phone")
+                input(class="call-request__field call-request__field--phone" type="tel" placeholder="Телефон" id="modal-phone" autocomplete="off")
             div(class="call-request__checkbox-wrapper")
-                input(class="call-request__checkbox  visually-hidden" type="checkbox" name="" value="" id="modal-policy")
+                input(class="call-request__checkbox  visually-hidden" type="checkbox" name="" value="" id="modal-policy" autocomplete="off")
                 label(class="call-request__label  call-request__label--policy" for="modal-policy") Соглашаюсь с
                     |
                     |
                     a(class="call-request__link" href="#") политикой конфиденциальности
             button(class="call-request__button  button  button--orange" type="submit")
                 span(class="button-fix") Отправить
+        button(class="call-request__close-button")
+            span(class="visually-hidden") Закрыть
