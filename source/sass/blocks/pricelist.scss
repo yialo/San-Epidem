@@ -110,6 +110,10 @@
         padding-bottom: 20px;
         background-color: transparent;
 
+        &:not(:last-child) {
+            border-bottom-style: none;
+        }
+
         &--active {
             position: relative;
             z-index: 0;
