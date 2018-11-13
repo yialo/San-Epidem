@@ -1,37 +1,48 @@
 .page-header {
-    padding-bottom: 40px;
+    position: relative;
+    padding-top: 30px;
     background-color: $asphalt;
 
+    &--large {
+        padding-bottom: 40px;
+    }
+
+    &--small {
+        padding-bottom: 30px;
+    }
+
     @media (min-width: $min-desktop-width) {
-        padding-top: 40px;
-        padding-bottom: 140px;
-        background-image: url("../img/header-backgound-large.png");
-        background-repeat: no-repeat;
-        background-position: calc(50% + 240px) 100%;
+        position: static;
+
+        &--large {
+            padding-bottom: 140px;
+            background-image: url("../img/header-backgound-large.png");
+            background-repeat: no-repeat;
+            background-position: calc(50% + 240px) 100%;
+        }
     }
 }
 
-.page-header__container {
-    position: relative;
-}
-
 .page-header__top-pane {
-    margin-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: 0;
+
+    &--large {
+        padding-bottom: 20px;
+    }
 
     @media (min-width: $min-desktop-width) {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 60px;
-        padding-bottom: 30px;
-        border-bottom: 2px solid $orange;
+
+        &--large {
+            padding-bottom: 30px;
+        }
     }
 }
 
 .page-header__menu-button {
     position: absolute;
-    top: 30px;
     z-index: 2;
     padding: 0;
     background-color: transparent;
@@ -41,21 +52,33 @@
     border-style: none;
 
     &--open {
-        right: 20px;
+        top: 40px;
+        right: calc(50% - 140px);
         width: 50px;
         height: 30px;
         background-image: url("../img/page-header-menu-open.svg");
     }
 
     &--close {
-        right: 30px;
+        top: 20px;
+        right: calc(50% - 130px);
         width: 30px;
         height: 30px;
         background-image: url("../img/page-header-menu-close.svg");
     }
 
+    @media (min-width: $min-tablet-width) {
+        &--open {
+            right: calc(50% - 360px);
+        }
+
+        &--close {
+            right: calc(50% - 350px);
+        }
+    }
+
     @media (max-width: $max-tablet-width) {
-        &--js-hidden {
+        &.is-hidden {
             display: none;
         }
     }
@@ -74,7 +97,7 @@
         width: 405px;
         height: 129px;
         margin-left: 50px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     @media (min-width: $min-desktop-width) {
@@ -101,8 +124,12 @@
 .page-header__navigation {
     position: absolute;
     top: 0;
-    left: 0;
+    left: calc(50% - 160px);
     z-index: 1;
+
+    @media (min-width: $min-tablet-width) {
+        left: calc(50% - 380px);
+    }
 
     @media (min-width: $min-desktop-width) {
         position: static;
@@ -146,16 +173,19 @@
 }
 
 .page-header__info {
+    padding-top: 20px;
+
     @media (min-width: $min-desktop-width) {
-        width: 680px;
-        padding-top: 50px;
+        padding-top: 110px;
+        padding-right: 500px;
         background-image: url("/img/page-header-redline.png");
         background-repeat: no-repeat;
-        background-position: 100% 0;
+        background-position: 80px 50px;
+        border-top: 2px solid $orange;
     }
 }
 
-.page-header__title {
+.page-header__lead {
     margin-top: 0;
     font-variant: small-caps;
     font-weight: 400;
@@ -175,53 +205,47 @@
     }
 }
 
-.page-header__title-string {
+.page-header__lead-string {
     color: white;
 }
 
 .page-header__details {
     margin-top: 0;
+    margin-bottom: 20px;
     font-weight: 300;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 28px;
     text-align: center;
     color: white;
-
-    &:first-of-type {
-        margin-bottom: 20px;
-    }
-
-    &:last-of-type {
-        margin-bottom: 30px;
-    }
 
     @media (min-width: $min-tablet-width) {
         margin-left: auto;
         margin-right: auto;
 
-        &:first-of-type {
+        &--1 {
             width: 600px;
         }
     }
 
     @media (min-width: $min-desktop-width) {
+        margin-bottom: 15px;
         margin-left: 120px;
         margin-right: 0;
-        line-height: 28px;
         text-align: left;
 
-        &:first-of-type {
-            width: 340px;
-            margin-bottom: 15px;
+        &--1 {
+            width: 320px;
         }
 
-        &:last-of-type {
+        &--2 {
             width: 380px;
         }
     }
 }
 
 .page-header__button {
+    margin-top: 30px;
+
     @media (min-width: $min-tablet-width) {
         width: 450px;
         margin-left: auto;
@@ -230,6 +254,7 @@
 
     @media (min-width: $min-desktop-width) {
         width: 315px;
+        margin-top: 22px;
         margin-left: 120px;
         margin-right: 0;
     }

@@ -1,0 +1,138 @@
+.worktypes-about__container {
+    @media (min-width: $min-tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.worktypes-about__image {
+    display: block;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 30px;
+
+    @media (min-width: $min-tablet-width) {
+        order: 1;
+        align-self: center;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        order: 0;
+        align-self: stretch;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+.worktypes-about__inner-container {
+    margin-bottom: 30px;
+
+    @media (min-width: $min-tablet-width) {
+        width: 420px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 800px;
+        margin-bottom: 50px;
+    }
+}
+
+.worktypes-about__title {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.worktypes-about__subtitle {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-gray;
+
+    @media (min-width: $min-tablet-width) {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        width: 100%;
+        margin-bottom: 60px;
+        padding-right: 300px;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
+    }
+}
+
+.worktypes-about__string {
+    color: $orange;
+}
+
+.worktypes-about__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+
+    &--1 {
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        width: 50%;
+
+        &--1 {
+            width: 300px;
+            margin-bottom: 0;
+            margin-right: 100px;
+        }
+
+        &--2 {
+            width: 380px;
+        }
+    }
+}
+
+.worktypes-about__item {
+    position: relative;
+    padding-left: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: $dark-gray;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        width: 10px;
+        height: 10px;
+        background-color: $orange;
+    }
+}
+
+.worktypes-about__button {
+    @media (min-width: $min-tablet-width) {
+        order: 1;
+        width: 420px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        order: 0;
+        width: 480px;
+        margin-left: 300px;
+    }
+}

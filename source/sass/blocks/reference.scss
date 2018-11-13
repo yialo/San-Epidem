@@ -1,17 +1,38 @@
 .reference {
     position: relative;
+    padding-top: 20px;
     background-color: white;
+
+    @media (min-width: $min-desktop-width) {
+        padding-top: 110px;
+        padding-bottom: 250px;
+    }
+}
+
+.reference__container {
+    padding-bottom: 50px;
+
+    @media (min-width: $min-desktop-width) {
+        padding-bottom: 0;
+    }
 }
 
 .reference__title {
-    padding-top: 100px;
-    margin-bottom: 65px;
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 500;
-
-    font-size: 36px;
-    line-height: 60px;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
     text-transform: uppercase;
     color: $dark-gray;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 60px;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: left;
+    }
 }
 
 .reference__title-string {
@@ -20,33 +41,45 @@
 
 .reference__list {
     margin-top: 0;
-    margin-left: 0;
+    margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: $dark-gray;
+
+    @media (min-width: $min-desktop-width) {
+        width: 580px;
+    }
 }
 
 .reference__item {
     position: relative;
-    margin: 10px;
+    padding-left: 40px;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
 
     &::before {
         content: "";
         position: absolute;
+        left: 10px;
+        top: 8px;
         width: 17px;
         height: 9px;
         background-image: url("../img/arrow-down.png");
         background-repeat: no-repeat;
-        left: -28px;
-        top: 8px;
     }
 }
 
 .reference__consultation {
     @media (min-width: $min-desktop-width) {
         position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: calc(50% + 10px);
     }
 }

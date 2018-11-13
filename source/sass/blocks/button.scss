@@ -2,6 +2,8 @@
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
     font-weight: 300;
     font-size: 18px;
     line-height: 27px;
@@ -9,6 +11,7 @@
     text-transform: uppercase;
     color: white;
     border: 2px solid $orange;
+    cursor: pointer;
 
     &--transparent {
         background-color: transparent;
@@ -24,8 +27,15 @@
         border-color: white;
     }
 
-    &--footer {
-        padding-top: 18px;
-        padding-bottom: 18px;
+    &--articles {
+        color: $dark-gray;
+        background-color: transparent;
+    }
+
+    @media (min-width: $min-tablet-width) {
+        &--footer {
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
     }
 }

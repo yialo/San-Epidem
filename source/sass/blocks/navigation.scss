@@ -1,12 +1,13 @@
 .navigation {
-    &--footer {
-        width: 180px;
-        padding-top: 70px;
+    @media (max-width: $max-tablet-width) {
+        &.is-hidden {
+            display: none;
+        }
     }
 
-    @media (max-width: $max-tablet-width) {
-        &--js-closed {
-            display: none;
+    @media (min-width: $min-desktop-width) {
+        &--footer {
+            padding-top: 70px;
         }
     }
 }
@@ -17,37 +18,58 @@
     padding-left: 0;
     list-style-type: none;
 
+    .navigation--footer & {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: -20px;
+    }
+
+    @media (min-width: $min-tablet-width) {
+        .navigation--footer & {
+            margin-top: 0;
+        }
+    }
+
     @media (min-width: $min-desktop-width) {
-        &--header {
+        .navigation--header & {
             display: flex;
             justify-content: flex-end;
+        }
+
+        .navigation--footer & {
+            display: block;
         }
     }
 }
 
 .navigation__item {
-    &--header {
+    .navigation--header & {
         background-color: $orange;
     }
 
-    &--header:not(:last-child) {
+    .navigation--header &:not(:last-child) {
         border-bottom: 1px solid white;
+    }
+
+    .navigation--footer & {
+        margin-top: 20px;
     }
 
 
     @media (min-width: $min-desktop-width) {
         position: relative;
 
-        &--header {
+        .navigation--header & {
             background-color: transparent;
         }
 
-        &--header:not(:last-child) {
+        .navigation--header &:not(:last-child) {
             margin-right: 40px;
             border-style: none;
         }
 
-        &--header:not(:last-child)::after {
+        .navigation--header &:not(:last-child)::after {
             content: "";
             position: absolute;
             top: 0;
@@ -57,7 +79,11 @@
             background-color: white;
         }
 
-        &--footer:not(:last-child) {
+        .navigation--footer & {
+            margin-top: 0;
+        }
+
+        .navigation--footer &:not(:last-child) {
             margin-bottom: 10px;
         }
     }
@@ -69,7 +95,7 @@
     line-height: 20px;
     color: white;
 
-    &--header {
+    .navigation--header & {
         display: block;
         width: 240px;
         padding-top: 15px;
@@ -79,12 +105,16 @@
     }
 
     @media (min-width: $min-desktop-width) {
-        &--header {
+        .navigation--header & {
             display: inline;
             padding-top: 0;
             padding-bottom: 0;
             text-align: left;
             text-transform: none;
+        }
+
+        .navigation--footer & {
+            font-variant: normal;
         }
     }
 }

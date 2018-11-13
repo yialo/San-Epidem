@@ -1,1 +1,17 @@
-//TODO: удалить данный файл, если здесь останется пусто
+.page__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+}
+
+.page__call-request {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    margin-left: -412px;
+    z-index: 4;
+    width: 824px;
+}

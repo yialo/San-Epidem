@@ -6,9 +6,7 @@ var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
 var del = require('del');
 var gulp = require('gulp');
-var include = require('posthtml-include');
 var mincss = require('gulp-csso');
-var minhtml = require('gulp-htmlmin');
 var minimage = require('gulp-imagemin');
 var minjs = require('gulp-uglify');
 var mozjpeg = require('imagemin-mozjpeg');
@@ -16,10 +14,9 @@ var notify = require('gulp-notify');
 var plumber = require('gulp-plumber');
 var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
-var posthtml = require('gulp-posthtml');
+var pug = require('gulp-pug');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
-var webp = require('gulp-webp');
 var zopfli = require('imagemin-zopfli');
 
 // Task functions
@@ -94,10 +91,6 @@ var minbitmap = function () {
         quality: 90
       })
     ]))
-    .pipe(gulp.dest('./source/img/'))
-    .pipe(webp({
-      quality: 80
-    }))
     .pipe(gulp.dest('./source/img/'));
 }
 
@@ -116,7 +109,7 @@ var copysvg = function () {
 }
 
 var copybitmap = function () {
-  return gulp.src('./source/img/*.{jpg,png,webp}')
+  return gulp.src('./source/img/*.{jpg,png}')
     .pipe(gulp.dest('./build/img/'));
 }
 
@@ -143,16 +136,14 @@ var style = function () {
 }
 
 var html = function () {
-  return gulp.src('./source/*.html')
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(minhtml({
-      collapseWhitespace: true,
-      removeComments: true
-    }))
-    .pipe(gulp.dest('./build/'));
-}
+    return gulp.src('./source/pug/*.pug')
+      .pipe(plumber({
+        errorHandler: notify.onError()
+      }))
+      .pipe(pug())
+      .pipe(gulp.dest('./build/'))
+      .pipe(browserSync.stream());
+  }
 
 var serve = function () {
   browserSync.init({
@@ -162,9 +153,9 @@ var serve = function () {
     cors: true,
     ui: false
   });
-  gulp.watch('./source/sass/**/*.scss', style);
   gulp.watch('./source/js/*.js', scripts).on('change', browserSync.reload);
-  gulp.watch('./source/*.html', html).on('change', browserSync.reload);
+  gulp.watch('./source/sass/**/*.scss', style);
+  gulp.watch('./source/pug/**/*.pug', html);
 }
 
 // Gulp tasks

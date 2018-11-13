@@ -1,16 +1,126 @@
 .page-main {
-    padding-top: 40px;
+    padding-top: 20px;
     background-color: $light-gray;
 
-    @media (min-width: $min-desktop-width) {
+    &--indexpage {
+        padding-top: 40px;
+    }
+
+    &--textpage {
+        background-color: #fefefe;
+    }
+
+    &--contacts {
         padding-top: 0;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        &--indexpage {
+            padding-top: 0;
+        }
+    }
+}
+
+.page-main__breadcrumbs {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    .page-main--worktypes-about-page & {
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 60px;
+
+        .page-main--worktypes-about-page & {
+            margin-bottom: 80px;
+        }
     }
 }
 
 .page-main__worktypes {
-    margin-bottom: 80px;
+    .page-main--indexpage & {
+        margin-bottom: 80px;
+    }
+
+    .page-main--worktypes-page & {
+        margin-bottom: 40px;
+    }
 
     @media (min-width: $min-tablet-width) {
+        .page-main & {
+            margin-bottom: 80px;
+        }
+    }
+
+    @media (min-width: $min-desktop-width) {
+        .page-main & {
+            margin-bottom: 120px;
+        }
+
+        .page-main--indexpage & {
+            position: relative;
+            top: -35px;
+        }
+    }
+}
+
+.page-main__worktypes-about {
+    margin-bottom: 30px;
+
+    @media (min-width: $min-tablet-width) {
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 100px;
+    }
+}
+
+.page-main__worktypes-text {
+    margin-bottom: 30px;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 100px;
+    }
+}
+
+.page-main__textstyle {
+    margin-bottom: 20px;
+
+    @media (min-width: $min-tablet-width) {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 110px;
+    }
+}
+
+.page-main__certificates {
+    margin-bottom: 30px;
+
+    @media (min-width: $min-tablet-width) {
+        margin-bottom: 60px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 100px;
+    }
+}
+
+.page-main__price-menu {
+    margin-bottom: 40px;
+}
+
+.page-main__pricelist {
+    margin-bottom: 80px;
+}
+
+.page-main__articles {
+    margin-bottom: 30px;
+
+    @media (min-width: $min-desktop-width) {
         margin-bottom: 120px;
     }
 }

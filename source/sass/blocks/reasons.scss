@@ -1,38 +1,50 @@
 .reasons {
-    padding-top: 90px;
+    padding-top: 50px;
     padding-bottom: 50px;
+
+    @media (min-width: $min-tablet-width) {
+        padding-bottom: 20px;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        padding-top: 80px;
+    }
 }
 
 .reasons__title {
     margin-top: 0;
-    margin-bottom: 80px;
-    font-size: 36px;
+    margin-bottom: 40px;
     font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
     text-align: center;
     text-transform: uppercase;
     color: $orange;
+
+    @media (min-width: $min-desktop-width) {
+        margin-bottom: 70px;
+    }
 }
 
 .reasons__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    overflow: hidden;
-    max-height: 840px;
-    margin-top: -20px;
+    margin-top: 0;
     margin-bottom: 0;
-    margin-left: -20px;
     padding-left: 0;
     list-style-type: none;
+
+    @media (min-width: $min-tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-top: -20px;
+        margin-left: -20px;
+    }
 }
 
 .reasons__item {
     position: relative;
-    width: 380px;
-    margin-top: 20px;
-    margin-left: 20px;
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-left: 100px;
     padding-right: 30px;
     background-color: white;
@@ -56,6 +68,73 @@
         width: 40px;
         height: 100%;
         background-color: $light-gray;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: $min-tablet-width) {
+        width: calc((100% - 40px) / 2);
+        margin-top: 20px;
+        margin-left: 20px;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+
+        &--3 {
+            top: -48px;
+        }
+
+        &--4 {
+            top: 0;
+        }
+
+        &--5 {
+            top: -48px;
+        }
+
+        &--6 {
+            top: -18px;
+        }
+
+        &--7 {
+            top: -78px;
+        }
+
+        &--8 {
+            top: -18px;
+        }
+    }
+
+    @media (min-width: $min-desktop-width) {
+        width: 380px;
+        padding-bottom: 50px;
+
+        &--3 {
+            top: 0;
+        }
+
+        &--4 {
+            top: -72px;
+        }
+
+        &--5 {
+            top: 0;
+        }
+
+        &--6 {
+            top: 0;
+        }
+
+        &--7 {
+            top: -72px;
+        }
+
+        &--8 {
+            top: -30px;
+        }
     }
 }
 

@@ -1,0 +1,47 @@
+extends scaffolding/page-layout.pug
+
+block title
+    | Контакты | Санитарная Эпидемиологическая Служба
+
+block header
+    include modules/header-inner.pug
+
+block main
+    main(class="page__main  page-main  page-main--contacts")
+        h1(class="page-main__title  visually-hidden") Наши контактные данные
+
+        block contacts
+            include modules/contacts-block.pug
+
+        section(class="page-main__connection  connection")
+            div(class="connection__container  container")
+                h2(class="connection__title  inner-section-title  inner-section-title--left")
+                    span(class="inner-section-title__string") Связаться
+                    span(class="inner-section-title__text-wrap")
+                        <span> </span>
+                        br
+                        | с нами
+                form(class="connection__form" action="" method="POST")
+                    label(class="connection__label  connection__label--fullname" for="fullname")
+                        span(class="visually-hidden") Укажите имя
+                        input(class="connection__field" type="name" placeholder="Ваше имя" id="fullname")
+                    label(class="connection__label  connection__label--phone" for="phone")
+                        span(class="visually-hidden") Укажите телефон
+                        input(class="connection__field" type="tel" placeholder="Телефон" id="phone")
+                    label(class="connection__label  connection__label--email" for="email")
+                        span(class="visually-hidden") Укажите адрес электронной почты
+                        input(class="connection__field" type="email" placeholder="E-mail" id="email")
+                    label(class="connection__label  connection__label--object" for="object")
+                        span(class="visually-hidden") Укажите объект
+                        input(class="connection__field" type="text" placeholder="Объект" id="object")
+                    label(class="connection__label  connection__label--comment" for="comment")
+                        span(class="visually-hidden") Ваш комментарий
+                        textarea(class="connection__field  connection__field--textarea" name="comment" placeholder="Комментарий" id="comment")
+                    div(class="connection__checkbox-wrapper")
+                        input(class="connection__checkbox  visually-hidden" type="checkbox" name="" value="" id="policy")
+                        label(class="connection__label  connection__label--policy" for="policy") Соглашаюсь с
+                            |
+                            |
+                            a(class="connection__link" href="#") политикой конфиденциальности
+                    button(class="connection__button  button  button--orange" type="submit")
+                        span(class="button-fix") Отправить

@@ -8,7 +8,7 @@
         padding-bottom: 50px;
         background-image: url("../img/problems-cup.png");
         background-repeat: no-repeat;
-        background-position: calc(50% - 320px) 550px;
+        background-position: calc(50% - 320px) 600px;
     }
 
     @media (min-width: $min-desktop-width) {
@@ -21,25 +21,33 @@
 .problems__container {
     @media (min-width: $min-tablet-width) {
         display: flex;
+        align-items: flex-start;
         justify-content: space-between;
+    }
+
+    @media (min-width: $min-desktop-width) {
+        align-items: stretch;
     }
 }
 
 .problems__lead {
     margin-top: 0;
     margin-bottom: 50px;
-    font-variant: small-caps;
     font-weight: 500;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 40px;
     text-transform: uppercase;
     color: white;
 
     @media (min-width: $min-tablet-width) {
-        width: 240px;
-        margin-left: 20px;
-        font-size: 26px;
+        width: 260px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 18px;
+        padding-right: 18px;
+        font-size: 24px;
         line-height: 70px;
+        border: 2px solid $orange;
     }
 
     @media (min-width: $min-desktop-width) {
@@ -52,6 +60,7 @@
         padding-top: 71px;
         padding-left: 92px;
         line-height: 40px;
+        border-style: none;
     }
 }
 
@@ -88,6 +97,7 @@
         content: "";
         position: absolute;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &:not(:last-child) {
@@ -99,7 +109,7 @@
         right: 30px;
         width: 23px;
         height: 85px;
-        background-image: url("../img/problems-1.png");
+        background-image: url("../img/problems-1.svg");
     }
 
     &--2::before {
@@ -107,7 +117,7 @@
         right: 10px;
         width: 66px;
         height: 61px;
-        background-image: url("../img/problems-2.png");
+        background-image: url("../img/problems-2.svg");
     }
 
     &--3::before {
@@ -115,7 +125,7 @@
         right: 10px;
         width: 70px;
         height: 74px;
-        background-image: url("../img/problems-3.png");
+        background-image: url("../img/problems-3.svg");
     }
 
     &--4::before {
@@ -123,7 +133,7 @@
         right: 10px;
         width: 63px;
         height: 73px;
-        background-image: url("../img/problems-4.png");
+        background-image: url("../img/problems-4.svg");
     }
 
     &--5::before {
@@ -131,7 +141,7 @@
         right: 10px;
         width: 49px;
         height: 78px;
-        background-image: url("../img/problems-5.png");
+        background-image: url("../img/problems-5.svg");
     }
 
     &--6::before {
@@ -139,7 +149,7 @@
         right: 10px;
         width: 76px;
         height: 47px;
-        background-image: url("../img/problems-6.png");
+        background-image: url("../img/problems-6.svg");
     }
 
     @media (min-width: $min-tablet-width) {

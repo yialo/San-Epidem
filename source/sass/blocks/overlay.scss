@@ -1,0 +1,8 @@
+.overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.25);
+
+    &.is-visible {
+        display: block;
+    }
+}

@@ -12,6 +12,14 @@
 
     @media (min-width: $min-tablet-width) {
         width: $min-tablet-width;
+
+        &--workstyle {
+            padding-left: 320px;
+        }
+
+        &--textstyle {
+            padding-left: 320px;
+        }
     }
 
     @media (min-width: $min-desktop-width) {
@@ -20,6 +28,16 @@
         &--workflow {
             padding-left: 20px;
             padding-right: 20px;
+        }
+
+        &--workstyle {
+            padding-left: 20px;
+            padding-right: 620px;
+        }
+
+        &--textstyle {
+            padding-left: 400px;
+            padding-right: 240px;
         }
     }
 }

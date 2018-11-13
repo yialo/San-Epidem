@@ -1,0 +1,115 @@
+extends scaffolding/page-layout.pug
+
+block title
+    | Статьи | Санитарная Эпидемиологическая Служба
+
+block header
+    include modules/header-inner.pug
+
+block main
+    main(class="page__main  page-main  page-main--certificates")
+        ul(class="page-main__breadcrumbs  breadcrumbs  container")
+            li(class="breadcrumb__item")
+                a(class="breadcrumb__link" href="#") Главная
+            li(class="breadcrumb__item  breadcrumb__item--active")
+                a(class="breadcrumb__link") Услуги
+
+        h1(class="page-main__title  visually-hidden") Наши статьи
+
+        section(class="page-main__articles  articles")
+            div(class="articles__container  container")
+                h2(class="articles__title") Статьи
+                ul(class="articles__list")
+                    li(class="articles__column")
+                        article(class="articles__item  article  article--horizontal")
+                            a(class="article__link" href="#")
+                                picture
+                                    source(media="(min-width: 768px)" srcset="img/articles-image-1-large.jpg")
+                                    img(class="article__image" src="img/articles-image-1-small.jpg" alt="Статья 1")
+                                div(class="article__container")
+                                    h3(class="article__title") Наш центр дезинсекции, дезинфекции и дератизации
+                                    p(class="article__subtitle") Несоблюдение техники поведения обработки или экономия препарата значительно снижает эффективность мероприятия
+
+                        article(class="articles__item  article  article--vertical")
+                            a(class="article__link" href="#")
+                                picture
+                                    source(media="(min-width: 768px)" srcset="img/articles-image-2-large.jpg")
+                                    img(class="article__image" src="img/articles-image-2-small.jpg" alt="Статья 2")
+                                div(class="article__container")
+                                    div(class="article__title-wrapper")
+                                        h3(class="article__title") Большой штат опытных сотрудников, возможен выезд в день заказа
+
+                        article(class="articles__item  article  article--horizontal")
+                            a(class="article__link" href="#")
+                                picture
+                                    source(media="(min-width: 768px)" srcset="img/articles-image-3-large.jpg")
+                                    img(class="article__image" src="img/articles-image-3-small.jpg" alt="Статья 3")
+                                div(class="article__container")
+                                    h3(class="article__title") Cледует отметить, что от выбора подрядчика
+                                    p(class="article__subtitle") Cледует отметить, что от выбора подрядчика, напрямую будет зависеть и конечный результат, поскольку факторов (по опыту нашего центра), влияющих на качественное проведение мероприятий достаточно немало.
+
+
+                    li(class="articles__column")
+                        article(class="articles__item  article  article--horizontal")
+                            a(class="article__link" href="#")
+                                picture
+                                    source(media="(min-width: 768px)" srcset="img/articles-image-4-large.jpg")
+                                    img(class="article__image" src="img/articles-image-4-small.jpg" alt="Статья 4")
+
+                                div(class="article__container")
+                                    h3(class="article__title") Cледует отметить, что от выбора подрядчика
+                                    p(class="article__subtitle") Cледует отметить, что от выбора подрядчика, напрямую будет зависеть и конечный результат, поскольку факторов (по опыту нашего центра), влияющих на качественное проведение мероприятий достаточно немало.
+
+                        article(class="articles__item  article  article--horizontal")
+                            a(class="article__link" href="#")
+                                picture
+                                    source(media="(min-width: 768px)" srcset="img/articles-image-5-large.jpg")
+                                    img(class="article__image" src="img/articles-image-5-small.jpg" alt="Статья 5")
+
+                                div(class="article__container")
+                                    h3(class="article__title") Наш центр дезинсекции, дезинфекции и дератизации
+                                    p(class="article__subtitle") Несоблюдение техники поведения обработки или экономия препарата значительно снижает эффективность мероприятия Несоблюдение техники поведения обработки или экономия препарата значительно
+
+                        article(class="articles__item  article  article--vertical")
+                            a(class="article__link" href="#")
+                                picture
+                                    source(media="(min-width: 768px)" srcset="img/articles-image-2-large.jpg")
+                                    img(class="article__image" src="img/articles-image-2-small.jpg" alt="Статья 2")
+
+                                div(class="article__container")
+                                    div(class="article__title-wrapper")
+                                        h3(class="article__title") Большой штат опытных сотрудников, возможен выезд в день заказа
+
+                    li(class="articles__column")
+                        article(class="articles__item  article  article--vertical")
+                            a(class="article__link" href="#")
+                                picture
+                                    source(media="(min-width: 768px)" srcset="img/articles-image-6-large.jpg")
+                                    img(class="article__image" src="img/articles-image-6-small.jpg" alt="Статья 6")
+
+                                div(class="article__container")
+                                    div(class="article__title-wrapper")
+                                        h3(class="article__title") Большой штат опытных сотрудников, возможен выезд в день заказа
+
+                        article(class="articles__item  article  article--horizontal")
+                            a(class="article__link" href="#")
+                                picture
+                                    source(media="(min-width: 768px)" srcset="img/articles-image-7-large.jpg")
+                                    img(class="article__image" src="img/articles-image-7-small.jpg" alt="Статья 7")
+                                div(class="article__container")
+                                    h3(class="article__title") Cледует отметить, что от выбора подрядчика
+                                    p(class="article__subtitle") Cледует отметить, что от выбора подрядчика, напрямую будет зависеть и конечный результат, поскольку факторов (по опыту нашего центра), влияющих на качественное проведение мероприятий достаточно немало.
+
+                        article(class="articles__item  article  article--horizontal")
+                            a(class="article__link" href="#")
+                                picture
+                                    source(media="(min-width: 768px)" srcset="img/articles-image-1-large.jpg")
+                                    img(class="article__image" src="img/articles-image-1-small.jpg" alt="Статья 1")
+                                div(class="article__container")
+                                    h3(class="article__title") Наш центр дезинсекции, дезинфекции и дератизации
+                                    p(class="article__subtitle") Несоблюдение техники поведения обработки или экономия препарата значительно снижает эффективность мероприятия
+
+                a(class="articles__button  button  button--articles" href="#") Показать еще
+
+        block contacts
+            include modules/contacts-block.pug
