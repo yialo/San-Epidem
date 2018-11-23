@@ -1,6 +1,8 @@
 var headerModalCallButton = document.querySelector('.page-header__phone-button');
+var headerExtraButton = document.querySelector('.page-header__button');
 var footerModalCallButton = document.querySelector('.page-footer__button');
 var problemsButton = document.querySelector('.problems__button');
+var expertiseButton = document.querySelector('.expertise__button');
 var contactsButton = document.querySelector('.contacts__button');
 var overlay = document.querySelector('.overlay');
 var modalCallRequest = document.querySelector('.call-request');
@@ -16,7 +18,19 @@ headerModalCallButton.addEventListener('click', function(evt) {
     modalCallRequest.classList.add('is-visible');
 });
 
+headerExtraButton.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    overlay.classList.add('is-visible');
+    modalCallRequest.classList.add('is-visible');
+});
+
 problemsButton.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    overlay.classList.add('is-visible');
+    modalCallRequest.classList.add('is-visible');
+});
+
+expertiseButton.addEventListener('click', function(evt) {
     evt.preventDefault();
     overlay.classList.add('is-visible');
     modalCallRequest.classList.add('is-visible');
