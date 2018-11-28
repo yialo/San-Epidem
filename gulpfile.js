@@ -137,10 +137,10 @@ var style = function () {
 
 var html = function () {
     return gulp.src('./source/pug/*.pug')
-      .pipe(plumber({
-        errorHandler: notify.onError()
+      .pipe(plumber())
+      .pipe(pug({
+          pretty: true
       }))
-      .pipe(pug())
       .pipe(gulp.dest('./build/'))
       .pipe(browserSync.stream());
   }
