@@ -1,6 +1,5 @@
 .price-table {
     width: 1180px;
-    font-weight: 500;
     line-height: 24px;
     border-collapse: collapse;
 }
@@ -29,10 +28,26 @@
     &:nth-child(1) {
         padding-left: 20px;
         text-align: left;
+
+        .price-table__row--head & {
+            font-weight: 500;
+        }
+
+        .price-table__row--body & {
+            font-weight: 700;
+        }
     }
 
     &:not(:nth-child(1)) {
         text-align: center;
+
+        .price-table__row--head & {
+            font-weight: 400;
+        }
+
+        .price-table__row--body & {
+            font-weight: 500;
+        }
     }
 
     .price-table--1 &:nth-child(1) {
