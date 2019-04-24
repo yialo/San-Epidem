@@ -1,76 +1,76 @@
 .lead {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: $light-gray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $light-gray;
 
-    @media (min-width: $min-desktop-width) {
-        min-height: 320px;
-        padding-top: 90px;
-        padding-bottom: 90px;
-    }
+  @media (min-width: $min-desktop-width) {
+    min-height: 320px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 
 .lead__container {
-    @media (min-width: $min-tablet-width) {
-        display: flex;
-    }
+  @media (min-width: $min-tablet-width) {
+    display: flex;
+  }
 
-    @media (min-width: $min-desktop-width) {
-        position: relative;
-        display: block;
-        padding-right: 680px;
-    }
+  @media (min-width: $min-desktop-width) {
+    position: relative;
+    display: block;
+    padding-right: 680px;
+  }
 }
 
 .lead__image-wrapper {
-    display: block;
+  display: block;
 
-    @media (min-width: $min-tablet-width) {
-        order: 1;
-    }
+  @media (min-width: $min-tablet-width) {
+    order: 1;
+  }
 }
 
 .lead__image {
-    width: 280px;
-    height: 159px;
-    margin-bottom: 20px;
+  width: 280px;
+  height: 159px;
+  margin-bottom: 20px;
 
-    @media (min-width: $min-tablet-width) {
-        margin-bottom: 0;
-    }
+  @media (min-width: $min-tablet-width) {
+    margin-bottom: 0;
+  }
 
-    @media (min-width: $min-desktop-width) {
-        position: absolute;
-        top: -147px;
-        right: 20px;
-        width: 613px;
-        height: 348px;
-    }
+  @media (min-width: $min-desktop-width) {
+    position: absolute;
+    top: -147px;
+    right: 20px;
+    width: 613px;
+    height: 348px;
+  }
 }
 
 .lead__text {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    color: $dark-gray;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-gray;
 
-    @media (min-width: $min-tablet-width) {
-        margin-right: 20px;
-        align-self: center;
-        font-size: 20px;
-        line-height: 32px;
-    }
+  @media (min-width: $min-tablet-width) {
+    margin-right: 20px;
+    align-self: center;
+    font-size: 20px;
+    line-height: 32px;
+  }
 
-    @media (min-width: $min-desktop-width) {
-        margin-right: 0;
-        font-size: 24px;
-        line-height: 36px;
-    }
+  @media (min-width: $min-desktop-width) {
+    margin-right: 0;
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .lead__string {
-    font-weight: 700;
-    color: $orange;
+  font-weight: 700;
+  color: $orange;
 }

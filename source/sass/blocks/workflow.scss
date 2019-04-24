@@ -1,136 +1,136 @@
 .workflow {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
 
-    @media (min-width: $min-desktop-width) {
-        padding-top: 0;
-        padding-bottom: 0;
-        background-image: url("../img/workflow-background.png");
-        background-repeat: no-repeat;
-        background-position: calc(50% - 20px) 240px;
-    }
+  @media (min-width: $min-desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url("../img/workflow-background.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 20px) 240px;
+  }
 }
 
 .workflow__container {
-    @media (min-width: $min-desktop-width) {
-        position: relative;
-        height: 1000px;
-        padding-top: 155px;
-    }
+  @media (min-width: $min-desktop-width) {
+    position: relative;
+    height: 1000px;
+    padding-top: 155px;
+  }
 }
 
 .workflow__title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 36px;
-    line-height: 50px;
-    text-align: center;
-    color: black;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+  color: black;
 
-    @media (min-width: $min-desktop-width) {
-        width: 200px;
-        margin-bottom: 0;
-        text-align: left;
-    }
+  @media (min-width: $min-desktop-width) {
+    width: 200px;
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 
 .workflow__title-string {
-    color: $orange;
+  color: $orange;
 }
 
 .workflow__list {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  list-style-type: none;
 
-    @media (min-width: $min-tablet-width) {
-        display: flex;
-        flex-wrap: wrap;
-        width: 640px;
-    }
+  @media (min-width: $min-tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+  }
 
-    @media (min-width: $min-desktop-width) {
-        display: block;
-        width: auto;
-    }
+  @media (min-width: $min-desktop-width) {
+    display: block;
+    width: auto;
+  }
 }
 
 .workflow__item {
-    position: relative;
-    width: 320px;
-    height: 320px;
-    padding-top: 150px;
-    padding-left: 65px;
-    padding-right: 65px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: $orange;
-    background-image: url("../img/workflow-circle.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  position: relative;
+  width: 320px;
+  height: 320px;
+  padding-top: 150px;
+  padding-left: 65px;
+  padding-right: 65px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: $orange;
+  background-image: url("../img/workflow-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
 
-    @media (min-width: $min-tablet-width) {
-        &--2 {
-            top: 160px;
-        }
-
-        &--4 {
-            top: 160px;
-        }
+  @media (min-width: $min-tablet-width) {
+    &--2 {
+      top: 160px;
     }
 
-    @media (min-width: $min-desktop-width) {
-        position: absolute;
-
-        &--1 {
-            top: 85px;
-            left: 400px;
-        }
-
-        &--2 {
-            top: 360px;
-            left: 700px;
-            z-index: 1;
-        }
-
-        &--3 {
-            top: 360px;
-            left: 200px;
-            z-index: 1;
-        }
-
-        &--4 {
-            top: 625px;
-            left: 400px;
-        }
-
-        &--5 {
-            top: 625px;
-            left: 900px;
-        }
+    &--4 {
+      top: 160px;
     }
+  }
+
+  @media (min-width: $min-desktop-width) {
+    position: absolute;
+
+    &--1 {
+      top: 85px;
+      left: 400px;
+    }
+
+    &--2 {
+      top: 360px;
+      left: 700px;
+      z-index: 1;
+    }
+
+    &--3 {
+      top: 360px;
+      left: 200px;
+      z-index: 1;
+    }
+
+    &--4 {
+      top: 625px;
+      left: 400px;
+    }
+
+    &--5 {
+      top: 625px;
+      left: 900px;
+    }
+  }
 }
 
 .workflow__item-number {
-    position: absolute;
-    top: -5px;
-    right: 150px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 40px;
-    padding-right: 25px;
-    font-weight: 700;
-    font-size: 160px;
-    line-height: 160px;
-    text-align: center;
-    color: #eae9e7;
-    background-color: white;
+  position: absolute;
+  top: -5px;
+  right: 150px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 40px;
+  padding-right: 25px;
+  font-weight: 700;
+  font-size: 160px;
+  line-height: 160px;
+  text-align: center;
+  color: #eae9e7;
+  background-color: white;
 }

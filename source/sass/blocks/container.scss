@@ -1,43 +1,43 @@
 .container {
-    width: 320px;
+  width: 320px;
 
-    @include margin-hor;
-    padding-left: 20px;
-    padding-right: 20px;
+  @include margin-hor();
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &--workflow {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $min-tablet-width) {
+    width: $min-tablet-width;
+
+    &--workstyle {
+      padding-left: 320px;
+    }
+
+    &--textstyle {
+      padding-left: 320px;
+    }
+  }
+
+  @media (min-width: $min-desktop-width) {
+    width: $min-desktop-width;
 
     &--workflow {
-        padding-left: 0;
-        padding-right: 0;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
-    @media (min-width: $min-tablet-width) {
-        width: $min-tablet-width;
-
-        &--workstyle {
-            padding-left: 320px;
-        }
-
-        &--textstyle {
-            padding-left: 320px;
-        }
+    &--workstyle {
+      padding-left: 20px;
+      padding-right: 620px;
     }
 
-    @media (min-width: $min-desktop-width) {
-        width: $min-desktop-width;
-
-        &--workflow {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        &--workstyle {
-            padding-left: 20px;
-            padding-right: 620px;
-        }
-
-        &--textstyle {
-            padding-left: 400px;
-            padding-right: 240px;
-        }
+    &--textstyle {
+      padding-left: 400px;
+      padding-right: 240px;
     }
+  }
 }

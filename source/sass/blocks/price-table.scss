@@ -1,97 +1,96 @@
 .price-table {
-    width: 1180px;
-    line-height: 24px;
-    border-collapse: collapse;
+  width: 1180px;
+  line-height: 24px;
+  border-collapse: collapse;
 }
 
 .price-table__row {
-    font-size: 16px;
+  font-size: 16px;
 
-    &--head {
-        color: $orange;
-        background-color: white;
-    }
+  &--head {
+    color: $orange;
+    background-color: white;
+  }
 
-    &--body {
-        color: $dark-gray;
-    }
+  &--body {
+    color: $dark-gray;
+  }
 
-    &--body:nth-child(even) {
-        background-color: white;
-    }
+  &--body:nth-child(even) {
+    background-color: white;
+  }
 }
 
 .price-table__cell {
-    padding-top: 18px;
-    padding-bottom: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
-    &:nth-child(1) {
-        padding-left: 20px;
-        text-align: left;
+  &:nth-child(1) {
+    padding-left: 20px;
+    text-align: left;
 
-        .price-table__row--head & {
-            font-weight: 500;
-        }
-
-        .price-table__row--body & {
-            font-weight: 700;
-        }
+    .price-table__row--head & {
+      font-weight: 500;
     }
 
-    &:not(:nth-child(1)) {
-        text-align: center;
+    .price-table__row--body & {
+      font-weight: 700;
+    }
+  }
 
-        .price-table__row--head & {
-            font-weight: 400;
-        }
+  &:not(:nth-child(1)) {
+    text-align: center;
 
-        .price-table__row--body & {
-            font-weight: 500;
-        }
+    .price-table__row--head & {
+      font-weight: 400;
     }
 
-    .price-table--1 &:nth-child(1) {
-        width: 200px;
-        padding-right: 50px;
+    .price-table__row--body & {
+      font-weight: 500;
     }
+  }
 
-    .price-table--1 &:nth-child(2) {
-        width: 180px;
-    }
+  .price-table--1 &:nth-child(1) {
+    width: 200px;
+    padding-right: 50px;
+  }
 
-    .price-table--1 &:nth-child(3) {
-        width: 220px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .price-table--1 &:nth-child(2) {
+    width: 180px;
+  }
 
-    .price-table--1 &:nth-child(4) {
-        width: 260px;
-        padding-right: 10px;
-    }
+  .price-table--1 &:nth-child(3) {
+    width: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .price-table--1 &:nth-child(5) {
-        width: 160px;
-    }
+  .price-table--1 &:nth-child(4) {
+    width: 260px;
+    padding-right: 10px;
+  }
 
-    .price-table--1 &:nth-child(6) {
-        width: 160px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .price-table--1 &:nth-child(5) {
+    width: 160px;
+  }
 
-    .price-table--2 &:nth-child(1) {
-        width: 380px;
-    }
+  .price-table--1 &:nth-child(6) {
+    width: 160px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .price-table--2 &:nth-child(2) {
-        width: 240px;
-    }
+  .price-table--2 &:nth-child(1) {
+    width: 380px;
+  }
 
-    .price-table--2 &:nth-child(3) {
-        width: 560px;
-        padding-left: 180px;
-        padding-right: 80px;
-    }
+  .price-table--2 &:nth-child(2) {
+    width: 240px;
+  }
+
+  .price-table--2 &:nth-child(3) {
+    width: 560px;
+    padding-left: 180px;
+    padding-right: 80px;
+  }
 }
-

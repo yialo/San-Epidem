@@ -1,273 +1,273 @@
 .problems {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    background-color: $asphalt;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: $asphalt;
 
-    @media (min-width: $min-tablet-width) {
-        padding-top: 75px;
-        padding-bottom: 50px;
-        background-image: url("../img/problems-cup.png");
-        background-repeat: no-repeat;
-        background-position: calc(50% - 320px) 600px;
-    }
+  @media (min-width: $min-tablet-width) {
+    padding-top: 75px;
+    padding-bottom: 50px;
+    background-image: url("../img/problems-cup.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 320px) 600px;
+  }
 
-    @media (min-width: $min-desktop-width) {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        background-position: calc(50% - 510px) 450px;
-    }
+  @media (min-width: $min-desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: calc(50% - 510px) 450px;
+  }
 }
 
 .problems__container {
-    @media (min-width: $min-tablet-width) {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+  @media (min-width: $min-tablet-width) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-    @media (min-width: $min-desktop-width) {
-        align-items: stretch;
-    }
+  @media (min-width: $min-desktop-width) {
+    align-items: stretch;
+  }
 }
 
 .problems__lead {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: white;
+
+  @media (min-width: $min-tablet-width) {
+    width: 260px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
     font-size: 24px;
+    line-height: 70px;
+    border: 2px solid $orange;
+  }
+
+  @media (min-width: $min-desktop-width) {
+    width: 380px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    background-image: url("../img/problems-redline.png");
+    background-repeat: no-repeat;
+    padding-top: 71px;
+    padding-left: 92px;
     line-height: 40px;
-    text-transform: uppercase;
-    color: white;
-
-    @media (min-width: $min-tablet-width) {
-        width: 260px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 18px;
-        padding-right: 18px;
-        font-size: 24px;
-        line-height: 70px;
-        border: 2px solid $orange;
-    }
-
-    @media (min-width: $min-desktop-width) {
-        width: 380px;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 0;
-        background-image: url("../img/problems-redline.png");
-        background-repeat: no-repeat;
-        padding-top: 71px;
-        padding-left: 92px;
-        line-height: 40px;
-        border-style: none;
-    }
+    border-style: none;
+  }
 }
 
 .problems__string {
-    color: $orange;
+  color: $orange;
 }
 
 .problems__list {
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-left: 0;
-    list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-left: 0;
+  list-style-type: none;
 
-    @media (min-width: $min-tablet-width) {
-        width: 440px;
-        padding-top: 15px;
-    }
+  @media (min-width: $min-tablet-width) {
+    width: 440px;
+    padding-top: 15px;
+  }
 
-    @media (min-width: $min-desktop-width) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 780px;
-        margin-top: -65px;
-        margin-bottom: 60px;
-        padding-top: 0;
-    }
+  @media (min-width: $min-desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 780px;
+    margin-top: -65px;
+    margin-bottom: 60px;
+    padding-top: 0;
+  }
 }
 
 .problems__item {
-    position: relative;
+  position: relative;
 
-    &::before {
-        content: "";
-        position: absolute;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &--1::before {
+    top: -10px;
+    right: 30px;
+    width: 23px;
+    height: 85px;
+    background-image: url("../img/problems-1.svg");
+  }
+
+  &--2::before {
+    top: -15px;
+    right: 10px;
+    width: 66px;
+    height: 61px;
+    background-image: url("../img/problems-2.svg");
+  }
+
+  &--3::before {
+    top: 0;
+    right: 10px;
+    width: 70px;
+    height: 74px;
+    background-image: url("../img/problems-3.svg");
+  }
+
+  &--4::before {
+    top: -10px;
+    right: 10px;
+    width: 63px;
+    height: 73px;
+    background-image: url("../img/problems-4.svg");
+  }
+
+  &--5::before {
+    top: -10px;
+    right: 10px;
+    width: 49px;
+    height: 78px;
+    background-image: url("../img/problems-5.svg");
+  }
+
+  &--6::before {
+    top: 5px;
+    right: 10px;
+    width: 76px;
+    height: 47px;
+    background-image: url("../img/problems-6.svg");
+  }
+
+  @media (min-width: $min-tablet-width) {
     &:not(:last-child) {
-        margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
     &--1::before {
-        top: -10px;
-        right: 30px;
-        width: 23px;
-        height: 85px;
-        background-image: url("../img/problems-1.svg");
+      top: -40px;
+      right: 40px;
     }
 
     &--2::before {
-        top: -15px;
-        right: 10px;
-        width: 66px;
-        height: 61px;
-        background-image: url("../img/problems-2.svg");
+      top: -20px;
+      right: 25px;
     }
 
     &--3::before {
-        top: 0;
-        right: 10px;
-        width: 70px;
-        height: 74px;
-        background-image: url("../img/problems-3.svg");
+      top: -25px;
+      right: 25px;
     }
 
     &--4::before {
-        top: -10px;
-        right: 10px;
-        width: 63px;
-        height: 73px;
-        background-image: url("../img/problems-4.svg");
+      top: -25px;
+      right: 30px;
     }
 
     &--5::before {
-        top: -10px;
-        right: 10px;
-        width: 49px;
-        height: 78px;
-        background-image: url("../img/problems-5.svg");
+      top: -30px;
+      right: 35px;
     }
 
     &--6::before {
-        top: 5px;
-        right: 10px;
-        width: 76px;
-        height: 47px;
-        background-image: url("../img/problems-6.svg");
+      top: -5px;
+      right: 30px;
+    }
+  }
+
+  @media (min-width: $min-desktop-width) {
+    width: 380px;
+    margin-top: 65px;
+    padding-top: 255px;
+    background-image: url("../img/problems-redarc.png");
+    background-repeat: no-repeat;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
 
-    @media (min-width: $min-tablet-width) {
-        &:not(:last-child) {
-            margin-bottom: 60px;
-        }
-
-        &--1::before {
-            top: -40px;
-            right: 40px;
-        }
-
-        &--2::before {
-            top: -20px;
-            right: 25px;
-        }
-
-        &--3::before {
-            top: -25px;
-            right: 25px;
-        }
-
-        &--4::before {
-            top: -25px;
-            right: 30px;
-        }
-
-        &--5::before {
-            top: -30px;
-            right: 35px;
-        }
-
-        &--6::before {
-            top: -5px;
-            right: 30px;
-        }
+    &--1::before {
+      top: 60px;
+      left: 90px;
     }
 
-    @media (min-width: $min-desktop-width) {
-        width: 380px;
-        margin-top: 65px;
-        padding-top: 255px;
-        background-image: url("../img/problems-redarc.png");
-        background-repeat: no-repeat;
-
-        &:not(:last-child) {
-            margin-bottom: 0;
-        }
-
-        &--1::before {
-            top: 60px;
-            left: 90px;
-        }
-
-        &--2::before {
-            top: 72px;
-            left: 70px;
-        }
-
-        &--3::before {
-            top: 70px;
-            left: 65px;
-        }
-
-        &--4::before {
-            top: 65px;
-            left: 70px;
-        }
-
-        &--5::before {
-            top: 65px;
-            left: 80px;
-        }
-
-        &--6::before {
-            top: 80px;
-            left: 65px;
-        }
+    &--2::before {
+      top: 72px;
+      left: 70px;
     }
+
+    &--3::before {
+      top: 70px;
+      left: 65px;
+    }
+
+    &--4::before {
+      top: 65px;
+      left: 70px;
+    }
+
+    &--5::before {
+      top: 65px;
+      left: 80px;
+    }
+
+    &--6::before {
+      top: 80px;
+      left: 65px;
+    }
+  }
 }
 
 .problems__item-title {
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding-right: 100px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $orange;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-right: 100px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $orange;
 
-    @media (min-width: $min-desktop-width) {
-        width: 100%;
-        padding-right: 0;
-    }
+  @media (min-width: $min-desktop-width) {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 
 .problems__item-description {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
 
-    @media (min-width: $min-desktop-width) {
-        width: 320px;
-    }
+  @media (min-width: $min-desktop-width) {
+    width: 320px;
+  }
 }
 
 .problems__button {
-    font-weight: 300;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: white;
-    background-color: $orange;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  background-color: $orange;
 
-    @media (min-width: $min-desktop-width) {
-        width: 320px;
-    }
+  @media (min-width: $min-desktop-width) {
+    width: 320px;
+  }
 }
