@@ -26,6 +26,11 @@
   "license": "ISC",
   "main": "index.js",
   "name": "san-epidem",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yialo/san-epidem.git"
+  },
   "scripts": {
     "build": "gulp build",
     "editorconfig": "editorconfig-cli",
